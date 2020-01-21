@@ -1,0 +1,429 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  21 JAN 2020 17:23
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**manuscript.tex
+(./manuscript.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(./tesi_upf.cls
+
+LaTeX Warning: You have requested document class `tesi_upf',
+               but the document class provides `book'.
+
+Document Class: book 2005/09/16 v1.4f Standard LaTeX document class
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/bk12.clo
+File: bk12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/latin1.def
+File: latin1.def 2015/03/17 v1.2c Input encoding file
+))
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2017/05/19 3.10 The Babel package
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/01/24 v3.3q English support from the babel system
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
+File: babel.def 2017/05/19 3.10 Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\l@canadian = a dialect from \language\l@american 
+\l@australian = a dialect from \language\l@british 
+\l@newzealand = a dialect from \language\l@british 
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/babel-catalan/catalan.ldf
+Language: catalan 2005/03/29 v2.2p Catalan support from the babel system
+Package babel Info: Making " an active character on input line 91.
+Warning: You are using encoding OT1 instead of T1.
+Some word breaks will not be found.
+\leftllkern=\dimen104
+\rightllkern=\dimen105
+\raiselldim=\dimen106
+))
+(./geometry.sty
+Package: geometry 2002/07/08 v3.2 Page Geometry
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\Gm@cnth=\count89
+\Gm@cntv=\count90
+\c@Gm@tempcnt=\count91
+\Gm@bindingoffset=\dimen107
+\Gm@wd@mp=\dimen108
+\Gm@odd@mp=\dimen109
+\Gm@even@mp=\dimen110
+\Gm@dimlist=\toks17
+) (./crop.sty
+Package: crop 2003/05/20 v1.9 crop marks (mf)
+\stockwidth=\dimen111
+\stockheight=\dimen112
+\CROP@index=\count92
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/01/12 v0.06k Graphics/color for pdfTeX
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count93
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/04/14 v1.1b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+)
+\CROP@offset=\count94
+Package crop Info: Local config file crop.cfg used on input line 605.
+
+(/usr/local/texlive/2017/texmf-dist/tex/xelatex/xetexconfig/crop.cfg))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2005/04/12 PSNFSS-v9.2a (SPQR) 
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+\@indexfile=\write3
+\openout3 = `manuscript.idx'.
+
+
+Writing index file manuscript.idx
+(./manuscript.aux)
+\openout1 = `manuscript.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 53.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Info: Redefining \l on input line 53.
+LaTeX Info: Redefining \L on input line 53.
+-------------------- Geometry parameters
+paper: b5paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 60.09283pt, 0.7\paperwidth , 90.13925pt (default)
+v-parts: 85.35913pt, 0.7\paperheight , 128.03871pt (default)
+hmarginratio: 2:3
+vmarginratio: 2:3
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: --
+includefoot: --
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  500.7685pt
+\paperheight 711.3189pt
+\textwidth  350.5364pt
+\textheight 497.92105pt
+\oddsidemargin  -12.17715pt
+\evensidemargin 17.86926pt
+\topmargin  -18.78465pt
+\headheight 12.0pt
+\headsep    19.8738pt
+\footskip   30.0pt
+\marginparwidth 50.0pt
+\marginparsep   7.0pt
+\columnsep  10.0pt
+\skip\footins  10.8pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+
+(/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count95
+\scratchdimen=\dimen115
+\scratchbox=\box26
+\nofMPsegments=\count96
+\nofMParguments=\count97
+\everyMPshowfont=\toks18
+\MPscratchCnt=\count98
+\MPscratchDim=\dimen116
+\MPnumerator=\count99
+\makeMPintoPDFobject=\count100
+\everyMPtoPDFconversion=\toks19
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+))
+(/usr/local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package crop Info: requested driver: `' on input line 53.
+Package crop Info: detected driver: `pdftex' on input line 53.
+Package crop Info: using `pdftex' graphics driver on input line 53.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 58.
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 58.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 58.
+
+<logo_upf.png, id=1, 240.9pt x 87.6876pt>
+File: logo_upf.png Graphic file (type png)
+ <use logo_upf.png>
+Package pdftex.def Info: logo_upf.png used on input line 58.
+(pdftex.def)             Requested size: 96.35828pt x 35.0744pt.
+ [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+
+
+
+ <./logo_upf.png>]
+[2
+
+
+] [3] [4
+
+
+] [5] [6
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 81.
+LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 81.
+ [7] [8
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+ [9] [10
+
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 103.
+ (./manuscript.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 8.
+)
+\tf@toc=\write4
+\openout4 = `manuscript.toc'.
+
+ [11
+
+
+] [12
+
+
+]
+(./manuscript.lof)
+\tf@lof=\write5
+\openout5 = `manuscript.lof'.
+
+ [13] [14
+
+
+] (./manuscript.lot)
+\tf@lot=\write6
+\openout6 = `manuscript.lot'.
+
+ [15] [16
+
+
+]
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 123.
+
+
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+Overfull \hbox (0.60603pt too wide) in paragraph at lines 134--135
+[]\OT1/ptm/m/n/12 The com-bi-na-ti-on of the packa-ges \OT1/pcr/m/n/12 geometry
+ \OT1/ptm/m/n/12 i \OT1/pcr/m/n/12 crop \OT1/ptm/m/n/12 It allows
+ []
+
+
+Overfull \hbox (42.82361pt too wide) in paragraph at lines 142--143
+[]\OT1/ptm/m/n/12 To the or-ders \OT1/pcr/m/n/12 title\OT1/ptm/m/n/12 , \OT1/pc
+r/m/n/12 subtitle\OT1/ptm/m/n/12 , \OT1/pcr/m/n/12 author\OT1/ptm/m/n/12 , \OT1
+/pcr/m/n/12 thyear\OT1/ptm/m/n/12 ,\OT1/pcr/m/n/12 department\OT1/ptm/m/n/12 ,
+ []
+
+
+Overfull \hbox (2.66534pt too wide) in paragraph at lines 142--143
+\OT1/pcr/m/n/12 supervisor \OT1/ptm/m/n/12 the ap-pro-pri-a-te va-lu-es ??must 
+be put. L[]T[]Xwill
+ []
+
+[1
+
+
+]
+Overfull \hbox (5.40549pt too wide) in paragraph at lines 159--160
+[]\OT1/ptm/m/n/12 The or-ders [][]\OT1/pcr/m/n/12 \usepackage{makeidx} \makeind
+ex []\OT1/ptm/m/n/12 in the pre-
+ []
+
+[2]
+Cap\'{\i }tol 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 176.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 194.
+[3
+
+
+]
+File: logo_upf.png Graphic file (type png)
+ <use logo_upf.png>
+Package pdftex.def Info: logo_upf.png used on input line 203.
+(pdftex.def)             Requested size: 120.44969pt x 43.84369pt.
+ [4]
+Cap\'{\i }tol 2.
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+ [5
+
+
+]
+[6]
+No file manuscript.bbl.
+[7] [8
+
+
+]
+No file manuscript.ind.
+(./manuscript.aux) )
+(\end occurred inside a group at level 1)
+
+### simple group (level 1) entered at line 200 ({)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 2766 strings out of 492995
+ 38844 string characters out of 6132705
+ 110620 words of memory out of 5000000
+ 6246 multiletter control sequences out of 15000+600000
+ 29985 words of font info for 56 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 39i,11n,25p,549b,276s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
+}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/l
+ocal/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/te
+xlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2
+017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-
+dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on manuscript.pdf (24 pages, 219873 bytes).
+PDF statistics:
+ 103 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+

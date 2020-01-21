@@ -1,0 +1,11 @@
+\select@language {english}
+\select@language {catalan}
+\select@language {english}
+\select@language {catalan}
+\contentsline {chapter}{List of figures}{xiii}
+\contentsline {chapter}{List of tables}{xv}
+\contentsline {chapter}{\numberline {1}{\MakeUppercase { The first chapter}}}{3}
+\contentsline {section}{\numberline {1.1}A section}{3}
+\contentsline {subsection}{\numberline {1.1.1}A subsection}{3}
+\contentsline {section}{\numberline {1.2}Another section}{4}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase { The second chapter}}}{5}
