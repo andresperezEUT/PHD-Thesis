@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  21 JAN 2020 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  23 JAN 2020 18:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -115,24 +115,24 @@ Writing index file manuscript.idx
 (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux)
 \openout1 = `manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 55.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 54.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Info: Redefining \l on input line 55.
-LaTeX Info: Redefining \L on input line 55.
+LaTeX Info: Redefining \l on input line 54.
+LaTeX Info: Redefining \L on input line 54.
 -------------------- Geometry parameters
 paper: b5paper
 landscape: --
@@ -221,21 +221,21 @@ Package grfext Info: Graphics extension search list:
  (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package crop Info: requested driver: `' on input line 55.
-Package crop Info: detected driver: `pdftex' on input line 55.
-Package crop Info: using `pdftex' graphics driver on input line 55.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 60.
+Package crop Info: requested driver: `' on input line 54.
+Package crop Info: detected driver: `pdftex' on input line 54.
+Package crop Info: using `pdftex' graphics driver on input line 54.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 59.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 60.
+(Font)              <14.4> on input line 59.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 60.
+(Font)              <7> on input line 59.
  <logo_upf.png, id=1, 240.9pt x 87.6876pt>
 File: logo_upf.png Graphic file (type png)
  <use logo_upf.png>
-Package pdftex.def Info: logo_upf.png used on input line 60.
+Package pdftex.def Info: logo_upf.png used on input line 59.
 (pdftex.def)             Requested size: 96.35828pt x 35.0744pt.
  [1{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -243,32 +243,35 @@ Package pdftex.def Info: logo_upf.png used on input line 60.
 
 
 
-] [2 <./logo_upf.png>] [3
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-] [4
+ [2] [3 <./logo_upf.png>] [4
 
 
 ] [5] [6
 
 
+] [7] [8
+
+
 ]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 83.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 82.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 83.
- [7] [8
-
-
-]
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 99.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 82.
  [9] [10
 
 
 ]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+ [11] [12
+
+
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 106.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 105.
  (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 9.
@@ -276,112 +279,112 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 9.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 9.
-)
+ [13
+
+
+])
 \tf@toc=\write4
 \openout4 = `manuscript.toc'.
 
- [11
-
-
-] [12
-
-
-] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.lof)
+ [14] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.lof)
 \tf@lof=\write5
 \openout5 = `manuscript.lof'.
 
- [13] [14
+ [15
+
+
+] [16
 
 
 ] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.lot)
 \tf@lot=\write6
 \openout6 = `manuscript.lot'.
 
- [15] [16
+ [17] [18
 
 
-]
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 126.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/ot1pcr.fd
-File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
-)
-Overfull \hbox (42.82361pt too wide) in paragraph at lines 145--146
-[]\OT1/ptm/m/n/12 To the or-ders \OT1/pcr/m/n/12 title\OT1/ptm/m/n/12 , \OT1/pcr/m/n/12 subtitle\OT1/ptm/m/n/12 , \OT1/pcr/m/n/12 author\OT1/ptm/m/n/12 , \OT1/pcr/m/n/12 thyear\OT1/ptm/m/n/12 ,\OT1/pcr/m/n/12 department\OT1/ptm/m/n/12 ,
- []
-
-
-Overfull \hbox (2.66534pt too wide) in paragraph at lines 145--146
-\OT1/pcr/m/n/12 supervisor \OT1/ptm/m/n/12 the ap-pro-pri-ate val-ues ??must be put. L[]T[]Xwill
- []
-
-[1
-
-
-] [2]
+] (./Chapters/Introduction.tex
 Chapter 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 176.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 193.
-File: logo_upf.png Graphic file (type png)
-<use logo_upf.png>
-Package pdftex.def Info: logo_upf.png used on input line 202.
-(pdftex.def)             Requested size: 120.44969pt x 43.84369pt.
- [3
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 6.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 15.
+(/usr/local/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
+)
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 15.
+ [1
 
 
-] [4]
-Chapter 2.
-
-Overfull \hbox (8.68053pt too wide) in paragraph at lines 212--213
-\OT1/ptm/m/n/12 tandi volup-ta-tum ut. Quaeren-dum def-i-ni-tiones est ut, no quo postea prompta
- []
-
-
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
- [5
+] <Figures/context_scheme.png, id=69, 624.3325pt x 197.73875pt>
+File: Figures/context_scheme.png Graphic file (type png)
+ <use Figures/context_scheme.png>
+Package pdftex.def Info: Figures/context_scheme.png used on input line 67.
+(pdftex.def)             Requested size: 350.5364pt x 111.0226pt.
+) (./Chapters/ScientificBackground.tex [2] [3 <./Figures/context_scheme.png>] [4
 
 
 ]
-Overfull \hbox (11.45168pt too wide) in paragraph at lines 216--217
-\OT1/ptm/m/n/12 cusata ac-com-modare, eu nam clita au-dire in-vidunt. Mu-tat deb-itis mediocrem
+Chapter 2.
+) (./Chapters/CoherenceEstimation.tex [5] [6
+
+
+]
+Chapter 3.
+) (./Chapters/AutoregressiveReverbEstimation.tex [7] [8
+
+
+]
+Chapter 4.
+) (./Chapters/SELD.tex [9] [10
+
+
+]
+Chapter 5.
+) (./Chapters/DataGeneration.tex [11] [12
+
+
+]
+Chapter 6.
+) (./Chapters/Conclusions.tex [13] [14
+
+
+]
+Chapter 7.
+
+Overfull \hbox (10.92581pt too wide) in paragraph at lines 20--21
+[]\OT1/ptm/b/n/12 Signal en-hance-ment\OT1/ptm/m/n/12 : Novel method-ol-ogy to re-reverberate
  []
 
-
-Overfull \hbox (8.83327pt too wide) in paragraph at lines 218--219
-[]\OT1/ptm/m/n/12 Usu ne apeirian de-serunt ex-pe-tendis, sed in iisque ab-hor-re-ant definiebas,
+[15]
+Overfull \hbox (4.48155pt too wide) in paragraph at lines 42--43
+[]\OT1/ptm/b/n/12 Recorded IRs\OT1/ptm/m/n/12 : File stan-dard/convention pro-posal for stor-
  []
 
+) (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.bbl [16]
 
-Overfull \hbox (7.29639pt too wide) in paragraph at lines 224--225
-[]\OT1/ptm/m/n/12 Vel at ul-lum in-tel-legam con-sti-tuam, mea dicta af-fert per-petua ea. Eripuit
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-[6] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.bbl [7] [8
-
-
-]) [9] [10
+) [17
 
 
-] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.ind) (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux) )
-(\end occurred inside a group at level 1)
+] [18
 
-### simple group (level 1) entered at line 199 ({)
-### bottom level 
+
+] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.ind) (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux) ) 
 Here is how much of TeX's memory you used:
- 2776 strings out of 492995
- 40083 string characters out of 6132705
- 109707 words of memory out of 5000000
- 6249 multiletter control sequences out of 15000+600000
- 31669 words of font info for 58 fonts, out of 8000000 for 9000
+ 2774 strings out of 492995
+ 40434 string characters out of 6132705
+ 109722 words of memory out of 5000000
+ 6230 multiletter control sequences out of 15000+600000
+ 24715 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,25p,549b,272s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (26 pages, 227188 bytes).
+ 39i,10n,25p,236b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (36 pages, 236121 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 97 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,10 +3,25 @@
 \select@language {english}
 \select@language {catalan}
 \select@language {english}
-\contentsline {chapter}{List of figures}{xiii}
-\contentsline {chapter}{List of tables}{xv}
-\contentsline {chapter}{\numberline {1}{\MakeUppercase { The first chapter}}}{3}
-\contentsline {section}{\numberline {1.1}A section}{3}
-\contentsline {subsection}{\numberline {1.1.1}A subsection}{3}
-\contentsline {section}{\numberline {1.2}Another section}{3}
-\contentsline {chapter}{\numberline {2}{\MakeUppercase { The second chapter}}}{5}
+\contentsline {chapter}{List of figures}{xv}
+\contentsline {chapter}{List of tables}{xvii}
+\contentsline {chapter}{\numberline {1}{\MakeUppercase { Introduction}}}{1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}
+\contentsline {subsection}{\numberline {1.1.1}3D arrays}{1}
+\contentsline {subsection}{\numberline {1.1.2}spherical microphone arrays}{1}
+\contentsline {subsection}{\numberline {1.1.3}ambisonics}{1}
+\contentsline {subsection}{\numberline {1.1.4}Current limitations of vr/ar production}{2}
+\contentsline {section}{\numberline {1.2}Goals}{2}
+\contentsline {section}{\numberline {1.3}Context}{2}
+\contentsline {chapter}{\numberline {2}{\MakeUppercase { Scientific Background}}}{5}
+\contentsline {section}{\numberline {2.1}State of the Art}{5}
+\contentsline {chapter}{\numberline {3}{\MakeUppercase { Coherence Estimation}}}{7}
+\contentsline {chapter}{\numberline {4}{\MakeUppercase { Autoregressive Impulse Response Models}}}{9}
+\contentsline {chapter}{\numberline {5}{\MakeUppercase { Sound Event Localization and Detection}}}{11}
+\contentsline {chapter}{\numberline {6}{\MakeUppercase { Data generation and storage}}}{13}
+\contentsline {section}{\numberline {6.1}Recorded IRs}{13}
+\contentsline {section}{\numberline {6.2}Simulated IRs}{13}
+\contentsline {section}{\numberline {6.3}High-level scene description}{13}
+\contentsline {chapter}{\numberline {7}{\MakeUppercase { Conclusions}}}{15}
+\contentsline {section}{\numberline {7.1}Summary of Contributions}{15}
+\contentsline {section}{\numberline {7.2}List of related publications}{16}
