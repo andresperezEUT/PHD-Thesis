@@ -1,6 +1,7 @@
 \relax 
 \catcode `"\active 
 \bibstyle{apalike}
+\providecommand \oddpage@label [2]{}
 \select@language{english}
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
@@ -21,8 +22,9 @@
 \@writefile{toc}{\select@language{english}}
 \@writefile{lof}{\select@language{english}}
 \@writefile{lot}{\select@language{english}}
-\@writefile{toc}{\contentsline {chapter}{List of figures}{xv}}
-\@writefile{toc}{\contentsline {chapter}{List of tables}{xvii}}
+\citation{guildhall}
+\@writefile{toc}{\contentsline {chapter}{List of figures}{xviii}}
+\@writefile{toc}{\contentsline {chapter}{List of tables}{xix}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {1}{\MakeUppercase  { Introduction}}}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
@@ -33,29 +35,333 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1.4}Current limitations of vr/ar production}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Goals}{2}}
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Context}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces \leavevmode {\color  {red}todo caption}}}{3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces \leavevmode {\color  {red}todo caption}\relax }}{3}}
 \@writefile{toc}{\contentsline {chapter}{\numberline {2}{\MakeUppercase  { Scientific Background}}}{5}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}State of the Art}{5}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}{\MakeUppercase  { Coherence Estimation}}}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Reference system and conventions}{5}}
+\@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Cartesian and spherical representation of characteristic points along the unit sphere.\relax }}{6}}
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:cartesian}{{2.1}{6}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Spherical Harmonics}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}Definition}{6}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Spherical harmonics up to order $N=3$. The rows correspond to the spherical harmonics of a given order $n$, and the columns span all possible degree values.\relax }}{8}}
+\newlabel{fig:sphericalharmonics}{{2.1}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.2}Spherical array processing}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Ambisonics}{10}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.4}Practical Considerations}{10}}
+\citation{p_habets_dual-microphone_2006}
+\citation{ito_designing_2010}
+\citation{duong_under-determined_2009}
+\citation{stefanakis_foreground_2015}
+\citation{pulkki_directional_2006,politis_compass_2018}
+\citation{thiergart_localization_2009}
+\citation{motlicek_real-time_2013}
+\citation{elko_spatial_2001,mccowan_microphone_2003}
+\citation{elko_spatial_2001}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}{\MakeUppercase  { Coherence Estimation}}}{11}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}{\MakeUppercase  { Autoregressive Impulse Response Models}}}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Introduction}{11}}
+\citation{elko_spatial_2001}
+\newlabel{subsec:3:1}{{3.1.1}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1} Coherence analysis}{12}}
+\newlabel{eq:MSC}{{3.1}{12}}
+\newlabel{eq:MSCdir}{{3.2}{12}}
+\citation{bertet_3d_2006}
+\citation{gerzon_design_1975}
+\citation{pulkki_directional_2006}
+\newlabel{eq:closedform_msc}{{3.4}{13}}
+\newlabel{subsec:3:2}{{3.1.2}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Diffuseness estimation in ambisonics}{13}}
+\newlabel{eq:ambisonics_encoding}{{3.5}{13}}
+\citation{elko_spatial_2001}
+\citation{thiergart_diffuseness_2011}
+\citation{schorkhuber_ambisonic_2017}
+\citation{habets_generating_2007,habets_comments_2010}
+\newlabel{eq:psi}{{3.6}{14}}
+\newlabel{eq:delta}{{3.7}{14}}
+\citation{habets_comments_2010}
+\citation{zotter_all-round_2012}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Methods}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Simulation}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Recording}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Data processing and metrics}{16}}
+\newlabel{nmse}{{3.8}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Results and discussion}{16}}
+\newlabel{subsec:results_aformat}{{3.3.1}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}A-Format}{16}}
+\citation{gerzon_design_1975}
+\citation{politis_direction--arrival_2015}
+\citation{schorkhuber_ambisonic_2017}
+\citation{epain_spherical_2016}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit  {A-Format} coherence between microphone signals. Left: $\text  {MSC}$ as a function of the frequency of theoretical, simulated and recorded \textit  {((BLD,BRU)}, $L=5, N=64$) signals. Right: mean error $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals' $MSC$ \textit  {(BLD,BRU)} compared to the simulated values, for all values of $L$ and $N$.\relax }}{17}}
+\newlabel{fig:Fig1}{{3.1}{17}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}B-Format}{17}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces  Estimated \textit  {B-Format} coherence ($\Delta $) of a simulated diffuse sound field, as a function of the temporal averaging vicinity radius $r$. Left: $\Delta (k)$ for different values of $r$, with (coarse) and without (fine) application of radial filters. Right: mean and standard deviation of $\Delta (k)$ as a function of $r$.\relax }}{18}}
+\newlabel{fig:Fig2}{{3.2}{18}}
+\citation{thiergart_diffuseness_2011}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit  {B-Format} coherence between microphone signals. Left: $\Delta $ of simulated and recorded ($L=5, N=64$) signals. Right: $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals coherence across all values of $L$ and $N$.\relax }}{20}}
+\newlabel{fig:Fig3}{{3.3}{20}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Conclusions}{20}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}{\MakeUppercase  { Autoregressive Impulse Response Models}}}{23}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}{\MakeUppercase  { Sound Event Localization and Detection}}}{11}}
+\citation{grobler2017sound,butko2011two,chakraborty2014sound}
+\citation{hirvonen2015classification,lopatka2016detection,Adavanne2018_JSTSP}
+\citation{Adavanne2018_JSTSP}
+\citation{gerzon1973periphony,daniel2000representation}
+\citation{pulkki2006directional,berge2010high,Politis2018,pulkki2018parametric}
+\citation{Adavanne2018_JSTSP}
+\citation{lopatka2016detection}
+\citation{pulkki2006directional}
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}{\MakeUppercase  { Sound Event Localization and Detection}}}{25}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {chapter}{\numberline {6}{\MakeUppercase  { Data generation and storage}}}{13}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Introduction}{25}}
+\newlabel{sec:intro}{{5.1}{25}}
+\citation{code}
+\citation{carpentier2017normalization}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Method}{27}}
+\newlabel{sec:method}{{5.2}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces System architecture.\relax }}{27}}
+\newlabel{fig:diagram_all}{{5.1}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}DOA estimation}{27}}
+\newlabel{ssec:doa_estimation}{{5.2.1}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces DOA estimation architecture.\relax }}{27}}
+\newlabel{fig:doa}{{5.2}{27}}
+\citation{pulkki2006directional}
+\citation{stanzial1996reactive}
+\citation{merimaa2005spatial}
+\citation{pulkki2018parametric}
+\newlabel{psi}{{5.4}{28}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Association}{29}}
+\newlabel{ssec:association}{{5.2.2}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Association architecture.\relax }}{29}}
+\newlabel{fig:association}{{5.3}{29}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Beamforming}{30}}
+\newlabel{ssec:Beamforming}{{5.2.3}{30}}
+\citation{nair2010rectified}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Deep learning classification back-end}{31}}
+\newlabel{ssec:backend_method}{{5.2.4}{31}}
+\citation{Adavanne2019_DCASE}
+\citation{Adavanne2018_JSTSP}
+\citation{Adavanne2018_JSTSP}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Experiments}{32}}
+\newlabel{sec:expe}{{5.3}{32}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Dataset, evaluation metrics and baseline system}{32}}
+\newlabel{ssec:dataset}{{5.3.1}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Back-end architecture.\relax }}{33}}
+\newlabel{fig:archi}{{5.4}{33}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Parametric front-end}{33}}
+\newlabel{ssec:param_frontend}{{5.3.2}{33}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Parameter values for the selected configuration. Top: \textit  {DOA analysis} parameters. Bottom: \textit  {Association} parameters.\relax }}{34}}
+\newlabel{tab:params_front}{{5.1}{34}}
+\citation{Fonseca2019learning}
+\citation{howard2017mobilenets}
+\citation{cakir2017convolutional}
+\citation{srivastava2014dropout}
+\citation{ioffe2015batch}
+\citation{fonseca2018simple}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.3}Deep learning classification back-end}{35}}
+\newlabel{ssec:backend_experiments}{{5.3.3}{35}}
+\citation{kingma2014adam}
+\citation{zhang2017mixup}
+\citation{Fonseca2019model}
+\citation{Fonseca2019learning}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Results and Discussion}{36}}
+\newlabel{sec:results}{{5.4}{36}}
+\citation{Adavanne2018_JSTSP}
+\citation{he2010detecting,Stefanakis2017}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces Results for development (top) and evaluation (bottom) sets.\relax }}{37}}
+\newlabel{tab:results_real}{{5.2}{37}}
+\newlabel{fig:5a}{{5.5a}{38}}
+\newlabel{sub@fig:5a}{{a}{38}}
+\newlabel{fig:5b}{{5.5b}{38}}
+\newlabel{sub@fig:5b}{{b}{38}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces DCASE2019 Challenge Task 3 results, evaluation set.\relax }}{38}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Conclusion}{39}}
+\newlabel{sec:conclusion}{{5.5}{39}}
+\citation{stan2002comparison}
+\citation{embrechts2005computation}
+\citation{embrechts2005computation}
+\citation{embrechts2015measurement,clapp2011investigations}
+\citation{romblom2017diffuse}
+\citation{coleman2017object}
+\citation{baque2016separation}
+\citation{gerzon1975recording,murphy2005multi}
+\@writefile{toc}{\contentsline {chapter}{\numberline {6}{\MakeUppercase  { Data generation and storage}}}{41}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {6.1}Recorded IRs}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.2}Simulated IRs}{13}}
-\@writefile{toc}{\contentsline {section}{\numberline {6.3}High-level scene description}{13}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {7}{\MakeUppercase  { Conclusions}}}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Recorded IRs}{41}}
+\citation{Bertet2006}
+\citation{soundfield,ambeo,zylia,tetra,em32}
+\citation{gerzon1975recording}
+\citation{murphy2010openair}
+\citation{coleman2015s3a,openair}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Ambisonics Recording}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.2}Ambisonics DRIRs}{42}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.3}The SOFA Conventions}{42}}
+\citation{majdak2015aes69}
+\citation{generalfire}
+\citation{sofaconventions}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.4}Convention Proposal}{44}}
+\@writefile{toc}{\contentsline {subsubsection}{Considerations}{44}}
+\@writefile{toc}{\contentsline {subsubsection}{Specifications}{44}}
+\citation{sofacpp}
+\citation{sofamo}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.5}Results}{45}}
+\citation{coleman2015s3a}
+\citation{openair}
+\citation{ambisonicsdrirexamples}
+\citation{guildhall}
+\citation{guildhall}
+\citation{Moore2015}
+\citation{Pavlidi2015}
+\citation{He2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.6}Summary}{46}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Simulated IRs}{46}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}High-level scene description}{46}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Motivation}{46}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces Source and Listener position diagram for the "York Guildhall Council Chamber" Ambisonics DRIR (original diagram attribution to \cite  {guildhall} \relax }}{47}}
+\newlabel{guildhall}{{6.1}{47}}
+\citation{Gunel2008}
+\citation{Shujau2011}
+\citation{Riaz2015}
+\citation{Chen2015}
+\citation{smir}
+\citation{gerzon1975recording}
+\citation{murphy2010openair}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.2}Evaluation data}{48}}
+\newlabel{subsec:evaluationdata}{{6.3.2}{48}}
+\citation{timit}
+\citation{Thiergart2009}
+\citation{Tervo2009}
+\citation{Jarrett2010}
+\citation{Nadiri2014}
+\citation{Moore2015}
+\citation{Pavlidi2015}
+\citation{He2017}
+\citation{Gunel2008}
+\citation{Shujau2011}
+\citation{Riaz2015}
+\citation{Chen2015}
+\@writefile{lot}{\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of audio data used across Ambisonics-based Source Localization (above) and Source Separation (below) algorithm proposals. \leavevmode {\color  {red}update table? fix references}\relax }}{50}}
+\newlabel{table:evaluationdata}{{6.1}{50}}
+\citation{ambiscaper}
+\citation{Salamon2017}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.3}AMBISCAPER}{51}}
+\newlabel{sec:ambiscaper}{{6.3.3}{51}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.4}Sound scene description}{51}}
+\newlabel{subsec:description}{{6.3.4}{51}}
+\newlabel{fig_architecture}{{\caption@xref {fig_architecture}{ on input line 273}}{52}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces AmbiScaper architecture.\relax }}{52}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.5}Architecture}{52}}
+\newlabel{subsec:architecture}{{6.3.5}{52}}
+\citation{humphrey2014jams}
+\citation{carpentier2017ambisonic}
+\citation{coleman2015s3a}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.6}Reverberation}{53}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.7}AmbiScaper and experiment reproducibility}{54}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.8}Sample Dataset}{54}}
+\newlabel{ssec:dataset}{{6.3.8}{54}}
+\citation{perez2018ambisonics}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.9}CONCLUSIONS AND FUTURE WORK}{55}}
+\newlabel{sec:conclusions}{{6.3.9}{55}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {7}{\MakeUppercase  { Conclusions}}}{57}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {7.1}Summary of Contributions}{15}}
-\bibdata{exemple_bibtex}
-\@writefile{toc}{\contentsline {section}{\numberline {7.2}List of related publications}{16}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}Summary of Contributions}{57}}
+\bibdata{Bibliography/CoherenceEstimation, Bibliography/SELD.bib, Bibliography/Ambiscaper.bib, Bibliography/AmbisonicsDRIR.bib}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}List of related publications}{58}}
+\bibcite{code}{cod, }
+\bibcite{openair}{ope, 2018}
+\bibcite{em32}{Acoustics, 2018}
+\bibcite{Adavanne2018_JSTSP}{Adavanne et~al., 2018}
+\bibcite{Adavanne2019_DCASE}{Adavanne et~al., 2019}
+\bibcite{baque2016separation}{Baqu{\'e} et~al., 2016}
+\bibcite{berge2010high}{Berge and Barrett, 2010}
+\bibcite{Bertet2006}{Bertet et~al., 2006a}
+\bibcite{bertet_3d_2006}{Bertet et~al., 2006b}
+\bibcite{butko2011two}{Butko et~al., 2011}
+\bibcite{cakir2017convolutional}{Cak{\i }r et~al., 2017}
+\bibcite{carpentier2017ambisonic}{Carpentier, 2017a}
+\bibcite{carpentier2017normalization}{Carpentier, 2017b}
+\bibcite{chakraborty2014sound}{Chakraborty and Nadeu, 2014}
+\bibcite{Chen2015}{Chen et~al., 2015}
+\bibcite{clapp2011investigations}{Clapp et~al., 2011}
+\bibcite{coleman2017object}{Coleman et~al., 2017}
+\bibcite{coleman2015s3a}{Coleman et~al., 2018}
+\bibcite{daniel2000representation}{Daniel, 2000}
+\bibcite{duong_under-determined_2009}{Duong et~al., 2009}
+\bibcite{elko_spatial_2001}{Elko, 2001}
+\bibcite{embrechts2015measurement}{Embrechts, 2015}
+\bibcite{embrechts2005computation}{Embrechts et~al., 2005}
+\bibcite{epain_spherical_2016}{Epain and Jin, 2016}
+\bibcite{Fonseca2019model}{Fonseca et~al., 2019a}
+\bibcite{fonseca2018simple}{Fonseca et~al., 2018}
+\bibcite{Fonseca2019learning}{Fonseca et~al., 2019b}
+\bibcite{timit}{Garofolo et~al., 1993}
+\bibcite{gerzon_design_1975}{Gerzon, 1975a}
+\bibcite{gerzon1973periphony}{Gerzon, 1973}
+\bibcite{gerzon1975recording}{Gerzon, 1975b}
+\bibcite{grobler2017sound}{Grobler et~al., 2017}
+\bibcite{Gunel2008}{Gunel et~al., 2018}
+\bibcite{habets_generating_2007}{Habets and Gannot, 2007}
+\bibcite{habets_comments_2010}{Habets and Gannot, 2010}
+\bibcite{He2017}{He and Chen, 2017}
+\bibcite{he2010detecting}{He et~al., 2010}
+\bibcite{hirvonen2015classification}{Hirvonen, 2015}
+\bibcite{howard2017mobilenets}{Howard et~al., 2017}
+\bibcite{humphrey2014jams}{Humphrey et~al., 2014}
+\bibcite{ioffe2015batch}{Ioffe and Szegedy, 2015}
+\bibcite{ito_designing_2010}{Ito et~al., 2010}
+\bibcite{Jarrett2010}{Jarrett et~al., 2010}
+\bibcite{smir}{Jarrett et~al., 2012}
+\bibcite{kingma2014adam}{Kingma and Ba, }
+\bibcite{lopatka2016detection}{Lopatka et~al., 2016}
+\bibcite{majdak2015aes69}{Majdak and Noisternig, 2015}
+\bibcite{mccowan_microphone_2003}{McCowan and Bourlard, 2003}
+\bibcite{merimaa2005spatial}{Merimaa and Pulkki, 2005}
+\bibcite{Moore2015}{Moore et~al., 2015}
+\bibcite{motlicek_real-time_2013}{Motlicek et~al., 2013}
+\bibcite{murphy2005multi}{Murphy, 2005}
+\bibcite{murphy2010openair}{Murphy and Shelley, 2010}
+\bibcite{sofamo}{Muynke, 2018}
+\bibcite{Nadiri2014}{Nadiri and Rafaely, 2014}
+\bibcite{nair2010rectified}{Nair and Hinton, 2010}
+\bibcite{guildhall}{of~York~Council, 2018}
+\bibcite{p_habets_dual-microphone_2006}{P.~Habets et~al., 2006}
+\bibcite{Pavlidi2015}{Pavlidi et~al., 2015}
+\bibcite{ambiscaper}{Perez-Lopez, 2018}
+\bibcite{perez2018ambisonics}{Perez-Lopez and De~Muynke, 2018}
+\bibcite{politis_direction--arrival_2015}{Politis et~al., 2015}
+\bibcite{politis_compass_2018}{Politis et~al., 2018a}
+\bibcite{Politis2018}{Politis et~al., 2018b}
+\bibcite{pulkki_directional_2006}{Pulkki, 2006a}
+\bibcite{pulkki2006directional}{Pulkki, 2006b}
+\bibcite{pulkki2018parametric}{Pulkki et~al., 2018}
+\bibcite{sofacpp}{P\'erez-L\'opez, 2018b}
+\bibcite{ambisonicsdrirexamples}{P\'erez-L\'opez, 2018a}
+\bibcite{Riaz2015}{Riaz, 2015}
+\bibcite{romblom2017diffuse}{Romblom, 2017}
+\bibcite{Salamon2017}{Salamon et~al., 2017}
+\bibcite{schorkhuber_ambisonic_2017}{Schorkhuber and Holdrich, 2017}
+\bibcite{ambeo}{Sennheiser, 2018}
+\bibcite{Shujau2011}{Shujau et~al., 2011}
+\bibcite{generalfire}{SOFA, 2018a}
+\bibcite{sofaconventions}{SOFA, 2018b}
+\bibcite{soundfield}{Soundfield, 2018}
+\bibcite{srivastava2014dropout}{Srivastava et~al., 2014}
+\bibcite{stan2002comparison}{Stan et~al., 2002}
+\bibcite{stanzial1996reactive}{Stanzial et~al., 1996}
+\bibcite{stefanakis_foreground_2015}{Stefanakis and Mouchtaris, 2015}
+\bibcite{Stefanakis2017}{Stefanakis et~al., 2017}
+\bibcite{Tervo2009}{Tervo, 2009}
+\bibcite{thiergart_diffuseness_2011}{Thiergart et~al., 2011}
+\bibcite{Thiergart2009}{Thiergart and Schultz-Amling, 2009}
+\bibcite{thiergart_localization_2009}{Thiergart et~al., 2009}
+\bibcite{tetra}{VVAudio.com, 2018}
+\bibcite{zhang2017mixup}{Zhang et~al., 2017}
+\bibcite{zotter_all-round_2012}{Zotter and Frank, 2012}
+\bibcite{zylia}{Zylia, 2018}

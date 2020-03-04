@@ -19,6 +19,29 @@
 \usepackage{times}
 %\usepackage{garamond}
 
+%COHERENCE ESTIMATION
+\usepackage{graphicx}% Include figure files
+\usepackage{dcolumn}% Align table columns on decimal point
+\usepackage{bm}% bold math
+\usepackage{latexsym}% 
+\usepackage{lineno}   
+\usepackage{array}
+\usepackage{adjustbox}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{newpxtext} 
+\usepackage{cite}
+\usepackage{booktabs}
+
+%SELD
+\DeclareMathOperator{\LL}{\langle}
+\DeclareMathOperator{\RR}{\rangle}
+\usepackage{graphicx,url,times,booktabs, tabularx}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{algorithm, algorithmic}
+\usepackage{color}
+\usepackage{subcaption}
+
 
 %WITHOUT HEADINGS: NO MODIFICATION
 \pagestyle{plain}
@@ -40,15 +63,18 @@
 
 
 %ADD YOUR DATA
-\title{Spherical harmonic domain parametric methods for 3D audio production enhancement\todo{(check capitalization)}}
+\title{Spherical harmonic domain methods for 3D audio production enhancement \todo{(check capitalization)}}
 \subtitle{\todo{subtitle Required?}}
 \author{Author: Andrés Pérez López}
 \thyear{2020}
 \department{of Information and Communication Technologies}
-\supervisor{Dr. Emilia Gómez GutiérrezDr. Adan Garriga Torres}
+\supervisor{Dr. Emilia Gómez Gutiérrez\\Dr. Adan Garriga Torres}
 
 % TODO
 \newcommand\todo[1]{\textcolor{red}{#1}}
+
+% INTEGRAL D
+\newcommand{\dif}{\mathop{}\!\mathrm{d}}
 
 
 \begin{document}
@@ -128,8 +154,7 @@ menys de 150 paraules. \todo{abstract in catalan}
 
 
 %ADD BIBLIOGRAPHY
-\bibliography{exemple_bibtex}
-
+\bibliography{Bibliography/CoherenceEstimation, Bibliography/SELD.bib, Bibliography/Ambiscaper.bib, Bibliography/AmbisonicsDRIR.bib}
 
 
 \backmatter

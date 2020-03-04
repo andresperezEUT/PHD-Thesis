@@ -2,47 +2,104 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux
 The style file: apalike.bst
-I found no \citation commands---while reading file /Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux
-Database file #1: ../exemple_bibtex.bib
-You've used 0 entries,
+Database file #1: ../Bibliography/CoherenceEstimation.bib
+I was expecting a `,' or a `}'---line 203 of file ../Bibliography/CoherenceEstimation.bib
+ : 
+ : @inproceedings{stefanakis_foreground_2015,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #2: ../Bibliography/SELD.bib.bib
+You're missing a field name---line 171 of file ../Bibliography/SELD.bib.bib
+ : 
+ : %   howpublished = {\url{http://www.ieee.org/portal/pages/pubs/confpubcenter/register.html}}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 176 of file ../Bibliography/SELD.bib.bib
+ : 
+ : %   howpublished = {{PDF} specification for {IEEE} {X}plore,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #3: ../Bibliography/Ambiscaper.bib.bib
+Repeated entry---line 268 of file ../Bibliography/Ambiscaper.bib.bib
+ : @article{gerzon1973periphony
+ :                             ,
+I'm skipping whatever remains of this entry
+Database file #4: ../Bibliography/AmbisonicsDRIR.bib.bib
+Repeated entry---line 18 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @misc{coleman2015s3a
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 50 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @article{gerzon1975recording
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 113 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @inproceedings{murphy2010openair
+ :                                 ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 132 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @article{stan2002comparison
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 143 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @article{gerzon1973periphony
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 154 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @article{Bertet2006
+ :                    ,
+I'm skipping whatever remains of this entry
+Warning--to sort, need author or key in code
+Warning--to sort, need author or key in openair
+Warning--empty year in code
+Warning--empty journal in bertet_3d_2006
+Warning--empty journal in daniel2000representation
+Warning--empty journal in gerzon_design_1975
+Warning--empty journal in habets_comments_2010
+Warning--empty year in kingma2014adam
+Warning--there's a number but no volume in Politis2018
+Warning--empty journal in pulkki_directional_2006
+Warning--empty journal in schorkhuber_ambisonic_2017
+Warning--empty booktitle in thiergart_localization_2009
+You've used 91 entries,
             1935 wiz_defined-function locations,
-            471 strings with 3823 characters,
-and the built_in function-call counts, 17 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
-int.to.chr$ -- 1
+            931 strings with 20717 characters,
+and the built_in function-call counts, 36555 in all, are:
+= -- 3655
+> -- 1420
+< -- 71
++ -- 488
+- -- 472
+* -- 2856
+:= -- 6189
+add.period$ -- 287
+call.type$ -- 91
+change.case$ -- 685
+chr.to.int$ -- 83
+cite$ -- 105
+duplicate$ -- 1566
+empty$ -- 2630
+format.name$ -- 599
+if$ -- 7373
+int.to.chr$ -- 9
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+missing$ -- 77
+newline$ -- 443
+num.names$ -- 267
+pop$ -- 753
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 691
 quote$ -- 0
-skip$ -- 1
+skip$ -- 1116
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 2344
+swap$ -- 274
+text.length$ -- 25
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 542
+warning$ -- 12
+while$ -- 287
 width$ -- 0
-write$ -- 2
-(There was 1 error message)
+write$ -- 1144
+(There were 10 error messages)
