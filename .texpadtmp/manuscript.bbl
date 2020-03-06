@@ -39,17 +39,11 @@ Berge, S. and Barrett, N. (2010).
 \newblock In {\em Proc. of the 2nd International Symposium on Ambisonics and
   Spherical Acoustics May}, pages 6--7.
 
-\bibitem[Bertet et~al., 2006a]{Bertet2006}
-Bertet, S., Daniel, J., and Moreau, S. (2006a).
+\bibitem[Bertet et~al., 2006]{Bertet2006}
+Bertet, S., Daniel, J., and Moreau, S. (2006).
 \newblock {3D Sound Field Recording With Higher Order Ambisonics - Objective
   Measurements and Validation of a 4th Order Spherical Microphone}.
 \newblock {\em 120th AES Convention}, pages 1--24.
-
-\bibitem[Bertet et~al., 2006b]{bertet_3d_2006}
-Bertet, S., Daniel, J., and Moreau, S. (2006b).
-\newblock {3D} {Sound} {Field} {Recording} with {Higher} {Order} {Ambisonics} -
-  {Objective} {Measurements} and {Validation} of {Spherical} {Microphone}.
-\newblock page~24.
 
 \bibitem[Butko et~al., 2011]{butko2011two}
 Butko, T., Pla, F.~G., Segura, C., Nadeu, C., and Hernando, J. (2011).
@@ -545,11 +539,6 @@ VVAudio.com (Accessed on March 8th, 2018).
 Zhang, H., Cisse, M., Dauphin, Y.~N., and Lopez-Paz, D. (2017).
 \newblock mixup: Beyond empirical risk minimization.
 \newblock {\em arXiv preprint arXiv:1710.09412}.
-
-\bibitem[Zotter and Frank, 2012]{zotter_all-round_2012}
-Zotter, F. and Frank, M. (2012).
-\newblock All-{Round} {Ambisonic} {Panning} and {Decoding}.
-\newblock {\em J. Audio Eng. Soc.}, 60(10):14.
 
 \bibitem[Zylia, 2018]{zylia}
 Zylia (Accessed on March 8th, 2018).

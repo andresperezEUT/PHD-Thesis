@@ -52,7 +52,6 @@ I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in code
 Warning--to sort, need author or key in openair
 Warning--empty year in code
-Warning--empty journal in bertet_3d_2006
 Warning--empty journal in daniel2000representation
 Warning--empty journal in gerzon_design_1975
 Warning--empty journal in habets_comments_2010
@@ -61,45 +60,45 @@ Warning--there's a number but no volume in Politis2018
 Warning--empty journal in pulkki_directional_2006
 Warning--empty journal in schorkhuber_ambisonic_2017
 Warning--empty booktitle in thiergart_localization_2009
-You've used 91 entries,
+You've used 89 entries,
             1935 wiz_defined-function locations,
-            931 strings with 20717 characters,
-and the built_in function-call counts, 36555 in all, are:
-= -- 3655
-> -- 1420
-< -- 71
-+ -- 488
-- -- 472
-* -- 2856
-:= -- 6189
-add.period$ -- 287
-call.type$ -- 91
-change.case$ -- 685
-chr.to.int$ -- 83
-cite$ -- 105
-duplicate$ -- 1566
-empty$ -- 2630
-format.name$ -- 599
-if$ -- 7373
-int.to.chr$ -- 9
+            921 strings with 20374 characters,
+and the built_in function-call counts, 35809 in all, are:
+= -- 3585
+> -- 1389
+< -- 69
++ -- 477
+- -- 462
+* -- 2795
+:= -- 6059
+add.period$ -- 281
+call.type$ -- 89
+change.case$ -- 670
+chr.to.int$ -- 82
+cite$ -- 102
+duplicate$ -- 1533
+empty$ -- 2580
+format.name$ -- 585
+if$ -- 7225
+int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 77
-newline$ -- 443
-num.names$ -- 267
-pop$ -- 753
+missing$ -- 75
+newline$ -- 433
+num.names$ -- 261
+pop$ -- 738
 preamble$ -- 1
-purify$ -- 691
+purify$ -- 676
 quote$ -- 0
-skip$ -- 1116
+skip$ -- 1091
 stack$ -- 0
-substring$ -- 2344
-swap$ -- 274
-text.length$ -- 25
+substring$ -- 2310
+swap$ -- 268
+text.length$ -- 24
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 542
-warning$ -- 12
-while$ -- 287
+type$ -- 530
+warning$ -- 11
+while$ -- 281
 width$ -- 0
-write$ -- 1144
+write$ -- 1119
 (There were 10 error messages)
