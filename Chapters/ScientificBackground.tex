@@ -1,6 +1,7 @@
-\chapter{Scientific Background}
+\chapter{Background}
 
-\section{Reference system and conventions}
+\section{Conventions}
+\subsection{Reference system}
 
 In what follows, we will make use of a right-handed coordinate system, where the positive \textit{x}-axis points towards the \textit{front}, the positive \textit{y}-axis points towards the \textit{left}, and the positive \textit{z}-axis points towards the \textit{zenith} (North Pole).
 
@@ -46,6 +47,22 @@ The \textit{elevation} angle $\theta$ provides an alternative way of describing 
 
 
 For the sake of compactness, a point in the unit sphere will be often represented by $\Omega = (\vartheta, \varphi)$.
+
+\subsection{Nomenclature}
+
+Through the document, we refer to time-domain signals with lowercase, e.g. $x(t)$, with $t$ as the time index. 
+
+Time-domain signals transformed by the Short-Time Fourier Transform (STFT) are represented with uppercase, e.g. $X(k,n)$, where $k$ is the frequency bin index, and $n$ the time frame index. 
+
+Multichannel signals are in general denoted by a subscript variable index, usually with the letter $m$; for example, $x_m(t)$ or $X_m(k,n)$.
+Signals with an integer subscript index, such as $x_0(t)$, represent a specific channel of the corresponding multichannel signal.
+
+In the context of ambisonic, subscripts and superscripts are used in signal names with a specific meaning; check Section~\ref{sec:ambisonics} for a detailed explanation.
+
+Vector notation is represented with boldface characters, e.g. $\bm{X}(k,n)$.  When used, the way to construct the vectors will be specified. 
+
+\todo{revise all vector notations}
+
 
 
 
@@ -161,6 +178,7 @@ with $c$ being the sound speed.
 
 
 \section{Ambisonics}
+\label{sec:ambisonics}
 
 \subsection{Ambisonics Theory}
 
@@ -181,13 +199,13 @@ Let us consider a sound field composed of a point sound source $S$ located in fa
 
 The ordered set of values of all spherical harmonics up to order $N$, evaluated at the source position, is known as the \textit{ambisonic coefficients}:
 \begin{equation}
-	\pmb{Y}_n^m(\Omega_s) = [Y_0^0(\Omega_s), Y_1^{-1}(\Omega_s),  \ldots ,  Y_N^N(\Omega_s)]
+	Y_n^m(\Omega_s) = [Y_0^0(\Omega_s), Y_1^{-1}(\Omega_s),  \ldots ,  Y_N^N(\Omega_s)]
 	\label{eq:sphericalharmonicvector}
 \end{equation}
 
 Furthermore, the process of multiplying the signal $S$ by the ambisonic coefficients is known in the literature as the \textit{ambisonic encoding}. The resulting signal vector is usually referred to as the \textit{ambisonic} (or \textit{B-Format}) signal $\pmb{S}_n^m$:
 \begin{equation}
-	\pmb{S}_n^m = \pmb{Y}_n^m(\Omega_s) S
+	S_n^m = Y_n^m(\Omega_s) S
 \end{equation}
 
 
@@ -203,34 +221,87 @@ In practice, there are two alternative ways to generate ambisonic signals. The f
 \subsubsection{Ambisonic Decoding}
 Conversely, the sound field reconstruction is performed by the \textit{ambisonic decoding} operation. This process is equivalent to weight-and-sum beamforming in the spherical harmonic domain, and it is sometimes also referred to as the \textit{virtual microphone} technique [ambisonic book].
 
-\todo{change L for other name}
-Let us consider a loudspeaker located at the angular position $\Omega_\ell$. The signal feed $L$ is \textit{decoded} from the ambisonic signal as:
+Let us consider a loudspeaker located at the angular position $\Omega_p$. The signal feed $P$ is \textit{decoded} from the ambisonic signal as:
 \begin{equation}
-	L = \sum_{n=0}^{N} \sum_{m=-n}^{n} Y_n^m(\Omega_s) Y_n^m(\Omega_\ell)  S \alpha_n 
+	P = \sum_{n=0}^{N} \sum_{m=-n}^{n} Y_n^m(\Omega_s) S Y_n^m(\Omega_\ell)  \alpha_n 
 	\label{eq:decoding}
 \end{equation}
 
-where $\alpha_n$ is a weighting factor which accounts for the beam directivity. Some of the weightings are widely used for its specific properties, such as \textit{max-rE} or \textit{in-phase} -- the reader is referred to [\todo{find ref. daniel? zotter?}] for more information.
+where $\alpha_n$ is a weighting factor which accounts for the beam directivity. Some of the weightings are widely used for its specific properties, such as \textit{max-rE} or \textit{in-phase}. Table~\ref{tab:alpha} shows the values of $\alpha_n$ for the different weightings, and Figure~\ref{fig:alpha} plots their first-order directive patterns.
 
-The decoding equation \ref{eq:decoding} can be written in vector form as:
+
+\begin{table}[t]
+\caption{Ambisonic decoding: standard values of $alpha_n$ weightings. Extracted from \cite{daniel2000representation}.}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+Decoding & $m$ & \multicolumn{4}{c}{$n$} \\ 
+&  & 0 & 1 & 2 & 3 \\
+\midrule
+\textit{basic} & 0 & 1  \\
+	& 1 & 1 & 1  \\
+ 	& 2 & 1 & 1 & 1 \\
+ 	& 3 & 1 & 1 & 1 & 1 \\
+\midrule
+\textit{max-rE} & 0 & 0.577  \\
+	& 1 & 0.775 & 0.4  \\
+ 	& 2 & 0.861 & 0.612 & 0.305 \\
+ 	& 3 & 0.906 & 0.732 & 0.501 & 0.246 \\
+\midrule
+\textit{in-phase} & 0 & 0.333  \\
+	& 1 & 0.5 & 0.1  \\
+ 	& 2 & 0.6 & 0.2 & 0.029 \\
+ 	& 3 & 0.667 & 0.286 & 0.071 & 0.008 \\
+\bottomrule
+\end{tabular}
+\label{tab:alpha}
+\end{center}
+\end{table}
+
+\begin{figure*}[htbp]
+	\begin{center}
+	\begin{minipage}[b]{0.9\linewidth}
+		\centerline{\includegraphics[width=\textwidth]{Figures/Introduction/basic.png}}
+	\end{minipage}
+	\begin{minipage}[b]{0.9\linewidth}
+		\centerline{\includegraphics[width=\textwidth]{Figures/Introduction/maxre.png}}
+	\end{minipage}
+		\begin{minipage}[c]{0.9\linewidth}
+		\centerline{\includegraphics[width=\textwidth]{Figures/Introduction/inphase.png}}
+	\end{minipage}
+	\caption{Directive patterns of first-order ambisonic decoding.}
+	\label{fig:alpha}
+	\end{center}
+\end{figure*}
+
+
+The decoding equation \ref{eq:decoding} can be written in matrix form as:
 \begin{equation}
-	L =  \pmb{S}_n^m {\pmb{Y}_n^{m}(\Omega_\ell)}^T \alpha_n
+	P = S_n^m {Y_n^m (\Omega_p)}^T \alpha_n
 \end{equation}
 
 where the superscript $T$ represents the matrix transposition. 
-This equation can be extended to the regular case of decoding to a loudspeaker array, comprised of $L$ loudspeakers located at the positions $\pmb{\Omega}_l = [\Omega_{\ell_1}, \ldots, \Omega_{\ell_L}]$ . In such case, the loudspeaker feed vector $\pmb{L}$ can be written as:
+This equation can be extended to the usual case of decoding to a loudspeaker array, comprised of $L$ loudspeakers located at the positions $\Omega_L = [\Omega_{p_1}, \ldots, \Omega_{p_L}]$ . In such case, the loudspeaker feed vector $P_L$ can be written as:
 \begin{equation}
-	\pmb{L} = \pmb{S}_n^m \pmb{D},
+	P_L = S_n^m D,
+\label{eq:decodingequation}
 \end{equation}
 where 
 \begin{equation}
-	\pmb{D} = \text{diag}(\alpha_n) [{\pmb{Y}_n^{m}(\Omega_{\ell_1})}^T, \ldots, {\pmb{Y}_n^{m}(\Omega_{\ell_L})}^T]
+	D = \text{diag}(\alpha_n) [{Y_n^{m}(\Omega_{p_1})}^T, \ldots, {Y_n^{m}(\Omega_{p_L})}^T]
 \end{equation}
 
 is a $M \times L$ matrix known as the \textit{decoding matrix}, and $\text{diag}(\alpha_n)$ is a diagonal matrix of size $M$ containing the values of $\alpha_n$ along the main diagonal. 
-$\pmb{D}$ is frequency-independent and depends solely on the loudspeaker array geometry. The reader is referred to [zotter? daniel? idhoa?] for more information about the vast field of study of ambisonic decoding.
+Although the matrix $D$ is frequency-independent and depends solely on the loudspeaker array geometry, in practical scenarios it is usual to include frequency-dependent weightings, $\alpha_n(k)$, to improve the broadband sound field reconstruction \cite{daniel2000representation}.
 
-\todo{figure from daniel? to sum up the subsection). Explain the allrad method and stuff because it will appear later on}.
+Furthermore, sound field reconstruction with Eq.~\ref{eq:decodingequation} is only possible when the loudspeakers are evenly located on the 3D space; in other words, the speaker layout must take the form of one of the five \textit{Platonic solids}: tetrahedron, cube, octahedron, dodecahedron or icosahedron.
+Provided that this condition is usually difficult to fulfil in real scenarios, there are several methods which allow ambisonic decoding for such \textit{irregular} layouts. One of the most commonly used is the AllRAD method \todo{cite zotter}. AllRAD proposes a two step decoding: first, the ambisonic signal is decoded to a nearly-uniform layout of virtual speakers. Then, the signals of the virtual speakers are further distributed into the real speakers by the \textit{Vector-Based Amplitude Panning (VBAP)} method \todo{cite pulkki}.
+
+
+% The reader is referred to [zotter? daniel? idhoa?] for more information about the vast field of study of ambisonic decoding.
+
+
+
 
 
 
@@ -286,7 +357,7 @@ The \textit{ACN} (from \textit{Ambisonic Channel Number}) scheme follows from th
 Historically, first-order ambisonic audio has followed what it might be called \textit{traditional B-Format} channel ordering [ambisonics in multichannel broadcasting and video]. 
 By following this scheme, the four channels are referred to by the axis where the corresponding spherical harmonic steers, plus the name $W$ for the zeroth order component:
 \begin{equation}
-	{\pmb{Y}_n^m(\Omega)}^{\text{(FuMa CO)}} = [W, X, Y, Z]
+	{Y_n^m(\Omega)}^{\text{(FuMa CO)}} = [W, X, Y, Z]
 \end{equation}
 with:
 \begin{equation}
@@ -318,6 +389,9 @@ Trough parametric analysis, sound fields may be described in terms of a small am
 One of the most successful sound field parametric models is DirAC[pulkki2007 dirac]. Originally conceived as a method for impulse response processing and spatial sound reproduction [merima2005], it has been widely used in many different audio-related problems [\todo{find some references!}].
 
 DirAC (acronym for \textit{Directional Audio Coding}) is a perceptually motivated time-frequency domain method, based on the assumption that any sound field may be reproduced with high perceptual quality by considering two parameters: the sound field diffuseness and the most prominent sound direction of arrivals (DOAs) [cite parametric book]. \\
+
+
+\todo{check here bold vector notation}
 
 Let us consider a \textit{N3D}-normalized first-order ambisonic signal in time-frequency domain $\pmb{B}_n^m(k, n)$, begin $k$ the frequency index and $n$ the time index. For the sake of clarity, we will use \textit{FuMa} channel notation and ordering:
 \begin{equation}
@@ -441,8 +515,21 @@ where $x_i$, $y_i$ and $z_i$ are the cartesian coordinates of the wave incidence
 
 \section{Room Acoustics, Impulse Responses}
 
+ir, partes del ir
 
-\section{SOFA}
+
+%%%%%%%%%%%%%% cogido del paper de MMSP
+Reverberation time $T_{60}$ \cite{kuttruff2016room} might be one of the most widespread acoustic parameters; it represents the time required 
+%for a sound in the diffuse field to decrease its energy envelope by 60 dB. 
+for the reverberant sound field power to decay by 60 dB.
+Reverberation time can be accurately computed from the room geometry \cite{sabine1927collected} or from the Impulse Response (IR) \cite{schroeder1965new}; the problem of $T_{60}$ estimation just from observations of the reverberant signal itself is referred to as the blind reverberation time estimation, and it still remains an open research question.
+
+% TODO
+reverberation time, sabine, schroeder
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{SOFA}
  maybe as subsection of room acoustics
 
 
@@ -471,6 +558,43 @@ where $x_i$, $y_i$ and $z_i$ are the cartesian coordinates of the wave incidence
 %alternative formulations
 
 
+\section{Signal Model}
+
+
+Let us consider a sound source represented by the signal $s(t)$, located in a given acoustic enclosure. Assuming that the system is Linear and Time-Invariant (LTI), it can be represented by its room impulse response $h(t)$. The resulting reverberant signal $x(t)$ can be therefore described as the \textit{convolutive mixture} of the source and the RIR: 
+\begin{equation}
+	x(t) = s(t) \ast h(t).
+\label{eq:convolutivemixture}
+\end{equation}
+
+When dealing with multichannel room impulse responses, as it is the case in ambisonics, the multichannel reverberant signal $x_m(t)$ is obtained by the convolutive mixture of each RIR channel independently:
+\begin{equation}
+	x_m(t) = s(t) \ast h_m(t).
+\label{eq:convolutivemixturemultichannel}
+\end{equation}
+
+The time domain convolution operation, under certain assumptions, is equivalent to the multiplication in frequency domain. By doing so, Eq.~\ref{eq:convolutivemixture} can be expressed as:
+\begin{equation}
+	X(k,n) = S(k,n) H(k,n).
+\label{eq:multiplicativetransferfunction}
+\end{equation}
+
+Eq.~\ref{eq:multiplicativetransferfunction}, also known as the \textit{Multiplicative Transfer Function (MTF) model} is only valid when the length of the filter $h(t)$ is smaller than the length of the analysis window used in the STFT. 
+
+
+On the contrary, when the filter $h(t)$ spans across several analysis windows, the resulting model is referred to as the \textit{Convolutive Transfer Function (CTF) model}:
+\begin{equation}
+	X(k, n) = \sum_{l=0}^{L_h-1} H(k, l) S(k, n-l), 
+\label{eq:convolutivetransferfunction}
+\end{equation} 
+where $L_h$ is the length of the filter $H(k, n)$ in time frames. 
+
+
+
+\todo{isotropic noise}
+
+
 
 \section{Practical Considerations}
+% TODO I don't remember what is this
 

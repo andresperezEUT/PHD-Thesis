@@ -25,6 +25,12 @@ Adavanne, S., Politis, A., and Virtanen, T. (2019).
 \newblock In {\em Submitted to Detection and Classification of Acoustic Scenes
   and Events 2019 Workshop (DCASE2019)}.
 
+\bibitem[Avargel and Cohen, 2007]{avargel2007multiplicative}
+Avargel, Y. and Cohen, I. (2007).
+\newblock On multiplicative transfer function approximation in the short-time
+  fourier transform domain.
+\newblock {\em IEEE Signal Processing Letters}, 14(5):337--340.
+
 \bibitem[Baqu{\'e} et~al., 2016]{baque2016separation}
 Baqu{\'e}, M., Gu{\'e}rin, A., and Melon, M. (2016).
 \newblock Separation of direct sounds from early reflections using the entropy
@@ -44,6 +50,27 @@ Bertet, S., Daniel, J., and Moreau, S. (2006).
 \newblock {3D Sound Field Recording With Higher Order Ambisonics - Objective
   Measurements and Validation of a 4th Order Spherical Microphone}.
 \newblock {\em 120th AES Convention}, pages 1--24.
+
+\bibitem[Braun and Habets, 2016]{braun2016online}
+Braun, S. and Habets, E.~A. (2016).
+\newblock Online dereverberation for dynamic scenarios using a kalman filter
+  with an autoregressive model.
+\newblock {\em IEEE Signal Processing Letters}, 23(12):1741--1745.
+
+\bibitem[Braun et~al., 2018]{braun2018evaluation}
+Braun, S., Kuklasi{\'n}ski, A., Schwartz, O., Thiergart, O., Habets, E.~A.,
+  Gannot, S., Doclo, S., and Jensen, J. (2018).
+\newblock Evaluation and comparison of late reverberation power spectral
+  density estimators.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 26(6):1056--1071.
+
+\bibitem[Bryan, 2020]{bryan2020impulse}
+Bryan, N.~J. (2020).
+\newblock Impulse response data augmentation and deep neural networks for blind
+  room acoustic parameter estimation.
+\newblock In {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 1--5. IEEE.
 
 \bibitem[Butko et~al., 2011]{butko2011two}
 Butko, T., Pla, F.~G., Segura, C., Nadeu, C., and Hernando, J. (2011).
@@ -77,6 +104,12 @@ Chakraborty, R. and Nadeu, C. (2014).
   microphone arrays.
 \newblock In {\em 2014 IEEE International Conference on Acoustics, Speech and
   Signal Processing (ICASSP)}, pages 619--623. IEEE.
+
+\bibitem[Chartrand and Yin, 2008]{chartrand2008iteratively}
+Chartrand, R. and Yin, W. (2008).
+\newblock Iteratively reweighted algorithms for compressive sensing.
+\newblock In {\em 2008 IEEE International Conference on Acoustics, Speech and
+  Signal Processing}, pages 3869--3872. IEEE.
 
 \bibitem[Chen et~al., 2015]{Chen2015}
 Chen, X., Wang, W., Wang, Y., Zhong, X., and Alinaghi, A. (2015).
@@ -114,6 +147,12 @@ Duong, N., Vincent, E., and Gribonval, R. (2009).
   full-rank spatial covariance model.
 \newblock {\em arXiv:0912.0171 [stat]}.
 \newblock arXiv: 0912.0171.
+
+\bibitem[Eaton et~al., 2016]{eaton2016estimation}
+Eaton, J., Gaubitch, N.~D., Moore, A.~H., and Naylor, P.~A. (2016).
+\newblock Estimation of room acoustic parameters: The ace challenge.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 24(10):1681--1693.
 
 \bibitem[Elko, 2001]{elko_spatial_2001}
 Elko, G.~W. (2001).
@@ -160,6 +199,20 @@ Fonseca, E., Plakal, M., Ellis, D. P.~W., Font, F., Favory, X., and Serra, X.
   (2019b).
 \newblock Learning sound event classifiers from web audio with noisy labels.
 \newblock In {\em Proc. IEEE ICASSP 2019}, Brighton, UK.
+
+\bibitem[Gamper and Tashev, 2018]{gamper2018blind}
+Gamper, H. and Tashev, I.~J. (2018).
+\newblock Blind reverberation time estimation using a convolutional neural
+  network.
+\newblock In {\em 2018 16th International Workshop on Acoustic Signal
+  Enhancement (IWAENC)}, pages 136--140. IEEE.
+
+\bibitem[Gannot et~al., 2017]{gannot2017consolidated}
+Gannot, S., Vincent, E., Markovich-Golan, S., and Ozerov, A. (2017).
+\newblock A consolidated perspective on multimicrophone speech enhancement and
+  source separation.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 25(4):692--730.
 
 \bibitem[Garofolo et~al., 1993]{timit}
 Garofolo, J.~S., Lamel, L.~F., Fisher, W.~M., Fiscus, J.~G., and Pallett, D.~S.
@@ -268,10 +321,44 @@ Jarrett, D.~P., Habets, E. A.~P., Thomas, M. R.~P., and Naylor, P.~A. (2012).
 \newblock {\em The Journal of the Acoustical Society of America},
   132(3):1462--1472.
 
+\bibitem[Juki{\'c} et~al., 2015]{jukic2015group}
+Juki{\'c}, A., van Waterschoot, T., Gerkmann, T., and Doclo, S. (2015).
+\newblock Group sparsity for mimo speech dereverberation.
+\newblock In {\em 2015 IEEE Workshop on Applications of Signal Processing to
+  Audio and Acoustics (WASPAA)}, pages 1--5. IEEE.
+
 \bibitem[Kingma and Ba, ]{kingma2014adam}
 Kingma, D.~P. and Ba, J.
 \newblock Adam: A method for stochastic optimization.
 \newblock In {\em ICLR 2015}.
+
+\bibitem[Kuttruff, 2016]{kuttruff2016room}
+Kuttruff, H. (2016).
+\newblock {\em Room acoustics}.
+\newblock Crc Press.
+
+\bibitem[Liutkus et~al., 2017]{SiSEC16}
+Liutkus, A., St{\"o}ter, F.-R., Rafii, Z., Kitamura, D., Rivet, B., Ito, N.,
+  Ono, N., and Fontecave, J. (2017).
+\newblock The 2016 signal separation evaluation campaign.
+\newblock In Tichavsk{\'y}, P., Babaie-Zadeh, M., Michel, O.~J., and
+  Thirion-Moreau, N., editors, {\em Latent Variable Analysis and Signal
+  Separation - 12th International Conference, {LVA/ICA} 2015, Liberec, Czech
+  Republic, August 25-28, 2015, Proceedings}, pages 323--332, Cham. Springer
+  International Publishing.
+
+\bibitem[L{\"o}llmann et~al., 2019]{lollmann2019comparative}
+L{\"o}llmann, H.~W., Brendel, A., and Kellermann, W. (2019).
+\newblock Comparative study for single-channel algorithms for blind
+  reverberation time estimation.
+\newblock In {\em Proc. Intl. Congress on Acoustics (ICA)}.
+
+\bibitem[Looney and Gaubitch, 2020]{looney2020joint}
+Looney, D. and Gaubitch, N.~D. (2020).
+\newblock Joint estimation of acoustic parameters from single-microphone speech
+  observations.
+\newblock In {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 431--435. IEEE.
 
 \bibitem[Lopatka et~al., 2016]{lopatka2016detection}
 Lopatka, K., Kotus, J., and Czyzewski, A. (2016).
@@ -354,6 +441,12 @@ P.~Habets, E., Gannot, S., and Cohen, I. (2006).
   {Processing} and {Information} {Technology}}, pages 651--655, Vancouver, BC,
   Canada. IEEE.
 
+\bibitem[Panayotov et~al., 2015]{panayotov2015librispeech}
+Panayotov, V., Chen, G., Povey, D., and Khudanpur, S. (2015).
+\newblock Librispeech: an asr corpus based on public domain audio books.
+\newblock In {\em 2015 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pages 5206--5210. IEEE.
+
 \bibitem[Pavlidi et~al., 2015]{Pavlidi2015}
 Pavlidi, D., Delikaris-Manias, S., Pulkki, V., and Mouchtaris, A. (2015).
 \newblock 3d localization of multiple sound sources with intensity vector
@@ -371,6 +464,11 @@ Perez-Lopez, A. and De~Muynke, J. (2018).
 \newblock Ambisonics directional room impulse response as a new convention of
   the spatially oriented format for acoustics.
 \newblock In {\em 144th Audio Engineering Society Convention}. AES.
+
+\bibitem[P{\'e}rez-L{\'o}pez and Politis, 2020]{masp}
+P{\'e}rez-L{\'o}pez, A. and Politis, A. (2020).
+\newblock A python library for multichannel acoustic signal processing.
+\newblock In {\em AES Virtual Vienna Convention}. Audio Engineering Society.
 
 \bibitem[Politis et~al., 2015]{politis_direction--arrival_2015}
 Politis, A., Delikaris-Manias, S., and Pulkki, V. (2015).
@@ -394,6 +492,14 @@ Politis, A., Tervo, S., and Pulkki, V. (2018b).
   Sound Scenes}.
 \newblock {\em IEEE International Conference on Acoustics, Speech, and Signal
   Processing}, (May):6802--6806.
+
+\bibitem[Prego et~al., 2012]{prego2012blind}
+Prego, T. d.~M., de~Lima, A.~A., Netto, S.~L., Lee, B., Said, A., Schafer,
+  R.~W., and Kalker, T. (2012).
+\newblock A blind algorithm for reverberation-time estimation using subband
+  decomposition of speech signals.
+\newblock {\em The Journal of the Acoustical Society of America},
+  131(4):2811--2816.
 
 \bibitem[Pulkki, 2006a]{pulkki_directional_2006}
 Pulkki, V. (2006a).
@@ -435,6 +541,11 @@ Romblom, D. (2017).
   filters: Improvements to the filter design method.
 \newblock {\em Journal of the Audio Engineering Society}, 65(11):943--953.
 
+\bibitem[Sabine, 1927]{sabine1927collected}
+Sabine, W.~C. (1927).
+\newblock {\em Collected papers on acoustics}.
+\newblock Harvard University Press Cambridge, MA.
+
 \bibitem[Salamon et~al., 2017]{Salamon2017}
 Salamon, J., MacConnell, D., Cartwright, M., Li, P., and Bello, J.~P. (2017).
 \newblock Scaper: A library for soundscape synthesis and augmentation.
@@ -445,6 +556,12 @@ Salamon, J., MacConnell, D., Cartwright, M., Li, P., and Bello, J.~P. (2017).
 Schorkhuber, C. and Holdrich, R. (2017).
 \newblock Ambisonic {Microphone} {Encoding} with {Covariance} {Constraint}.
 \newblock page~6.
+
+\bibitem[Schroeder, 1965]{schroeder1965new}
+Schroeder, M.~R. (1965).
+\newblock New method of measuring reverberation time.
+\newblock {\em The Journal of the Acoustical Society of America},
+  37(6):1187--1188.
 
 \bibitem[Sennheiser, 2018]{ambeo}
 Sennheiser (Accessed on March 8th, 2018).
@@ -539,6 +656,11 @@ VVAudio.com (Accessed on March 8th, 2018).
 Zhang, H., Cisse, M., Dauphin, Y.~N., and Lopez-Paz, D. (2017).
 \newblock mixup: Beyond empirical risk minimization.
 \newblock {\em arXiv preprint arXiv:1710.09412}.
+
+\bibitem[Zotter and Frank, 2019]{zotter2019ambisonics}
+Zotter, F. and Frank, M. (2019).
+\newblock {\em Ambisonics}.
+\newblock Springer.
 
 \bibitem[Zylia, 2018]{zylia}
 Zylia (Accessed on March 8th, 2018).

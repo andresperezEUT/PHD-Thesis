@@ -1,6 +1,7 @@
 \documentclass[12pt, b5paper,twoside]{tesi_upf}
 
 
+
 %CODIFICATION
 \usepackage[latin1]{inputenc}
 
@@ -31,6 +32,9 @@
 \usepackage{newpxtext} 
 \usepackage{cite}
 \usepackage{booktabs}
+%\usepackage{hyperref}
+%\hypersetup{pdftex,colorlinks=true,allcolors=blue}
+%\usepackage{hypcap}
 
 %SELD
 \DeclareMathOperator{\LL}{\langle}
@@ -41,6 +45,8 @@
 \usepackage{algorithm, algorithmic}
 \usepackage{color}
 \usepackage{subcaption}
+
+%\usepackage{hyperref}
 
 
 %WITHOUT HEADINGS: NO MODIFICATION
@@ -75,6 +81,8 @@
 
 % INTEGRAL D
 \newcommand{\dif}{\mathop{}\!\mathrm{d}}
+
+
 
 
 \begin{document}
@@ -147,14 +155,14 @@ menys de 150 paraules. \todo{abstract in catalan}
 \input{Chapters/Introduction.tex}
 \input{Chapters/ScientificBackground.tex}
 \input{Chapters/CoherenceEstimation}
-\input{Chapters/AutoregressiveReverbEstimation}
+\input{Chapters/ReververationTimeEstimation}
 \input{Chapters/SELD}
 \input{Chapters/DataGeneration}
 \input{Chapters/Conclusions}
 
 
 %ADD BIBLIOGRAPHY
-\bibliography{Bibliography/CoherenceEstimation, Bibliography/SELD.bib, Bibliography/Ambiscaper.bib, Bibliography/AmbisonicsDRIR.bib}
+\bibliography{Bibliography/CoherenceEstimation, Bibliography/SELD.bib, Bibliography/Ambiscaper.bib, Bibliography/AmbisonicsDRIR.bib, Bibliography/ReverberationTimeEstimation.bib}
 
 
 \backmatter

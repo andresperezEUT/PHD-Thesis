@@ -49,6 +49,7 @@ Repeated entry---line 154 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @article{Bertet2006
  :                    ,
 I'm skipping whatever remains of this entry
+Database file #5: ../Bibliography/ReverberationTimeEstimation.bib.bib
 Warning--to sort, need author or key in code
 Warning--to sort, need author or key in openair
 Warning--empty year in code
@@ -60,45 +61,45 @@ Warning--there's a number but no volume in Politis2018
 Warning--empty journal in pulkki_directional_2006
 Warning--empty journal in schorkhuber_ambisonic_2017
 Warning--empty booktitle in thiergart_localization_2009
-You've used 89 entries,
+You've used 108 entries,
             1935 wiz_defined-function locations,
-            921 strings with 20374 characters,
-and the built_in function-call counts, 35809 in all, are:
-= -- 3585
-> -- 1389
-< -- 69
-+ -- 477
-- -- 462
-* -- 2795
-:= -- 6059
-add.period$ -- 281
-call.type$ -- 89
-change.case$ -- 670
-chr.to.int$ -- 82
-cite$ -- 102
-duplicate$ -- 1533
-empty$ -- 2580
-format.name$ -- 585
-if$ -- 7225
+            1018 strings with 24179 characters,
+and the built_in function-call counts, 44701 in all, are:
+= -- 4476
+> -- 1756
+< -- 87
++ -- 609
+- -- 586
+* -- 3521
+:= -- 7518
+add.period$ -- 346
+call.type$ -- 108
+change.case$ -- 822
+chr.to.int$ -- 101
+cite$ -- 121
+duplicate$ -- 1894
+empty$ -- 3216
+format.name$ -- 742
+if$ -- 9041
 int.to.chr$ -- 8
 int.to.str$ -- 0
-missing$ -- 75
-newline$ -- 433
-num.names$ -- 261
-pop$ -- 738
+missing$ -- 97
+newline$ -- 528
+num.names$ -- 320
+pop$ -- 906
 preamble$ -- 1
-purify$ -- 676
+purify$ -- 831
 quote$ -- 0
-skip$ -- 1091
+skip$ -- 1356
 stack$ -- 0
-substring$ -- 2310
-swap$ -- 268
-text.length$ -- 24
+substring$ -- 2959
+swap$ -- 346
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 530
+type$ -- 638
 warning$ -- 11
-while$ -- 281
+while$ -- 355
 width$ -- 0
-write$ -- 1119
+write$ -- 1370
 (There were 10 error messages)
