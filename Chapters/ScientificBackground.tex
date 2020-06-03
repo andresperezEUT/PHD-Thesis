@@ -34,9 +34,9 @@ Notice that the poles ($\vartheta = ±\pi$) are a special case for the spherical 
 The transformation between spherical and cartesian coordinate systems is given by the following relationship:
 \begin{equation}
 	\begin{aligned}
-		x = & cos \varphi sin \vartheta\\
-		y = & sin \varphi sin \vartheta\\
-		z = & cos \vartheta\\
+		x = & \cos{\varphi} \sin{\vartheta}\\
+		y = & \sin{\varphi} \sin{\vartheta}\\
+		z = & \cos{\vartheta}\\
 	\end{aligned}
 \end{equation}
 
@@ -46,7 +46,10 @@ The \textit{elevation} angle $\theta$ provides an alternative way of describing 
 \end{equation}
 
 
-For the sake of compactness, a point in the unit sphere will be often represented by $\Omega = (\vartheta, \varphi)$.
+For the sake of compactness, a point in the unit sphere will be often represented by $\Omega = (\vartheta, \varphi)$.\\
+
+Given the periodic nature of the azimuth angle, the descriptive statistic operations applied to $\vartheta$ will refer to the $2\pi$-\textit{periodic} version or the operator; this situation does not affect the inclination/elevation coordinate.
+
 
 \subsection{Nomenclature}
 
@@ -190,7 +193,7 @@ In general, with the term Ambisonics we will be referring to the latter definiti
 
 \subsubsection{Ambisonic encoding}
 
-Let us consider a sound field composed of a point sound source $S$ located in far-field at the angular position $\Omega_s$. The sound pressure at the coordinate origin can be expressed in terms of the spherical harmonic expansion of order $N$ as: \todo{check equation, find references, how to explain the domain? extend also to multiple sources by superposition}
+Let us consider a sound field composed of a point sound source $S$ located in far-field at the angular position $\Omega_s$. The sound pressure at the coordinate origin $P$ can be expressed in terms of the spherical harmonic expansion of order $N$ as: \todo{check equation, find references, how to explain the domain? extend also to multiple sources by superposition}
 \begin{equation}
 	P = \sum_{n=0}^{N} \sum_{m=-n}^{n} Y_n^m(\Omega_s) S
 	\label{eq:encoding}
@@ -203,7 +206,7 @@ The ordered set of values of all spherical harmonics up to order $N$, evaluated 
 	\label{eq:sphericalharmonicvector}
 \end{equation}
 
-Furthermore, the process of multiplying the signal $S$ by the ambisonic coefficients is known in the literature as the \textit{ambisonic encoding}. The resulting signal vector is usually referred to as the \textit{ambisonic} (or \textit{B-Format}) signal $\pmb{S}_n^m$:
+Furthermore, the process of multiplying the signal $S$ by the ambisonic coefficients is known in the literature as the \textit{ambisonic encoding}. The resulting signal vector is usually referred to as the \textit{ambisonic} (or \textit{B-Format}) signal $S_n^m$:
 \begin{equation}
 	S_n^m = Y_n^m(\Omega_s) S
 \end{equation}
@@ -221,21 +224,21 @@ In practice, there are two alternative ways to generate ambisonic signals. The f
 \subsubsection{Ambisonic Decoding}
 Conversely, the sound field reconstruction is performed by the \textit{ambisonic decoding} operation. This process is equivalent to weight-and-sum beamforming in the spherical harmonic domain, and it is sometimes also referred to as the \textit{virtual microphone} technique [ambisonic book].
 
-Let us consider a loudspeaker located at the angular position $\Omega_p$. The signal feed $P$ is \textit{decoded} from the ambisonic signal as:
+Let us consider a loudspeaker located at the angular position $\Omega_p$. In accordance with Eq.~\ref{eq:encoding}, the signal feed $P$ is \textit{decoded} from the ambisonic signal as:
 \begin{equation}
 	P = \sum_{n=0}^{N} \sum_{m=-n}^{n} Y_n^m(\Omega_s) S Y_n^m(\Omega_\ell)  \alpha_n 
 	\label{eq:decoding}
 \end{equation}
 
-where $\alpha_n$ is a weighting factor which accounts for the beam directivity. Some of the weightings are widely used for its specific properties, such as \textit{max-rE} or \textit{in-phase}. Table~\ref{tab:alpha} shows the values of $\alpha_n$ for the different weightings, and Figure~\ref{fig:alpha} plots their first-order directive patterns.
-
+where $\alpha_n$ is a weighting factor which accounts for the beam directivity.
+There are several standard weightings used for different purposes; their values are shown in Table~\ref{tab:alpha}, and the first-order directive patterns are plotted in Figure~\ref{fig:alpha}.
 
 \begin{table}[t]
 \caption{Ambisonic decoding: standard values of $alpha_n$ weightings. Extracted from \cite{daniel2000representation}.}
 \begin{center}
 \begin{tabular}{cccccc}
 \toprule
-Decoding & $m$ & \multicolumn{4}{c}{$n$} \\ 
+Decoding & $N$ & \multicolumn{4}{c}{$n$} \\ 
 &  & 0 & 1 & 2 & 3 \\
 \midrule
 \textit{basic} & 0 & 1  \\
@@ -258,7 +261,7 @@ Decoding & $m$ & \multicolumn{4}{c}{$n$} \\
 \end{center}
 \end{table}
 
-\begin{figure*}[htbp]
+\begin{figure}[htbp]
 	\begin{center}
 	\begin{minipage}[b]{0.9\linewidth}
 		\centerline{\includegraphics[width=\textwidth]{Figures/Introduction/basic.png}}
@@ -272,19 +275,20 @@ Decoding & $m$ & \multicolumn{4}{c}{$n$} \\
 	\caption{Directive patterns of first-order ambisonic decoding.}
 	\label{fig:alpha}
 	\end{center}
-\end{figure*}
+\end{figure}
 
 
 The decoding equation \ref{eq:decoding} can be written in matrix form as:
 \begin{equation}
 	P = S_n^m {Y_n^m (\Omega_p)}^T \alpha_n
+\label{eq:decodingequation}
 \end{equation}
 
 where the superscript $T$ represents the matrix transposition. 
 This equation can be extended to the usual case of decoding to a loudspeaker array, comprised of $L$ loudspeakers located at the positions $\Omega_L = [\Omega_{p_1}, \ldots, \Omega_{p_L}]$ . In such case, the loudspeaker feed vector $P_L$ can be written as:
 \begin{equation}
 	P_L = S_n^m D,
-\label{eq:decodingequation}
+\label{eq:decodingequation2}
 \end{equation}
 where 
 \begin{equation}
@@ -294,7 +298,7 @@ where
 is a $M \times L$ matrix known as the \textit{decoding matrix}, and $\text{diag}(\alpha_n)$ is a diagonal matrix of size $M$ containing the values of $\alpha_n$ along the main diagonal. 
 Although the matrix $D$ is frequency-independent and depends solely on the loudspeaker array geometry, in practical scenarios it is usual to include frequency-dependent weightings, $\alpha_n(k)$, to improve the broadband sound field reconstruction \cite{daniel2000representation}.
 
-Furthermore, sound field reconstruction with Eq.~\ref{eq:decodingequation} is only possible when the loudspeakers are evenly located on the 3D space; in other words, the speaker layout must take the form of one of the five \textit{Platonic solids}: tetrahedron, cube, octahedron, dodecahedron or icosahedron.
+Furthermore, sound field reconstruction with Eq.~\ref{eq:decodingequation2} is only possible when the loudspeakers are evenly located on the 3D space; in other words, the speaker layout must take the form of one of the five \textit{Platonic solids}: tetrahedron, cube, octahedron, dodecahedron or icosahedron.
 Provided that this condition is usually difficult to fulfil in real scenarios, there are several methods which allow ambisonic decoding for such \textit{irregular} layouts. One of the most commonly used is the AllRAD method \todo{cite zotter}. AllRAD proposes a two step decoding: first, the ambisonic signal is decoded to a nearly-uniform layout of virtual speakers. Then, the signals of the virtual speakers are further distributed into the real speakers by the \textit{Vector-Based Amplitude Panning (VBAP)} method \todo{cite pulkki}.
 
 
@@ -355,17 +359,18 @@ The \textit{ACN} (from \textit{Ambisonic Channel Number}) scheme follows from th
 \end{equation}
 
 Historically, first-order ambisonic audio has followed what it might be called \textit{traditional B-Format} channel ordering [ambisonics in multichannel broadcasting and video]. 
-By following this scheme, the four channels are referred to by the axis where the corresponding spherical harmonic steers, plus the name $W$ for the zeroth order component:
+By following this scheme, the four channels of a FOA signal $S_n^m$ are referred to by the axis where the corresponding spherical harmonic steers, plus the name $W$ for the zeroth order component:
 \begin{equation}
-	{Y_n^m(\Omega)}^{\text{(FuMa CO)}} = [W, X, Y, Z]
+	{S_n^m(\Omega)}^{\text{(FuMa CO)}} = [W, X, Y, Z]
+\label{eq:fumaordering}
 \end{equation}
 with:
 \begin{equation}
 \begin{aligned}
-	&W = Y_0^0(\Omega) \\
-	&X = Y_1^1(\Omega) \\
-	&Y = Y_1^{-1}(\Omega) \\
-	&Z = Y_1^0(\Omega)
+	&W = S_0^0(\Omega) \\
+	&X = S_1^1(\Omega) \\
+	&Y = S_1^{-1}(\Omega) \\
+	&Z = S_1^0(\Omega)
 \end{aligned}	
 \end{equation}
 
@@ -379,7 +384,8 @@ In practice, there exist two main combinations of channel normalization and orde
   \item The \textit{modern} approach, inspired by the \textit{ambix} file format [cite ambix], with \textit{SN3D} normalization and \textit{ACN} channel ordering.
 \end{itemize}
 
-Anyhow, the \textit{classical B-Format} channel naming and ordering is still widely used when referring to first-order ambisonics. In what follows, we will use indistinctly both \textit{classical} and \textit{ACN} conventions. \todo{is that true?}
+Anyhow, the \textit{classical B-Format} channel naming and ordering is still widely used when referring to first-order ambisonics. 
+%In what follows, we will use indistinctly both \textit{classical} and \textit{ACN} conventions. \todo{is that true?}
 
 
 \section{Parametric Spatial Audio Analysis}
@@ -388,14 +394,14 @@ Trough parametric analysis, sound fields may be described in terms of a small am
 
 One of the most successful sound field parametric models is DirAC[pulkki2007 dirac]. Originally conceived as a method for impulse response processing and spatial sound reproduction [merima2005], it has been widely used in many different audio-related problems [\todo{find some references!}].
 
-DirAC (acronym for \textit{Directional Audio Coding}) is a perceptually motivated time-frequency domain method, based on the assumption that any sound field may be reproduced with high perceptual quality by considering two parameters: the sound field diffuseness and the most prominent sound direction of arrivals (DOAs) [cite parametric book]. \\
+DirAC (acronym for \textit{Directional Audio Coding}) is a perceptually motivated time-frequency (TF) domain method, based on the assumption that any sound field may be reproduced with high perceptual quality by considering two parameters: the sound field diffuseness and the most prominent sound \textit{Direction-of-arrival} (DOA) [cite parametric book]. \\
 
 
-\todo{check here bold vector notation}
 
-Let us consider a \textit{N3D}-normalized first-order ambisonic signal in time-frequency domain $\pmb{B}_n^m(k, n)$, begin $k$ the frequency index and $n$ the time index. For the sake of clarity, we will use \textit{FuMa} channel notation and ordering:
+Let us consider a \textit{N3D}-normalized first-order ambisonic signal in time-frequency domain, $S_n^m(k, n)$. 
+For the sake of clarity, we will use in this section \textit{FuMa} channel notation and ordering (Eq.~\ref{eq:fumaordering}):
 \begin{equation}
-	\pmb{B}_n^m(k, n) = [W(k, n), X(k, n), Y(k, n), Z(k, n)]
+	S_n^m(k, n) = [W(k, n), X(k, n), Y(k, n), Z(k, n)]
 \end{equation}
 
 Given this representation, we can express the \textit{pressure} $P(k,n)$ of the sound field as:
@@ -420,6 +426,7 @@ where $^*$ represents the complex conjugate operator. \\
 An estimate of the instantaneous DOA $\Omega(k,n)$ can be extracted from the intensity vector, interpreting each of its time-frequency bins as a point in the cartesian space. Effectively, the sound propagation direction is the opposite to the observed arrival direction. 
 \begin{equation}
 	\Omega(k,n) = \angle(-\pmb{I}(k,n)),
+\label{eq:doa}
 \end{equation}
 with $\angle$ representing the spherical angle operator of a cartesian vector. The result of this computation must be understood as the direction of the net energy flow, which in the case of a single plane-wave will correspond to the source position. \\
 
@@ -429,6 +436,7 @@ Another useful parameter is the \textit{energy density} $E(k,n)$ [stazial 1996]:
 		E(k,n) &= \frac{|P(k,n)|^2 + \|\pmb{U}(k,n)\|^2}{2\rho_0 c^2} \\ 
 		&=  \frac{|W(k,n)|^2 + \| [X(k,n), Y(k,n), Z(k,n)] \|^2}{2\rho_0 c^2}.
 	\end{aligned}
+	\label{eq:energydensity}
 \end{equation}\\
 
 Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound intensity and  energy density [merimaa2005]:
@@ -437,7 +445,7 @@ Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound int
 		\Psi(k,n) &= 1 - \frac{ \| \langle \pmb{I}(k,n) \rangle \| }{ c \langle E(k,n) \rangle } \\
 		&= 1 - 2\frac{ \| \langle \Re\{W^*(k,n)[X(k,n),Y(k,n),Z(k,n)]\} \rangle \| }{ \langle |W(k,n)|^2 + \| [X(k,n), Y(k,n), Z(k,n)] \|^2 \rangle },
 	\end{aligned}
-	\label{eq:psidefinition}
+\label{eq:psidefinition}
 \end{equation}
  
  where the symbols $\langle \cdot \rangle$ represent the expectation operator, which is usually implemented as time-domain averaging. \todo{check equation}
@@ -445,14 +453,25 @@ Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound int
 Even though Eq.~\ref{eq:psidefinition} (known as \textit{DirAC's diffuseness}) is one of the most common ambisonic diffuseness estimators, several alternative formulations exist. 
 Other diffuseness estimation procedures include the \textit{coefficient of variation method} [ahonen, pulkki, del galdo] and the more recent \textit{COMEDIE} estimator [epain, craig]. 
 
-In any case, in what follows, the term \textit{diffuseness} and the symbol $\Psi$ will refer by default to Eq.~\ref{eq:psidefinition}.  \\
-
+In any case, in what follows, the term \textit{diffuseness} and the symbol $\Psi$ will refer by default to Eq.~\ref{eq:psidefinition}. 
 
 As a mathematical convenience, we will define the \textit{B-Format coherence} as the complement of the diffuseness:
 \begin{equation}
 	\Delta(k,n) = 1 - \Psi(k,n) 
 	\label{eq:delta}
 \end{equation}
+
+In conclusion, Figure~\ref{fig:dirac} plots the spectrograms of the DOA $\Omega(k,n)$ and diffuseness $\Psi(k,n)$ of a FOA recording, which consists of a sound source located at the front, plus a moderate amount of reverberation and background noise. 
+
+\begin{figure}[h!]
+	\begin{center}
+	\includegraphics[width=\textwidth]{Figures/Introduction/spectrograms.png}
+	\caption{Parametric time-frequency spatial audio analysis of a first order ambisonic recording. From top to bottom: 1.) Magnitude spectrogram of the omnidirectional channel. 2.) and 3.) Azimuth and elevation of the estimated instantaneous narrowband DOAs $\Omega(k,n)$. 4.) Instantaneous narrowband diffuseness $\Psi(k,n)$.}
+	\label{fig:dirac}
+	\end{center}
+\end{figure}
+
+
 
 
 \section{Spatial Coherence Analysis}
@@ -513,55 +532,112 @@ where $x_i$, $y_i$ and $z_i$ are the cartesian coordinates of the wave incidence
 
 
 
-\section{Room Acoustics, Impulse Responses}
+\section{Reverberation}
 
-ir, partes del ir
+In the context of room acoustics, reverberation refers to \textit{"the energy of a sound source that reaches a listener indirectly, by reflecting from surfaces within the surrounding space occupied by the sound source and the listener"} \cite{begault20003}. 
+Conversely, in anechoic or free-field conditions, where reverberation is not present, only the direct path of the sound source exists.
+Assuming linearity and time-invariance, room reverberation can be fully characterised by its impulse response (IR). \\
+
+Reverberation models often consider two differentiated parts of the reverberant tail, based on both physical and perceptual characteristics: the \textit{early reflections} and the \textit{late reverberation}. 
+Early reflections, as the name suggests, refers to the individual sound paths arriving to the listener after a few reflections on the room surfaces, which cause some degree of attenuation. Early reflections typically arrive with a time difference between 1 and 80 ms after the direct path \cite{begault20003}. 
+The term late reverberation encompasses all sound paths arriving to the listener after many reflections. Since the temporal density of such reflections increases with time, late reverberation is often modelled in statistical terms.
+An schematic representation of a room impulse response (RIR) is shown in Figure~\ref{fig:rir}.\\
+
+\begin{figure}[htbp]
+	\begin{center}
+	\includegraphics[width=\textwidth]{Figures/Introduction/Acoustic_room_impulse_response.jpg}
+	\caption{Room impulse response model, from \cite{murphy2017acoustic}.}
+	\label{fig:rir}
+	\end{center}
+\end{figure}
+
+By following this model, a RIR $h(t)$ can be described as a sequential combination of responses:
+\begin{equation}
+	h(t) = h_D(t) + h_R(t),
+\label{eq:directreverberant}
+\end{equation}
+where $h_D(t)$ and $h_R(t)$ represent the \textit{direct} (direct path plus early reflections) and \textit{reverberant} (late reverberation) components of the RIR. respectively.\\
 
 
-%%%%%%%%%%%%%% cogido del paper de MMSP
-Reverberation time $T_{60}$ \cite{kuttruff2016room} might be one of the most widespread acoustic parameters; it represents the time required 
-%for a sound in the diffuse field to decrease its energy envelope by 60 dB. 
-for the reverberant sound field power to decay by 60 dB.
-Reverberation time can be accurately computed from the room geometry \cite{sabine1927collected} or from the Impulse Response (IR) \cite{schroeder1965new}; the problem of $T_{60}$ estimation just from observations of the reverberant signal itself is referred to as the blind reverberation time estimation, and it still remains an open research question.
+The room impulse response is a function of both the source and the receiver locations. Different levels, delays and directions of direct path and early reflections can obtained from measurements in the same room. However, it is generally assumed that the late reverberation is fixed for a given room, regardless of source/receiver positions. \\
 
-% TODO
-reverberation time, sabine, schroeder
-%%%%%%%%%%%%%%%%%%%%%%%%
+Room reverberation plays an important role in psychoacoustics. While early reflections are usually perceived together with the direct path as a single auditory event, due to the \textit{precedence effect} \cite{haas1972influence}, late reverberation has often an influence on the received signal. In the specific case of speech, late reverberation is associated with a loss of intelligibility \cite{braun2018speech}.
+In the context of spatial perception, it has been shown that early reflections help the localization and externalization of sources [\todo{Improving Externalization in Ambisonic Binaural Decoding}], while the late reverberation is associated with a spaciousness perception of the room \cite{begault20003}. \\
 
 
-\subsection{SOFA}
- maybe as subsection of room acoustics
+There are a number of measurable parameters which help to characterise room acoustics. 
+Perhaps one of the most widespread is the \textit{reverberation time} $T_{60}$ \cite{kuttruff2016room}. It represents the time required for the reverberant sound field power to decay by 60 dB.
+Reverberation time can be accurately computed from the room geometry \cite{sabine1927collected} or from the IR \cite{schroeder1965new}.
+
+In the latter case, the $T_{60}$ value is usually estimated from the \textit{Energy Decay Curve} (EDC), which is defined as:
+
+\begin{equation}
+	\text{EDC}(t) = 10 \log_{10} \sum_{t'=t}^{\infty} h^2(t),
+\end{equation}
+
+where $h(t)$ represents the room impulse response. The values are normalized such that the maximum peak of the curve corresponds to 0 dB.
+
+The EDC is usually modelled as a straight line in logarithmic scale. Therefore, the $T_{60}$ estimation is performed by estimating the slope of a straight line between two reference levels on the EDC time series.
+Some of the most used reference levels receive specific names: \textit{Early Decay Time} (EDT), $T_{60}$, and reverberation times $T_{10}$, $T_{20}$ and $T_{30}$. Table\ref{tab:reverberationtimes} shows their correspondent reference levels, where the maximum energy peak is normalized to 0 dB. An schematic representation of the reference levels is depicted in Figure~\ref{fig:reverberationtimes}.
+
+An alternative parameter is the \textit{decay rate} $\alpha_{60}$, which is related to reverberation time $T_{60}$ as:
+\begin{equation}
+	\alpha_{60} = \frac{3 \ln{(10)}} {T_{60}} (\text{dB/s}).
+\end{equation}
+ 
+The decay rate is thus the slope of the EDC curve, in logarithmic scale, expressed in dB per second.  
+
+To conclude, it is important to notice that reverberation time is frequency-dependent. Accordingly, it is usual to report it for octave or third-octave bands, or alternatively to provide its value at a specific frequency. \\
 
 
-%
-%
-%
-%sound field capturing
-%
-%spherical harmonics
-%
-%decoding/beamforming
-%
-%\subsection{normalization, channel ordering}
-%
-%\section{Parametric spatial analysis}
-%
-%sirr, dirac
-%
-%sound field pressure and velocity approximation
-%
-%intensity vector
-%direction of arrival
-%energy density
-%diffuseness (limits)
+\begin{table}[t]
+\caption{Reverberation time computation: usual reference levels}
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+   & $\text{EDT}$ & $T_{10}$ & $T_{20}$ & $T_{30}$ \\
+\midrule
+$L_{max} (dB)$ & 0 & -5 & -5 & -5  \\
+$L_{min} (dB)$ & -10 & -15 & -25 & -35 \\
+\bottomrule
+\end{tabular}
+\label{tab:reverberationtimes}
+\end{center}
+\end{table}
 
-%alternative formulations
+\begin{figure}[htbp]
+	\begin{center}
+	\includegraphics[width=\textwidth]{Figures/Introduction/edt.png}
+	\caption{Room impulse response model, adapted from \url{http://www.bnoack.com/}.}
+	\label{fig:reverberationtimes}
+	\end{center}
+\end{figure}
+
+
+The \textit{Direct to Reverberant Ratio} (DRR) is another relevant acoustic parameter. DDR represents the ratio between direct and reverberant parts of the RIR, as defined in Eq.~\ref{eq:directreverberant}:
+\begin{equation}
+	DRR = 10 \log_{10} \frac{ \sum_{t=1}^{L_D} h^2_D(t) }{ \sum_{t=1}^{L_R} h^2_R(t)},
+\end{equation}
+with $L_D$ and $L_R$ as the length of the direct $h_D(t)$ and reverberant $h_R(t)$ filters, respectively.  
+At a psychoacoustic level, the direct to reverberant ratio is one of the main cues for distance perception \cite{begault20003}. 
+
+Since the direct path and early reflections (but not the late reverberation) depend on the relative position between source and receiver , the filter $h_D(t)$ and therefore the DRR are as well location-dependent. For a given room, the source-receiver distance that produces a DRR of 0 dB is known as the \textit{critical distance}. 
+
+
+\subsection{SOFA Conventions}
+
+The availability of recorded room impulse responses is of great importance to many acoustic signal processing problems. 
+As we have seen, many different RIRs can be obtained from the same room, by just varying the position of the source and the receiver; when the number of source and receiver positions increases, the total amount of measurements increases geometrically. 
+Besides that, the actual format and organisation of the produced data (not only the RIR themselves, but also the source/position annotations) can be arbitrarily different when produced by different groups of people.
+
+In order to overcome potential interoperatibility and reusability issues, the \textit{Spatially Oriented Format for Acoustics} (SOFA) convention \cite{majdak2013spatially}, also known as the \textit{AES-69} standard \cite{majdak2015aes69}, proposes a unified file format for the storage of IR-related data. 
+Despite that SOFA was initially created with a focus on \textit{Head-Related Impulse Response} (HRIR) data, its structure is very convenient to any kind of multi-location impulse responses, including ambisonics.
 
 
 \section{Signal Model}
 
 
-Let us consider a sound source represented by the signal $s(t)$, located in a given acoustic enclosure. Assuming that the system is Linear and Time-Invariant (LTI), it can be represented by its room impulse response $h(t)$. The resulting reverberant signal $x(t)$ can be therefore described as the \textit{convolutive mixture} of the source and the RIR: 
+Let us consider a sound source represented by the signal $s(t)$, located in a given acoustic enclosure characterised by its room impulse response $h(t)$. The resulting reverberant signal $x(t)$ can be therefore described as the \textit{convolutive mixture} of the source and the RIR: 
 \begin{equation}
 	x(t) = s(t) \ast h(t).
 \label{eq:convolutivemixture}

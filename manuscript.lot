@@ -2,6 +2,18 @@
 \select@language {catalan}
 \select@language {english}
 \select@language {catalan}
+\select@language {english}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1.1}{\ignorespaces test}}{3}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {2.1}{\ignorespaces Cartesian and spherical representation of characteristic points along the unit sphere.\relax }}{6}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Ambisonic decoding: standard values of $alpha_n$ weightings. Extracted from \cite {daniel2000representation}.\relax }}{13}{table.2.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Baseline system: linear regression parameters\relax }}{44}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Experiment results\relax }}{45}{table.4.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {5.1}{\ignorespaces Parameter values for the selected configuration. Top: \textit {DOA analysis} parameters. Bottom: \textit {Association} parameters.\relax }}{60}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Results for development (top) and evaluation (bottom) sets.\relax }}{62}{table.5.2}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {6.1}{\ignorespaces Summary of audio data used across Ambisonics-based Source Localization (above) and Source Separation (below) algorithm proposals. \leavevmode {\color {red}update table? fix references}\relax }}{75}{table.6.1}
 \addvspace {10\p@ }

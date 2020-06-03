@@ -25,6 +25,8 @@ In what follows, we present the methodology and the architecture of the proposed
 The proposed method presents a solution for the SELD problem splitting the task into four different problems: \textit{DOA  estimation}, \textit{association}, \textit{beamforming} and \textit{classification}, which will be described in the following subsections.
 The former three systems follow a heuristic approach---in what follows, they will be jointly referred to as the \textit{parametric front-end}. Conversely, the \textit{classification} system is data-driven, and will be referred to as the \textit{deep learning back-end}. The method architecture is depicted in Figure~\ref{fig:diagram_all}.
 
+\todo{redo figures in this section}
+
 \begin{figure}[h]
 	\centering
     \includegraphics[width=\columnwidth]{Figures//SELD/dcase_challenge_tech_report_all2.pdf}
@@ -44,42 +46,41 @@ The former three systems follow a heuristic approach---in what follows, they wil
 
 \end{figure*}
 
-The \textit{DOA estimation} system (Figure~\ref{fig:doa}) is based on parametric time-frequency (TF) spatial audio analysis.
-Let us consider a first-order ($L=1$) ambisonic signal vector $\pmb{b}(t)$ with N3D normalization \cite{carpentier2017normalization}:
-\begin{equation}
-    \pmb{b}(t) = [b_w(t), \sqrt{3}b_x(t),\sqrt{3}b_y(t), \sqrt{3}b_z(t)].
-\end{equation}
-From its short-time frequency domain representation $\pmb{B}(k,n)$, the instantaneous DOA at each TF bin $\pmb{\Omega}(k,n)$ can be estimated as:
-\begin{equation}
-    \begin{aligned}
-    \pmb{I}(k,n) = -\frac{1}{Z_0}\mathbb{R}\{& [B_x(k,n), B_y(k,n), B_z(k,n)]  B_w(k,n)^* \},\\
-    \pmb{\Omega}(k,n) &= [\varphi(k,n), \theta (k,n)] =\angle ( -\pmb{I}(k,n) ),
-    \end{aligned}
-\end{equation}
-where $\pmb{I}(k,n)$ stands for the \textit{active intensity vector} \cite{pulkki2006directional}, $Z_0$ is the characteristic impedance of the medium, $^*$ represents the complex conjugate operator, and $\angle$ is the spherical coordinates angle operator, expressed in terms of azimuth $\varphi$ and elevation $\theta$.
 
-It is desirable to identify the TF regions of $\pmb{\Omega}(k,n)$ which carry information from the sound events, and discard the rest. Three binary masks are computed with that aim.
 
-The first mask is the \textit{energy density mask}, which is used as an activity detector. The energy density $E(k,n)$ is defined as in \cite{stanzial1996reactive} :
-\begin{equation}
-    E(k,n) = \frac{|B_w(k,n)|^2
-    + || [ B_x(k,n), B_y(k,n), B_z(k,n)] ||^2}{2Z_0c},
-\end{equation}
+The \textit{DOA estimation} system (Figure~\ref{fig:doa}) is based on parametric time-frequency spatial audio analysis.
 
-with $c$ being the sound speed. A gaussian adaptive thresholding algorithm is then applied to $E(k,n)$, which selects TF bins with local maximum energy density, as expected from direct sounds.
+Let us consider a \textit{N3D}-normalized first-order ambisonic signal $x_n^m(t)$. 
+Using the DirAC parametric model, it is possible to obtain instantaneous time-frequency estimates of the Direction of Arrival $\Omega(k,n)$ (Eq.~\ref{eq:doa}), energy density $E(k,n)$ (Eq.~\ref{eq:energydensity}) and the diffuseness $\Psi(k,n)$ (Eq.~\ref{eq:psidefinition}).\\
 
-The \textit{diffuseness mask} selects the TF bins with high energy propagation. Diffuseness $\Psi(k,n)$ is defined in \cite{merimaa2005spatial} as:
-\begin{equation}
-    \Psi(k,n) = 1 - ||\LL \pmb{I}(k,n) \RR|| / (c \LL E(k,n) \RR),
-    \label{psi}
-\end{equation}
-where $\LL \cdot \RR$ represents the temporal expected value.
 
-The third mask is the \textit{DOA variance mask}. It tries to select TF regions with small standard deviation\footnote{In this work, all statistical operators for angular position refer to the $2\pi$-\textit{periodic} operator for azimuth, and the standard operator for elevation.} with respect to their neighbor bins---a characteristic of sound fields with low diffuseness \cite{pulkki2018parametric}.
 
-The three masks are then applied to the DOA estimation, obtaining the TF-filtered DOAs $\bar{\pmb{\Omega}}(k,n)$. Finally, a median filter is applied, with the aim of improving DOA estimation consistency and removing spurious TF bins.
-The median filter is applied in a TF bin belonging to $\bar{\pmb{\Omega}}(k,n)$ only if the number of TF bins belonging to $\bar{\pmb{\Omega}}(k,n)$  in its vicinity is greater than a given threshold $B_{min}$.
-The resulting filtered DOA estimation is referred to as $\breve{\pmb{\Omega}}(k,n)$.
+%Let us consider a first order ambisonic signal $$
+%Let us consider a first order ambisonic signal vector $\pmb{b}(t)$ with N3D normalization \cite{carpentier2017normalization}:
+%\begin{equation}
+%    \pmb{b}(t) = [b_w(t), \sqrt{3}b_x(t),\sqrt{3}b_y(t), \sqrt{3}b_z(t)].
+%\end{equation}
+%From its short-time frequency domain representation $\pmb{B}(k,n)$, the instantaneous DOA at each TF bin $\pmb{\Omega}(k,n)$ can be estimated as:
+%\begin{equation}
+%    \begin{aligned}
+%    \pmb{I}(k,n) = -\frac{1}{Z_0}\mathbb{R}\{& [B_x(k,n), B_y(k,n), B_z(k,n)]  B_w(k,n)^* \},\\
+%    \pmb{\Omega}(k,n) &= [\varphi(k,n), \theta (k,n)] =\angle ( -\pmb{I}(k,n) ),
+%    \end{aligned}
+%\end{equation}
+%where $\pmb{I}(k,n)$ stands for the \textit{active intensity vector} \cite{pulkki2006directional}, $Z_0$ is the characteristic impedance of the medium, $^*$ represents the complex conjugate operator, and $\angle$ is the spherical coordinates angle operator, expressed in terms of azimuth $\varphi$ and elevation $\theta$.
+
+It is desirable to identify the TF regions of $\Omega(k,n)$ which carry information from the sound events, and discard the rest. Three binary masks are computed with that aim.
+
+The first mask is the \textit{energy density mask}, which is used as an activity detector. A gaussian adaptive thresholding algorithm is applied to $E(k,n)$. This procedure selects TF bins with local maximum energy density, as expected from the direct path of the sources.
+
+The \textit{diffuseness mask} selects the TF bins with high energy propagation. Bins with a low diffuseness value represent a TF region where one sound source is predominant. A fixed threshold value $\Psi_{max}$ is used for the masking.
+
+The third mask is the \textit{DOA variance mask}. It tries to select TF regions with small standard deviation with respect to their neighbor bins---a characteristic of sound fields with low diffuseness \cite{pulkki2018parametric}.\\
+
+The three masks are then applied to the DOA estimation, obtaining the TF-filtered instanteneous DOAs $\bar{\Omega}(k,n)$. 
+Finally, a median filter is applied, with the aim of improving DOA estimation consistency and removing spurious TF bins.
+The median filter is applied in a TF bin belonging to $\bar{\Omega}(k,n)$ only if the number of TF bins belonging to $\bar{\\Omega}(k,n)$ in its vicinity is greater than a given threshold $B_{min}$.
+The resulting filtered DOA estimation is referred to as $\breve{\Omega}(k,n)$.
 
 
 \subsection{Association}
@@ -92,12 +93,12 @@ The resulting filtered DOA estimation is referred to as $\breve{\pmb{\Omega}}(k,
 
 \end{figure*}
 
-The association step (Figure~\ref{fig:association}) tackles the problem of assigning the time-frequency-space observation $\breve{\pmb{\Omega}}(k,n)$ to a set of events, each one having a specific onset, offset  and location. 
+The association step (Figure~\ref{fig:association}) tackles the problem of assigning the time-frequency-space observation $\breve{\Omega}(k,n)$ to a set of events, each one having a specific onset, offset and location. \\
 
-First, DOA estimates are resampled into \textit{frames} of the task's required length ($0.02$ s). In what follows, frames will be represented by index $m$. 
-An additional constraint is applied: for a given window $n_0$, the DOA estimates $\breve{\pmb{\Omega}}(k,n_0)$ are assigned to the corresponding frame $m_0$ only if the number of estimates is greater than a threshold $K_{min}$.
+First, DOA estimates are resampled into \textit{frames} with the task's required length ($0.02$ s). In what follows, frames will be represented by index $m$. 
+An additional constraint is applied: for a given window $n_0$, the DOA estimates $\breve{\Omega}(k,n_0)$ are assigned to the corresponding frame $m_0$ only if the number of estimates is higher than a given threshold $K_{min}$.\\
 
-Next, the standard deviation in azimuth ($\sigma_{\varphi}$) and elevation ($\sigma_{\theta} $) of the frame-based DOA estimates $\breve{\pmb{\Omega}}(k,m)$ are compared to a threshold value ($\sigma_{max}$), and the result is used to estimate the frame-based event overlapping amount $o(m)$ :
+Next, the standard deviation in azimuth $\sigma_{\varphi}$ and elevation $\sigma_{\theta}$ of the frame-based DOA estimates $\breve{\Omega}(k,m)$ are compared to a threshold value $\sigma_{max}$, and the result is used to estimate the frame-based event overlapping amount $o(m)$ :
 
 \begin{equation}
 \begin{aligned}
@@ -107,27 +108,29 @@ Next, the standard deviation in azimuth ($\sigma_{\varphi}$) and elevation ($\si
     \end{cases}    		
 \end{aligned}
 \end{equation}
-The clustered values $\pmb{\Omega}_{\text{cluster}}(m)$ are then computed as the $K=o(m)$ centroids of $\breve{\pmb{\Omega}}(k,m)$, using a modified version of K-Means which minimizes the central angle distance. Notice that, for $o(m)=1$, the operation is equivalent to the median.
+
+The clustered values $\Omega_{\text{cluster}}(m)$ are then computed as the $K=o(m)$ centroids of $\breve{\Omega}(k,m)$, using a modified version of K-Means which minimizes the central angle distance. Notice that, for $o(m)=1$, the operation is equivalent to the median.\\
 
 The following step is the grouping of clustered DOA values into events.
-Let us define $\pmb{\Omega}_S(m)$ as the frame-wise DOA estimations belonging to the event $S$. A given clustered DOA estimation $\pmb{\Omega}_{\text{cluster}}(m)$ belongs to the event $S$ if the following criteria are met:
+Let us define $\Omega_S(m)$ as the frame-wise DOA estimations belonging to the event $S$. A given clustered DOA estimation $\Omega_{\text{cluster}}(m)$ belongs to the event $S$ if the following criteria are met:
 \begin{itemize}
-    \item The central angle between  $\pmb{\Omega}_{\text{cluster}}(m)$ and the median of $\pmb{\Omega}_S(m)$ is smaller than a given threshold $d_{max}^\text{ANGLE}$, and
-    \item The frame distance between M and the closest frame of $\pmb{\Omega}_S(m)$ is smaller than a given threshold $d_{max}^\text{FRAME}$.
+    \item The central angle between  $\Omega_{\text{cluster}}(m)$ and the median of $\Omega_S(m)$ is smaller than a given threshold $d_{max}^\text{ANGLE}$, and
+    \item The frame distance between $m$ and the closest frame of $\Omega_S(m)$ is smaller than a given threshold $d_{max}^\text{FRAME}$.
 \end{itemize}
 
-The resulting DOAs $\pmb{\Omega}_S(m)$ are subject to a postprocessing step with the purpose of 
+The resulting DOAs $\Omega_S(m)$ are subject to a postprocessing step with the purpose of 
 delaying event onsets in frames where $o(m) > 2$, and discarding events shorter than a given minimum length. 
-Finally, the frame-based event estimations are converted into \textit{metadata annotations} in the form $\pmb{\Lambda}_S = (\pmb{\Omega}_S, \text{onset}_S, \text{offset}_S)$.
+
+Finally, the frame-based event estimations are converted into \textit{metadata annotations} in the form $\Lambda_S = (\Omega_S, \text{onset}_S, \text{offset}_S)$.
 
 \subsection{Beamforming}
 \label{ssec:Beamforming}
 
-The last step performed in the front-end is the input signal segmentation. The spatial and temporal information provided by the annotations $\pmb{\Lambda}_S$ are used to produce monophonic signal estimations of the events, $\tilde{b}_S(t)$, as the signals captured by a virtual hypercardioid:
+The last step performed in the front-end is the input signal segmentation. The spatial and temporal information provided by the annotations $\Lambda_S$ are used to produce monophonic signal estimations of the events, $\tilde{x}_S(t)$, as the signals captured by a virtual first-order cardioid (Eq.~\ref{eq:decodingequation}):
 \begin{equation}
-\tilde{b}_S(t) = \pmb{Y}(\pmb{\Omega}_S) \pmb{b}^\intercal(t),
+\tilde{x}_S(t) = x_n^m(t) Y_n^m(\Omega_S) \alpha_n,
 \end{equation}
-where $ \pmb{Y}(\pmb{\Omega}_S) = [Y_w(\pmb{\Omega}_S), Y_x(\pmb{\Omega}_S), Y_y(\pmb{\Omega}_S), Y_z(\pmb{\Omega}_S)]$ is the set of real-valued spherical harmonics up to order $L=1$ evaluated at $\pmb{\Omega}_S$.
+with $\alpha_n = [1, 1, 1, 1]$ using the \textit{basic} decoding weights.
 
 
 
@@ -135,16 +138,15 @@ where $ \pmb{Y}(\pmb{\Omega}_S) = [Y_w(\pmb{\Omega}_S), Y_x(\pmb{\Omega}_S), Y_y
 \label{ssec:backend_method}
 
 %intro - problem formulation==============
-The parametric front-end performs DOA estimation, temporal activity detection and time/space segmentation, and produces monophonic estimations of the events, $\tilde{b}_S(t)$.
+The parametric front-end performs DOA estimation, temporal activity detection and time/space segmentation, and produces monophonic estimations of the events, $\tilde{s}_S(t)$.
 Then, the back-end classifies the resulting signals as belonging to one of a target set of 11 classes.
 Therefore, the multi-task nature of the front-end allows us to define the back-end classification task as a simple multi-class problem, even though the original SELD task is multi-label.
-It must be noted, however, that due to the limited directivity of the first-order beamformer, the resulting monophonic signals can present a certain leakage from additional sound sources when two events overlap, even when the annotations $\pmb{\Lambda}_S$ are perfectly estimated.
+It must be noted, however, that due to the limited directivity of the first-order beamformer, the resulting monophonic signals can present a certain leakage from additional sound sources when two events overlap, even when the annotations $\Lambda_S$ are perfectly estimated.
 
 %2 stages: context
 The classification method is divided into two stages.
 First, the incoming signal is transformed into the log-mel spectrogram and split into TF patches.
-Then, the TF patches are fed into a single-mode based on a Convolutional Recurrent Neural Network (CRNN), which outputs probabilities for event classes $k \in \left\lbrace 1 ... K \right\rbrace$, with $K=11$.
-Then, we use a single model based on a Convolutional Recurrent Neural Network (CRNN), fed by the TF patches, and outputting probabilities for event classes $k \in \left\lbrace 1 ... K \right\rbrace$, with $K=11$.
+Then, the TF patches are fed into a single-mode based on a Convolutional Recurrent Neural Network (CRNN), which outputs probabilities for event classes $c \in \left\lbrace 1 ...C \right\rbrace$, with $C=11$.
 Predictions are done at the event-level (not at the frame level), since the temporal activities have been already determined by the front-end.
 Only one label is predicted for each incoming event, such that there is no binarization stage needed as in a standard SED task.
 
@@ -164,7 +166,7 @@ The model has $\sim$175k weights.
 \begin{figure}[ht]
   \vspace{-3mm}
   \centering
-  \centerline{\includegraphics[width=\textwidth]{Figures/SELD/DCASE19Task3_backend_archi_v3.png}}
+  \centerline{\includegraphics[width=0.9\textwidth]{Figures/SELD/DCASE19Task3_backend_archi_v3.png}}
   \vspace{-2mm}
   \caption{Back-end architecture.}
   \label{fig:archi}
@@ -183,12 +185,17 @@ The model has $\sim$175k weights.
 \label{ssec:dataset}
 We use the TAU Spatial Sound Events 2019 - Ambisonic, which provides first-order ambisonic recordings.
 Details about the recording format and dataset specifications can be found in \cite{Adavanne2019_DCASE}.
-The dataset features a vocabulary of 11 classes encompassing human sounds and sound events typically found in indoor office environments.
+The dataset features a vocabulary of $C=11$ classes encompassing human sounds and sound events typically found in indoor office environments.
 The dataset is split into a development and evaluation sets. 
-The development set consists of a four fold cross-validation setup.
+The development set consists of a four fold cross-validation setup.\\
 
-The SELD task is evaluated with individual metrics for SED (F-score (\textit{F}) and error rate (\textit{ER}) calculated in one-second segments) and DOA estimation (DOA error (\textit{DOA}) and frame recall (\textit{FR}) calculated frame-wise) \cite{Adavanne2018_JSTSP}.
+The SELD task is evaluated with individual metrics for the SED and DOA problems:
+\begin{itemize}
+	\item SED: F-score (\textit{F}) and error rate (\textit{ER}) calculated in one-second segments.
+	\item DOA: DOA error (\textit{DOA}) and frame recall (\textit{FR}) calculated frame-wise.
+\end{itemize}
 The \textit{SELD score} is an averaged summary of the system performance.
+A more detailed description of the evaluation metrics can be found in \cite{Adavanne2018_JSTSP}.\\
 
 The baseline system features a CRNN that jointly performs DOA and SED through multi-task learning \cite{Adavanne2018_JSTSP}.
 Baseline results are shown in Table \ref{tab:results_real}.
@@ -241,23 +248,22 @@ Training and validation stages use the outcome of an \textit{ideal} front-end, w
 Conversely, we test the trained models with the signals coming from the \textit{complete} front-end described in Section \ref{sec:method}.
 
 We conducted a set of preliminary experiments with different types of networks including a VGG-like net, a less deep CNN \cite{Fonseca2019learning}, a Mobilenetv1 \cite{howard2017mobilenets} and a CRNN \cite{cakir2017convolutional}.
-The latter was found to stand out, and we explore certain facets of the CRNN architecture and the learning pipeline.
+The latter was found to stand out, and we explore certain facets of the CRNN architecture and the learning pipeline.\\
 
 Sound events in the dataset last from $\sim$ 0.2 to 3.3 s.
 First, clips shorter than 2s are replicated to meet this length.
 Then, we compute TF patches of log-mel spectrograms of $T=50$ frames (1 s) and $F=64$ bands.
 The values come from the exploration of $T \in \left\lbrace 25,50,75,100\right\rbrace$ and $F \in \left\lbrace 40,64,96,128\right\rbrace$.
-$T=50$ is the top performing value, roughly coinciding with the median event duration. In turn, more than 64 bands provide inconsistent improvements, at the cost of increasing the number of network weights.
+$T=50$ is the top performing value, roughly coinciding with the median event duration. In turn, more than 64 bands provide inconsistent improvements, at the cost of increasing the number of network weights.\\
 
 Regarding the network structure, several variants of the CRNN architecture were explored until reaching the network of Figure \ref{fig:archi}.
 This included a small grid search over number of CNN filters, CNN filter size and shape, number of GRU units, number of FC units, dropout \cite{srivastava2014dropout}, learning rate, and the usage of Batch Normalization (BN) \cite{ioffe2015batch}.
 Network extensions (involving more weights) were considered only if providing major improvements, as a measure against overfitting.
-The main takeaways are: \textit{i)} squared 3x3 filters provide better results than larger filters, \textit{ii)} dropout of 0.5 is critical for overfitting mitigation, \textit{iii)} more than one recurrent layer does not yield improvements, while slowing down training, and \textit{iv)} surprisingly, slightly better performance is attained without BN nor pre-activation \cite{fonseca2018simple}.
+The main takeaways are: \textit{i)} squared 3x3 filters provide better results than larger filters, \textit{ii)} dropout of 0.5 is critical for overfitting mitigation, \textit{iii)} more than one recurrent layer does not yield improvements, while slowing down training, and \textit{iv)} surprisingly, slightly better performance is attained without BN nor pre-activation \cite{fonseca2018simple}. \\
 
 For all experiments, the batch size was 100 and Adam optimizer was used \cite{kingma2014adam} with initial learning rate of 0.001, halved each time the validation accuracy plateaus for 5 epochs.
 Earlystopping was adopted with a patience of 15 epochs, monitoring validation accuracy.
-
-Prediction for every event was obtained by computing predictions at the patch level, and aggregating them with the geometric mean to produce a clip-level prediction.
+Prediction for every event was obtained by computing predictions at the patch level, and aggregating them with the geometric mean to produce a clip-level prediction. \\
 
 
 Finally, we apply \textit{mixup} \cite{zhang2017mixup} as data augmentation technique.
@@ -299,10 +305,10 @@ Proposed & 0.29 & 82.1\% & 9.3$^{\circ}$   & 75.8\% & \textbf{ 0.1907}\\
 Table~\ref{tab:results_real} shows the results of the proposed method for both development and evaluation sets, compared to the baseline.
 Focusing on evaluation results, our method and the baseline obtain similar performance in SED (\textit{ER} and \textit{F}). However, there is a clear difference in the DOA metrics:
 in our method, \textit{DOA} error is reduced by a factor of 2.6, but \textit{FR}  is $\sim10$ points worst.
-In terms of \textit{SELD score}, our method performs slightly worse than the baseline in evaluation mode, while marginally outperforming it in development mode. 
+In terms of \textit{SELD score}, our method performs slightly worse than the baseline in evaluation mode, while marginally outperforming it in development mode. \\m,              
 
 The most relevant observation is the great improvement in \textit{DOA} error. Results suggest that using spatial audio parametric analysis as a preprocessing step can help to substantially improve localization. 
-Figure \ref{fig:5a} provides further evidence for this argument: Challenge methods using some kind of parametric preprocessing (\textit{GCC-PHAT} with the microphone dataset, and \textit{Intensity Vector-Based} in ambisonics) obtained in average better \textit{DOA} error results.
+Figure \ref{fig:5a} provides further evidence for this argument: Challenge methods using some kind of parametric preprocessing (\textit{GCC-PHAT} with the microphone dataset, and \textit{Intensity Vector-Based} in ambisonics) obtained in average better \textit{DOA} error results. \\
 
 \begin{figure}
   \begin{subfigure}[b]{\textwidth}
@@ -318,12 +324,12 @@ Figure \ref{fig:5a} provides further evidence for this argument: Challenge metho
 \caption{DCASE2019 Challenge Task 3 results, evaluation set.}
 \end{figure}
 
-Conversely, the front-end fails regarding \textit{FR}. This is probably due to the complexity added by the association step \cite{Adavanne2018_JSTSP}, and its lack of robustness under highly reverberant scenarios. Including spectral information at the grouping stage might help to improve \textit{FR} --- such information could be provided by the classification back-end, in a similar approach to the baseline system. Another option would be the usage of more sophisticated source counting methods \cite{he2010detecting, Stefanakis2017}.
+Conversely, the front-end fails regarding \textit{FR}. This is probably due to the complexity added by the association step \cite{Adavanne2018_JSTSP}, and its lack of robustness under highly reverberant scenarios. Including spectral information at the grouping stage might help to improve \textit{FR} --- such information could be provided by the classification back-end, in a similar approach to the baseline system. Another option would be the usage of more sophisticated source counting methods \cite{he2010detecting, Stefanakis2017}. \\
 
 In order to gain a better insight of the classification back-end performance, Table~\ref{tab:results_real} shows the method results when the testing clips are obtained by feeding  the beamformer  with groundtruth annotations (\textit{ideal} front-end).
 In this ideal scenario of DOA performance, the SED metrics show a significant boost. 
 This result suggests that the low \textit{FR} given by the front-end has a severe impact on the back-end  performance.
-Yet, the proposed system reaches similar performance to the baseline system in terms of SED metrics.
+Yet, the proposed system reaches similar performance to the baseline system in terms of SED metrics. \\
 
 Finally, we would like to discuss algorithm complexity among Challenge methods. 
 As depicted in Figure \ref{fig:5b}, there is a general trend towards architectures with very high number of weights, as a consequence of the usage of ensembles and large capacity networks.

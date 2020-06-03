@@ -2,6 +2,27 @@
 \select@language {catalan}
 \select@language {english}
 \select@language {catalan}
+\select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Graphic example}}{4}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces \leavevmode {\color {red}todo caption}\relax }}{3}{figure.1.1}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Spherical harmonics up to order $N=3$. The rows correspond to the spherical harmonics of a given order $n$, and the columns span all possible degree values.\relax }}{9}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Directive patterns of first-order ambisonic decoding.\relax }}{14}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from T. Carpentier [\leavevmode {\color {red}cite}].\relax }}{18}{figure.2.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces \textit {A-Format} coherence between microphone signals. Left: $\text {MSC}$ as a function of the frequency of theoretical, simulated and recorded \textit {((BLD,BRU)}, $N=5, I=64$) signals. Right: mean error $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals' $MSC$ \textit {(BLD,BRU)} compared to the simulated values, for all values of $N$ and $I$.\leavevmode {\color {red}REDO FIGURE WITH N AND I}\relax }}{30}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Estimated \textit {B-Format} coherence ($\Delta $) of a simulated diffuse sound field, as a function of the temporal averaging vicinity radius $r$. Left: $\Delta (k)$ for different values of $r$, with (coarse) and without (fine) application of radial filters. Right: mean and standard deviation of $\Delta (k)$ as a function of $r$.\relax }}{31}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces \textit {B-Format coherence} between microphone signals. Left: $\Delta $ of simulated and recorded ($N=5, I=64$) signals. Right: $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals coherence across all values of $N$ and $I$.\leavevmode {\color {red}REDO FIGURE} \relax }}{33}{figure.3.3}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Estimation error computed for each audio clip.\relax }}{47}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Total estimation error across audio clips and acoustic conditions. Top: boxplot. Bottom: histogram and density plot\relax }}{48}{figure.4.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces System architecture.\relax }}{53}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces DOA estimation architecture.\relax }}{53}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Association architecture.\relax }}{54}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Back-end architecture.\relax }}{58}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces DCASE2019 Challenge Task 3 results, evaluation set.\relax }}{64}{figure.5.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Source and Listener position diagram for the "York Guildhall Council Chamber" Ambisonics DRIR (original diagram attribution to \cite {guildhall} \relax }}{72}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces AmbiScaper architecture.\relax }}{78}{figure.6.2}
 \addvspace {10\p@ }

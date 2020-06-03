@@ -52,13 +52,11 @@ The rest of the chapter is organized as follows. Section~\ref{sec:signalmodel} i
 \section{Signal Model}
 \label{sec:signalmodel}
 
-Let us consider a FOA signal $x_m(t)$, with $m = 0 \ldots, M-1$ as the 
-%ACN 
-channel number, and $M=4$.
-Let us further assume that $x_m(t)$ represents the signal captured by an ideal spherical microphone array located in a reverberant enclosure, where a static sound source $s(t)$ is present. The ambisonic room impulse response between source and receiver is represented by $h_m(t)$. In the absence of noise, the recorded signal is the convolutive mix of the source signal $s(t)$ and the RIR, as described in Eq.~\ref{eq:convolutivemixture}:
+Let us consider a FOA signal $x_n^m(t)$, with $M=4$ as the number of channels.
+Let us further assume the convolutive mixture signal model described in Eq.~\ref{eq:convolutivemixturemultichannel}, where the reverberant signal $x_n^m(t)$ represents the signal captured by an ideal spherical microphone array located in a reverberant enclosure. 
+Let $s(t)$ denote the signal of the only sound source present in the scene, and $h_n^m(t)$ denote the ambisonic RIR modelling the acoustic enclosure:
 \begin{equation}
-\label{eq:signalmodel}
-	x_m(t) = s(t) \ast h_m(t)
+	x_n^m(t) = s(t) \ast h_n^m(t)
 \end{equation}
 
 It is important to remark that $T_{60}$ estimation here assumes no receiver directionality. In an ambisonic context, this corresponds to the zeroth order component. Therefore, in what follows, all methods estimating IR parameters will be applied to the zeroth order channel, $x_0(t)$.
@@ -71,7 +69,7 @@ It is important to remark that $T_{60}$ estimation here assumes no receiver dire
 
 The baseline algorithm, taken from \cite{prego2012blind}, is based on the detection of abrupt event offsets in the time-frequency domain. The subband energy decay on the transitions can be then used to compute an estimate of the full-band decay. This method performed best in the ACE Challenge regarding the Pearson correlation coefficient between estimated and true $T_{60}$\cite{eaton2016estimation}.
 
-Let us consider the zeroth order channel of the recorded signal, $x_0(t)$, and its Short-Time Frequency Transform (STFT) counterpart $X_0(k,n)$, where $k$ and $n$ indicate frequency bin and time frame indices respectively. 
+Let us consider the zeroth order channel of the recorded signal, $x_0(t)$, and its Short-Time Frequency Transform (STFT) counterpart $X_0(k,n)$.
 %Although the method could be potentially applied to any of the channels, in physical terms it makes more sense to work with an omnidirectional sound field representation; hence the usage of the zeroth order channel.
 The \textit{subband energy} $\bar{E}(k,n)$ of the recorded signal can be expressed as:\begin{equation}
 	\bar{E}(k,n) = |X_0(k,n)|^2.
@@ -113,7 +111,8 @@ Let us consider now the \textit{CTF} model (Eq.~\ref{eq:convolutivetransferfunct
 \end{equation} 
 where the multichannel filter $H_m(k, l)$ of length $L_h$ contains the \textit{CTF coefficients} between the source and the microphones.
 
-It is possible to split the former expression into two consecutive elements, which would conceptually match the early and late parts of the room's impulse response:
+Considering the room impulse response model of Eq.~\ref{eq:directreverberant}, 
+it is possible to sequentially split the former expression in the following way:
 \begin{equation}
 \label{eq:model}
 \begin{aligned}
@@ -136,7 +135,7 @@ It is possible to split the former expression into two consecutive elements, whi
 %\end{equation} 
 %\end{subequations}
 where the parameter $\tau$ represents the \textit{mixing time}, which states the transition time between early reflections and late reverberation. 
-In other words, the captured signal is split between a \textit{direct} part $D_m(k, n)$, containing the direct path and the early reflections, and a \textit{reverberant} part $R_m(k, n)$, which mainly contains the diffuse part of the reverberation.
+In other words, the captured signal is divided between a \textit{direct} part $D_m(k, n)$, containing the direct path and the early reflections, and a \textit{reverberant} part $R_m(k, n)$, which mainly contains the diffuse part of the reverberation.
 
 Assuming a Multichannel Auto-Regressive (MAR) model, $R_m(k, n)$ can be expressed as a multichannel Infinite Impulse Response (IIR) filter applied to the recorded signal:
 \begin{equation} 
@@ -322,19 +321,19 @@ $\rho$ & 0.8212    &\textbf{ 0.9848}   & 0.3705    			 & \textbf{0.7552}  \\
 
 Figure~\ref{fig:results1} shows the experiment result specified for all audio clips individually. Each boxplot represents the statistics of the mean estimation error (\textit{bias}) for a single audio clip subject to all 9 different IRs. The results are organized by method (rows) and dataset (columns). 
 Figure~\ref{fig:results2} aggregates all experiment results into the same plot, showing the statistical distribution of the \textit{bias} per method and dataset. In this case, the \textit{Oracle SID} results are omitted for clarity.
-The evaluation metrics for all methods are shown in Table~\ref{tab:results}.
+The evaluation metrics for all methods are shown in Table~\ref{tab:results}.\\
 
 According to the results, the proposed method clearly outperforms the baseline in the \textit{speech} dataset by a tenfold MSE improvement. For the \textit{drums} dataset, our method only outperforms the baseline regarding correlation. 
 Nevertheless, an inspection of the statistical distribution of mean estimation errors in Figure~\ref{fig:results2} brings in an interesting observation: 
 %the results of the presented method are much more concentrated around zero. In other words, 
-the variability of the results given by our method is substantially smaller than the results of the baseline system. This behaviour is consistent across datasets: the mean error distributions with the \textit{speech} dataset are approximately five times narrower than with the \textit{drums} dataset, regardless of the method. 
+the variability of the results given by our method is substantially smaller than the results of the baseline system. This behaviour is consistent across datasets: the mean error distributions with the \textit{speech} dataset are approximately five times narrower than with the \textit{drums} dataset, regardless of the method. \\
 %The wide distribution of results with the baseline method might be a side effect of the dynamic range expansion of Eq.~\ref{eq:expansion}.
 
 Moreover, all methods behave significantly better on the \textit{speech} dataset. The main reason might be the heterogeneity of the \textit{drums} dataset dataset with respect to dynamic range or timbre, and the potential application of audio effects of any kind.
 Furthermore, some audio clips of the \textit{drums} dataset contain sounds with a high degree of self-similarity, such as cymbal rolls or exaggerated reverbs; these characteristics would explain the outliers on the proposed method results.
 It is also interesting to notice the robustness of the proposed method against noise, present in the \textit{speech} dataset. 
 %Although the signal model does not contemplate noise explicitly, such robustness is consistent with the behaviour described in \cite{jukic2015group}.
-Such robustness is consistent with the behavior reported in \cite{jukic2015group}.
+Such robustness is consistent with the behavior reported in \cite{jukic2015group}.\\
 
 The performance of the \textit{ORACLE SID} method is close to ideal. The \textit{bias} is in all cases under 0.05 s (excepting a \textit{drums} clip containing mostly silence).
 This result validates the system identification, and allows, in practical terms, a direct evaluation of the proposed method against the groundtruth values.
