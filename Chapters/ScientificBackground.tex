@@ -1,4 +1,5 @@
-\chapter{Background}
+\chapter{Scientific Background}
+\label{chap:scientific}
 
 \section{Conventions}
 \subsection{Reference system}
@@ -52,8 +53,8 @@ Given the periodic nature of the azimuth angle, the descriptive statistic operat
 
 
 \subsection{Nomenclature}
-
-Through the document, we refer to time-domain signals with lowercase, e.g. $x(t)$, with $t$ as the time index. 
+\todo{is this name correct? }
+Throughout the Thesis, we refer to time-domain signals with lowercase, e.g. $x(t)$, with $t$ as the time index. 
 
 Time-domain signals transformed by the Short-Time Fourier Transform (STFT) are represented with uppercase, e.g. $X(k,n)$, where $k$ is the frequency bin index, and $n$ the time frame index. 
 
@@ -64,22 +65,19 @@ In the context of ambisonic, subscripts and superscripts are used in signal name
 
 Vector notation is represented with boldface characters, e.g. $\bm{X}(k,n)$.  When used, the way to construct the vectors will be specified. 
 
-\todo{revise all vector notations}
-
-
 
 
 \section{Spherical Harmonics}
 
 \subsection{Definition}
 
-Spherical harmonics are continuous functions defined on the sphere surface. Due to their mathematical properties, any spherical function can be decomposed as a combination of spherical harmonics, in what is known as the \textit{Spherical Harmonics Expansion} [Jarrett book, page 17].
+Spherical harmonics are continuous functions defined on the sphere surface. Due to their mathematical properties, any spherical function can be decomposed as a combination of spherical harmonics, in what is known as the \textit{Spherical Harmonics Expansion} \cite{jarrett2017theory}.
 
 
 
 
 %The spherical harmonic of \textit{order} $\ell>0$ and \textit{degree} $m$, with $|m| <= \ell$  in the direction \Omega is defined as:
-Many different spherical harmonic definitions exist in the literature, with minor variations among them. In the following, we will use the real-valued, fully normalized spherical harmonics as defined by [Zotter]: 
+Many different spherical harmonic definitions exist in the literature, with minor variations among them. In the following, we will use the real-valued, fully normalized spherical harmonics as defined by \cite{zotter2019ambisonics}: 
 
 \begin{equation}
 %ambisonics book 186
@@ -152,7 +150,7 @@ Figure~\ref{fig:sphericalharmonics} depicts all spherical harmonics from orders 
 \subsection{Spherical array processing}
 
 Let us consider a sound field captured with a spherical microphone array, which contains $Q$ capsules distributed around a spherical surface of radius $R$ at the positions $\Omega_q, 1 \leq q \leq Q$. 
-The captured frequency-domain signals $X_q(k)$ can be represented as the spherical harmonic domain signals $X_n^m(k)$ through the spherical harmonic transform of order $n$ and degree $m$ (Moreau et al., 2006):
+The captured frequency-domain signals $X_q(k)$ can be represented as the spherical harmonic domain signals $X_n^m(k)$ through the spherical harmonic transform of order $n$ and degree $m$ \cite{moreau20063d}:
 
 \begin{equation}
 	X_n^m(k) = \sum_{q=1}^{Q} X_q(k) Y_n^m(\Omega_q) \Gamma_n(kR),
@@ -160,14 +158,14 @@ The captured frequency-domain signals $X_q(k)$ can be represented as the spheric
 \end{equation}
 \todo{is that actually valid? or Y should be the complex-valued spherical harmonics?}
 
-where the term $\Gamma_n(kR)$ models the radial transfer function, and depends on the microphone geometry[SOME REFS: moreau, rafaely]. There are several possible sampling schemes of capsules along the sphere, each one having different properties; the reader is redirected to [rafaely] for a deeper insight. \\
+where the term $\Gamma_n(kR)$ models the radial transfer function, and depends on the microphone geometry. There are several possible sampling schemes of capsules along the sphere, each one having different properties; the reader is referred to  \cite{rafaely2004analysis} for a deeper insight. \\
 
-By using this model, the maximum spherical harmonic order $N$ that can be retrieved with negligible spatial aliasing depends on the number of microphone capsules [moreau]:
+By using this model, the maximum spherical harmonic order $N$ that can be retrieved with negligible spatial aliasing depends on the number of microphone capsules \cite{moreau20063d}:
 \begin{equation}
 	N \geq (Q + 1)^2.
 \end{equation}
 
-Furthermore, the sphere radius $R$ has also an effect on the operational bandwidth of the microphone. More precisely, for a given spherical harmonic order $n$, the maximum aliasing-free operational frequency is given by [moreau, rafaely]:
+Furthermore, the sphere radius $R$ has also an effect on the operational bandwidth of the microphone. More precisely, for a given spherical harmonic order $n$, the maximum aliasing-free operational frequency is given by:
 \begin{equation}
 	f_{max} = \frac{n c} {2 \pi R},
 	\label{eq:falias}
@@ -185,11 +183,11 @@ with $c$ being the sound speed.
 
 \subsection{Ambisonics Theory}
 
-Ambisonics is a spatial sound recording and playback technology initially developed during the 1970's, and further expanded into its modern formulation around the 2000s [ZOTTER, page 53].  
+Ambisonics is a spatial sound recording and playback technology initially developed during the 1970s \cite{gerzon1973periphony}, and further expanded into its modern formulation around the 2000s \cite{daniel2000representation}.  
 Ambisonics is based on the idea of decomposing a sound field into its spherical harmonic representation. 
 
-Originally, the decomposition was limited to first-order spherical harmonics, mainly due to practical limitations [CITE GERZON], as the so-called \textit{First Order Ambisonics} (FOA). The technique was later formalized for arbitrary spherical harmonic orders, known as \textit{Higher Order Ambisonics} or HOA [CITE DANIEL].
-In general, with the term Ambisonics we will be referring to the latter definition.\\
+Originally, the decomposition was limited to first-order spherical harmonics, as the so-called \textit{First Order Ambisonics} (FOA); mainly because of practical limitations. The technique was later formalized for arbitrary spherical harmonic orders, known as \textit{Higher Order Ambisonics} (HOA).
+In general, with the term \textit{ambisonics} we will be referring to the latter definition.\\
 
 \subsubsection{Ambisonic encoding}
 
@@ -214,15 +212,15 @@ Furthermore, the process of multiplying the signal $S$ by the ambisonic coeffici
 
 Although the term \textit{B-Format} was initially introduced as an alternative name for first-order ambisonic signals [gerzon, tesis de daniel], it is nowadays common to use it as a synonim of ambisonic signals, without any order restriction. We will use the latter acception in what follows.
 
-Historically, the name \textit{B-Format} was used as an opposite of \textit{A-Format}, which describes the signals recorded by a tetrahedral microphone array [cite gerzon?]. The tetrahedron is the simplest and most common form of spherical microphone arrays (\textit{ambisonic microphones}) with uniform capsule distribution. Again, the term \textit{A-Format} is also currently employed for referring to the signals recorded by any spherical microphone array, regardless of the number or arrangement of capsules.
+Historically, the name \textit{B-Format} was used as an opposite of \textit{A-Format}, which describes the signals recorded by a tetrahedral microphone array \cite{gerzon1975design}. The tetrahedron is the simplest and most common form of spherical microphone arrays (indistinctly referred to as ambisonic microphones) with uniform capsule distribution. Again, the term \textit{A-Format} is also currently employed for referring to the signals recorded by any spherical microphone array, regardless of the number or arrangement of capsules.
 
-Likewise, the process of signal conversion from the spatial domain (microphone capsules) to the spherical harmonic domain (ambisonic signals), as in Eq.~\ref{eq:a2b}, is known as \textit{A-B conversion}. A number of different approaches have been developed for this process, and the interested reader is referred to [\todo{find ref}] for more information.
+Likewise, the process of signal conversion from the spatial domain (microphone capsules) to the spherical harmonic domain (ambisonic signals), as in Eq.~\ref{eq:a2b}, is known as \textit{A-B conversion}. A number of different approaches have been developed for this process, and the interested reader is referred to \cite{moreau20063d} for more information.
 
 In practice, there are two alternative ways to generate ambisonic signals. The first one is the \textit{synthesis}, based on the direct application of ambisonics encoding (Eq.~\ref{eq:encoding}) to a monophonic signal. The second one is the \textit{recording} with a spherical microphone array, followed by the aforementioned domain conversion. \\
 
 
 \subsubsection{Ambisonic Decoding}
-Conversely, the sound field reconstruction is performed by the \textit{ambisonic decoding} operation. This process is equivalent to weight-and-sum beamforming in the spherical harmonic domain, and it is sometimes also referred to as the \textit{virtual microphone} technique [ambisonic book].
+Conversely, the sound field reconstruction is performed by the \textit{ambisonic decoding} operation. This process is equivalent to weight-and-sum beamforming in the spherical harmonic domain, and it is sometimes also referred to as the \textit{virtual microphone} technique \cite{zotter2019ambisonics}.
 
 Let us consider a loudspeaker located at the angular position $\Omega_p$. In accordance with Eq.~\ref{eq:encoding}, the signal feed $P$ is \textit{decoded} from the ambisonic signal as:
 \begin{equation}
@@ -234,7 +232,7 @@ where $\alpha_n$ is a weighting factor which accounts for the beam directivity.
 There are several standard weightings used for different purposes; their values are shown in Table~\ref{tab:alpha}, and the first-order directive patterns are plotted in Figure~\ref{fig:alpha}.
 
 \begin{table}[t]
-\caption{Ambisonic decoding: standard values of $alpha_n$ weightings. Extracted from \cite{daniel2000representation}.}
+\caption{Ambisonic decoding: standard values of $alpha_n$ weightings. Adapted from \cite{daniel2000representation}.}
 \begin{center}
 \begin{tabular}{cccccc}
 \toprule
@@ -336,16 +334,16 @@ Finally, the \textit{Furse-Malham} (or \textit{FuMa}) normalization only differs
 	\end{cases}	
 \end{equation} 
 
-Each of the normalization schemes has its own particularities. For instance, \textit{N3D} is the most mathematically straightforward, and spherical harmonics defined in that way can be directly used for both encoding and decoding (as in Eqs~\ref{eq:encoding} and Eq.~\ref{eq:decoding}) -- however, from a sound engineer point of view, other normalization schemes with maximum values below the unity might be preferred, such as \textit{SN3D}. Besides this, \textit{FuMa} has been historically the default normalization \todo{[gerzon?]}, while the more modern \textit{N3D} and \textit{SN3D} were popularized after Daniel \todo{[daniel]}. \\
+Each of the normalization schemes has its own particularities. For instance, \textit{N3D} is the most mathematically straightforward, and spherical harmonics defined in that way can be directly used for both encoding and decoding (as in Eqs~\ref{eq:encoding} and Eq.~\ref{eq:decoding}) -- however, from a sound engineer point of view, other normalization schemes with maximum values below the unity might be preferred, such as \textit{SN3D}. Besides this, \textit{FuMa} has been historically the default normalization \cite{gerzon1985ambisonics}, while the more modern \textit{N3D} and \textit{SN3D} were popularized after \cite{daniel2000representation}. \\
 
 \begin{figure}[hbt!]
   \includegraphics[width=\textwidth]{Figures/ScientificBackground/normalization.png}
-  \caption{Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from T. Carpentier [\todo{cite}].}
+  \caption{Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from \cite{carpentier2017ambisonic}.}
   \label{fig:normalization}
 \end{figure}
 
 
-As a summary, Figure~\ref{fig:normalization} displaysthe different normalization schemes. The reader is referred to \todo{[thibaut]} for an extensive review on the topic.
+As a summary, Figure~\ref{fig:normalization} displays the different normalization schemes. The reader is referred to \cite{carpentier2017ambisonic} for an extensive review on the topic.
 
 
 
@@ -358,13 +356,13 @@ The \textit{ACN} (from \textit{Ambisonic Channel Number}) scheme follows from th
 	i = n^2 + n + m 
 \end{equation}
 
-Historically, first-order ambisonic audio has followed what it might be called \textit{traditional B-Format} channel ordering [ambisonics in multichannel broadcasting and video]. 
-By following this scheme, the four channels of a FOA signal $S_n^m$ are referred to by the axis where the corresponding spherical harmonic steers, plus the name $W$ for the zeroth order component:
+Historically, first-order ambisonic audio has followed what it might be called \textit{traditional B-Format} channel ordering \cite{gerzon1985ambisonics}. 
+By this scheme, the four channels of a FOA signal $S_n^m$ are referred to by the axis where the corresponding spherical harmonic steers, plus the name $W$ for the zeroth order component:
 \begin{equation}
 	{S_n^m(\Omega)}^{\text{(FuMa CO)}} = [W, X, Y, Z]
 \label{eq:fumaordering}
 \end{equation}
-with:
+where:
 \begin{equation}
 \begin{aligned}
 	&W = S_0^0(\Omega) \\
@@ -374,7 +372,7 @@ with:
 \end{aligned}	
 \end{equation}
 
-This nomenclature was extended to second and third order by Malham, and is currently known as the \textit{Furse-Malham} or \textit{FuMa} channel ordering. The channel names use all english alphabet letters from K to Z in third order and, although there would be enough letters to go up to fourth order, the unconvenience of the system was evident [Higher order Ambisonic systems].
+This nomenclature was extended to second and third order, and is currently known as the \textit{Furse-Malham} or \textit{FuMa} channel ordering. The channel names use all english alphabet letters from K to Z in third order and, although there would be enough letters to go up to fourth order, the unconvenience of the system was clear \cite{malham2003higher}.
 Figure~\ref{fig:normalization} shows the equivalence between \textit{FuMa} (\textit{"letter code"}) and \textit{ACN} channel names.\\
 
 
@@ -390,15 +388,15 @@ Anyhow, the \textit{classical B-Format} channel naming and ordering is still wid
 
 \section{Parametric Spatial Audio Analysis}
 
-Trough parametric analysis, sound fields may be described in terms of a small amount of sound sources and associate parameters. Such representation might reduce to a great extent the complexity of processing methods [book jarrett].
+Trough parametric analysis, sound fields may be described in terms of a small amount of sound sources and associate parameters. Such representation might reduce to a great extent the complexity of processing methods \cite{jarrett2017theory}.
 
-One of the most successful sound field parametric models is DirAC[pulkki2007 dirac]. Originally conceived as a method for impulse response processing and spatial sound reproduction [merima2005], it has been widely used in many different audio-related problems [\todo{find some references!}].
+One of the most successful sound field parametric models is DirAC \cite{Pulkki07}, which was originally conceived as a method for impulse response processing and spatial sound reproduction \cite{merimaa2005spatial}.
 
-DirAC (acronym for \textit{Directional Audio Coding}) is a perceptually motivated time-frequency (TF) domain method, based on the assumption that any sound field may be reproduced with high perceptual quality by considering two parameters: the sound field diffuseness and the most prominent sound \textit{Direction-of-arrival} (DOA) [cite parametric book]. \\
+DirAC (acronym for \textit{Directional Audio Coding}) is a perceptually motivated time-frequency (TF) domain method, based on the assumption that any sound field may be reproduced with high perceptual quality by considering two parameters: the sound field diffuseness and the most prominent sound \textit{Direction-of-Arrival} (DOA) \cite{pulkki2018parametric}. \\
 
 
 
-Let us consider a \textit{N3D}-normalized first-order ambisonic signal in time-frequency domain, $S_n^m(k, n)$. 
+Let us consider a \textit{SN3D}-normalized first-order ambisonic signal in time-frequency domain, $S_n^m(k, n)$. 
 For the sake of clarity, we will use in this section \textit{FuMa} channel notation and ordering (Eq.~\ref{eq:fumaordering}):
 \begin{equation}
 	S_n^m(k, n) = [W(k, n), X(k, n), Y(k, n), Z(k, n)]
@@ -414,7 +412,7 @@ as well as the sound \textit{pressure-gradient} (or \textit{velocity}) $\pmb{U}(
 \end{equation}
 where $\rho_0$ is the mean density of the medium, and $c$ is the speed of sound.\\ 
 
-The \textit{active intensity} $\pmb{I}(k,n)$, defined as the amount of transmitted acoustic energy, can be expressed in terms of sound pressure and velocity [fahy2002]:
+The \textit{active intensity} $\pmb{I}(k,n)$, defined as the amount of transmitted acoustic energy, can be expressed in terms of sound pressure and velocity \cite{fahy1990sound}:
 \begin{equation}
 	\begin{aligned}
 	\pmb{I}(k,n) &=  \Re\{P^*(k,n)\pmb{U}(k,n)\} \\
@@ -430,16 +428,16 @@ An estimate of the instantaneous DOA $\Omega(k,n)$ can be extracted from the int
 \end{equation}
 with $\angle$ representing the spherical angle operator of a cartesian vector. The result of this computation must be understood as the direction of the net energy flow, which in the case of a single plane-wave will correspond to the source position. \\
 
-Another useful parameter is the \textit{energy density} $E(k,n)$ [stazial 1996]:
+Another useful parameter is the \textit{energy density} $E(k,n)$ \cite{stanzial1996reactive}:
 \begin{equation}
 	\begin{aligned}
-		E(k,n) &= \frac{|P(k,n)|^2 + \|\pmb{U}(k,n)\|^2}{2\rho_0 c^2} \\ 
-		&=  \frac{|W(k,n)|^2 + \| [X(k,n), Y(k,n), Z(k,n)] \|^2}{2\rho_0 c^2}.
+		E(k,n) &= \frac{1}{2\rho_0 c^2} |P(k,n)|^2 + \frac{1}{2} {\|\pmb{U}(k,n)\|^2} \\
+		&=  \frac{1}{2\rho_0 c^2} \Big(|W(k,n)|^2 + \| [X(k,n), Y(k,n), Z(k,n)] \|^2\Big).
 	\end{aligned}
 	\label{eq:energydensity}
 \end{equation}\\
 
-Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound intensity and  energy density [merimaa2005]:
+Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound intensity and  energy density \cite{merimaa2005spatial}:
 \begin{equation}
 	\begin{aligned}
 		\Psi(k,n) &= 1 - \frac{ \| \langle \pmb{I}(k,n) \rangle \| }{ c \langle E(k,n) \rangle } \\
@@ -448,11 +446,10 @@ Finally, the \textit{diffuseness} $\Psi(k,n)$ can be computed from the sound int
 \label{eq:psidefinition}
 \end{equation}
  
- where the symbols $\langle \cdot \rangle$ represent the expectation operator, which is usually implemented as time-domain averaging. \todo{check equation}
+ where the symbols $\langle \cdot \rangle$ represent the expectation operator, which is usually implemented as time-domain averaging. 
 
 Even though Eq.~\ref{eq:psidefinition} (known as \textit{DirAC's diffuseness}) is one of the most common ambisonic diffuseness estimators, several alternative formulations exist. 
-Other diffuseness estimation procedures include the \textit{coefficient of variation method} [ahonen, pulkki, del galdo] and the more recent \textit{COMEDIE} estimator [epain, craig]. 
-
+Other diffuseness estimation procedures include the \textit{coefficient of variation method} \cite{ahonen2009diffuseness} and the more recent \textit{COMEDIE} estimator \cite{epain2016spherical}. 
 In any case, in what follows, the term \textit{diffuseness} and the symbol $\Psi$ will refer by default to Eq.~\ref{eq:psidefinition}. 
 
 As a mathematical convenience, we will define the \textit{B-Format coherence} as the complement of the diffuseness:
@@ -562,7 +559,7 @@ where $h_D(t)$ and $h_R(t)$ represent the \textit{direct} (direct path plus earl
 The room impulse response is a function of both the source and the receiver locations. Different levels, delays and directions of direct path and early reflections can obtained from measurements in the same room. However, it is generally assumed that the late reverberation is fixed for a given room, regardless of source/receiver positions. \\
 
 Room reverberation plays an important role in psychoacoustics. While early reflections are usually perceived together with the direct path as a single auditory event, due to the \textit{precedence effect} \cite{haas1972influence}, late reverberation has often an influence on the received signal. In the specific case of speech, late reverberation is associated with a loss of intelligibility \cite{braun2018speech}.
-In the context of spatial perception, it has been shown that early reflections help the localization and externalization of sources [\todo{Improving Externalization in Ambisonic Binaural Decoding}], while the late reverberation is associated with a spaciousness perception of the room \cite{begault20003}. \\
+In the context of spatial perception, it has been shown that early reflections help the localization and externalization of sources \cite{rudrich2019improving}, while the late reverberation is associated with a spaciousness perception of the room \cite{begault20003}. \\
 
 
 There are a number of measurable parameters which help to characterise room acoustics. 
@@ -634,7 +631,7 @@ In order to overcome potential interoperatibility and reusability issues, the \t
 Despite that SOFA was initially created with a focus on \textit{Head-Related Impulse Response} (HRIR) data, its structure is very convenient to any kind of multi-location impulse responses, including ambisonics.
 
 
-\section{Signal Model}
+\section{Signal Models}
 
 
 Let us consider a sound source represented by the signal $s(t)$, located in a given acoustic enclosure characterised by its room impulse response $h(t)$. The resulting reverberant signal $x(t)$ can be therefore described as the \textit{convolutive mixture} of the source and the RIR: 
@@ -671,6 +668,6 @@ where $L_h$ is the length of the filter $H(k, n)$ in time frames.
 
 
 
-\section{Practical Considerations}
+%\section{Practical Considerations}
 % TODO I don't remember what is this
 
