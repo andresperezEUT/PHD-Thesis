@@ -1,46 +1,113 @@
 \chapter{Introduction}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Motivation}
 
-\section{Problem description and motivation}
-
-\subsection{3D arrays}
-
-Sound propagates in 3D: need for 3D mic arrays to capture spatial properties
+Ambisonics is a spatial audio theory based on the directional decomposition of the sound field. Conceived in its primal form during the 70s \cite{gerzon1973periphony}, it was not until the 21st century, with a modern mathematical formulation \cite{daniel2000representation} and much more computational power available, that it definitely drew the attention of the research community. 
 
 
+%\begin{figure}[t]
+%  \includegraphics[width=\textwidth]{Figures/Introduction/hardware.jpg}
+%    \caption{An ambisonic hardware processor, manufactured by Audio \& Design Recording Ltd. Source: \href{https://commons.wikimedia.org/w/index.php?curid=11813129}{Relen, Wikimedia Commons}}
+%  \label{fig:hardware}
+%\end{figure}
 
-\subsection{spherical microphone arrays}
+Nevertheless, the greatest contributor to the current interest in ambisonics has been the rise of Virtual Reality (VR) in recent years.
+Although VR focuses primarily on visual cues, the immersive experience might be greatly enhanced by spatial audio \todo{CITE REQUIRED, begault?}. In this context, Ambisonics has been rapidly adopted as \textit{de facto} standard for spatial audio transmission, supposedly due to a variety of factors:
 
-\begin{itemize}
-  \item even distribution of capsules
-  \item mathematical convenience: spherical harmonics
-\end{itemize}
+\begin{description}
 
+  \item [Layout independence] As opposed to other audio spatialization techniques that rely on specific playback layouts, ambisonics makes use of an intermediate sound field representation, known as \textit{B-Format} (or just ambisonic audio). This representation, often referred to as \textit{scene-based}, can be then further processed to match any playback configuration. 
 
+  \item [Recording device independence] Regardless of the specific characteristics of an ambisonic microphone, the recorded signal is usually converted into B-Format, which effectively represents the standard exchange format. 
 
-\subsection{ambisonics}
+  \item [Ease of manipulations] Signal-independent transformations of the ambisonic stream, and specifically rotations, are computationally inexpensive.
 
+  \item [Binaural transformation] Spatial audio in VR is mostly consumed as binaural; methods for ambisonic to binaural conversion have been known for a long time \todo{cite?}. Furthermore, VR headsets can easily provide head rotation information, which can be used in combination with scene rotations to provide head-locked audio, which greatly improves immersiveness \todo{cite required!}. This is a key feature of ambisonics when compared to static binaural recordings.
 
-advantages on the vr/ar context
-\begin{itemize}
-  \item device independent
-  \item intermediate storage format
-  \item signal-independent transformations are easy
-  \item de-facto standard for vr
-\end{itemize}
+\end{description}
 
-\subsection{Current limitations of vr/ar production}
-
-
-\section{Goals}
-
-Research question: 	How can we exploit the characteristics of ambisonic recordings in order to extract signal-dependent, meaningful information from them? 
+Coming back to the Virtual Reality popularity, the following three events might be representative of the growth that it experienced in the second half of the 2010s: 
+(i) the billionaire acquisition by Facebook of the VR headset manufacturer Oculus, in March 2014 \cite{facebookoculus}; 
+(ii) the Time cover page devoted to VR: \textit{""The surprising joy of Virtual Reality. And why it's about to change the world"} (August 2015) \cite{time};
+and (ii) M. Zuckerberg's invited talk at the \textit{Samsung Unpacked} event within the World Mobile Congress 2016 in Barcelona: \textit{"VR is the next platform where anyone can experience anything they want"} \cite{bbcnews}.
 
 
-\section{Context}
-\label{sec:context}
+\begin{figure}[t!]
+  \includegraphics[width=\textwidth]{Figures/Introduction/num_mics_ticks.png}
+  \caption{Number of ambisonic microphones released in last years (from \cite{List_of_Ambisonic_hardware}). From left to right, the vertical lines correspond to (i) Oculus acquisition, (ii) Time cover page on VR, (iii) M. Zuckerberg's speech in MWC, and (iv) Jaunt announcement of shift towards AR.}
+  \label{fig:nummics}
+\end{figure}
 
-Different levels of applications:
+
+\begin{table}[t!]
+\centering
+\caption{List of ambisonic microphones released in recent years (from \cite{List_of_Ambisonic_hardware}).}
+\begin{tabular}{cccc}
+  \toprule
+Manufacturer & Model   & Year & Order \\
+\midrule
+MH Acoustics & EigenMike   & 2013                     & 4                         \\
+Brahma       & (Brahma)                                                   & 2014                     & 1                         \\
+Sennheiser   & Ambeo                                                      & 2016                     & 1                         \\
+Twirling     & 720 VR    & 2016                     & 1                         \\
+Zoom         & H2n                                                        & 2016                     & 1                         \\
+Zylia        & ZM-1                                                       & 2017                     & 3                         \\
+Twirling     & 720 Lite    & 2017                     & 1                         \\
+Ricoh        &  TA-1        & 2017                     & 1                         \\
+Nevaton      & Nevaton VR                                                 & 2017                     & 1                         \\
+Rode         &  Rode NT-SF1 & 2018                     & 1                         \\
+CoreSound    &  OctoMic     & 2018                     & 2                         \\
+Zoom         & H3-VR                                                      & 2018                     & 1                         \\
+Brahma       & Brahma 8                                                   & 2019                     & 2                         \\
+Voyage Audio & Spatial Mic  & 2019    & 2  \\
+\bottomrule
+\end{tabular}
+\label{tab:nummics}
+\end{table}
+
+
+Given this context, many microphone manufacturers and audio-related companies have followed the industry trend in the search for new markets. Only in the interval 2016-2019, 12 different ambisonic microphones have reached the market (Figure~\ref{fig:nummics}) --- a greater amount than all previous existing ambisonic microphones together. A comprehensive list of recent ambisonic microphone releases is shown in \ref{tab:nummics}.
+
+
+At the present time, however, the high expectations in VR have significantly lowered, as shown in Figure~\ref{fig:vrfunding}. This is due to a variety of reasons, including lack of interesting content and the high production cost of the headsets \cite{fortune}. The change of focus of Jaunt (formerly one of the biggest VR film production companies) towards Augmented Reality (AR), as of October 2018, might be a paradigmatic example of this tendency \cite{theverge}. 
+
+\begin{figure}[t!]
+  \includegraphics[width=\textwidth]{Figures/Introduction/vr_funding.png}
+  \caption{Venture investments in VR in the period 2014-2018. Adapted from \cite{fortune}.}
+  \label{fig:vrfunding}
+\end{figure}
+
+
+
+In any case, the current high availability and affordability of ambisonic microphones brings new challenges from the signal processing perspective. More specifically, ambisonic microphones conform a subset of near-coincident spherical microphone arrays, a category which possesses some specific characteristics.
+
+Although the VR momentum has also reached spherical microphone array processing, many challenges remain still opened, and the number of research works specifically focusing on such geometry are still low. 
+Besides that, the growing interest in AR posses new problems related to acoustical signal processing. But since ambisonics is still the standard choice for immersive audio, existing solutions might be successfully adapted. 
+
+Lastly, the advance in signal processing methods for ambisonics can give rise to applications that enhance the work of immersive audio producers, providing meaningful information about the recorded scenes and automating some of the repetitive tasks, thus allowing a more flexible and creative workflow.
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem Description}
+
+\begin{figure}[hbt]
+  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1.png}
+  \caption{\todo{todo caption}}
+  \label{fig:scheme1}
+\end{figure}
+
+EXPLAIN PARTS OF FIGURE:
+
+Different levels of applications in multichannel acoustic signal processing (inspired by \cite{jarrett2017theory})
 
 \begin{itemize}
 	\item Acoustic Parameter Estimation (low level, audio2data)
@@ -65,21 +132,32 @@ Different levels of applications:
 	\end{itemize}
 \end{itemize}
 
-\begin{figure}[hbt]
-  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1.png}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Scientific Objectives}
+
+preguntas cientificas concretas, coincidiendo con contribuciones
+
+(base para la conclusion)
+
+%\section{Goals}
+%
+%Research question: How can we exploit the characteristics of ambisonic recordings in order to extract signal-dependent, meaningful information from them? 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Outline}
+
+\begin{figure}[t]
+  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1_NUMBERS.png}
   \caption{\todo{todo caption}}
-  \label{fig:scheme1}
+  \label{fig:scheme1_numbers}
 \end{figure}
-
-
-\section{Outline and main contributions}
-
-\subsection{Thesis structure}
-
 
 The present Thesis is organised as follows. 
 
 \textbf{Chapter~\ref{chap:scientific}} introduces the basic concepts that will be developed throughout the Thesis, including spherical harmonics and ambisonics, coherence estimation, parametric analysis or room acoustics. The Chapter also defines the signal models and the mathematical terminology.
+
 
 Chapters~\ref{chap:rt60}, \ref{chap:coherence} and \ref{chap:seld2019} develop the most significant academic contributions of the Thesis. 
 \textbf{Chapter~\ref{chap:rt60}} presents a novel method for blind reverberation time in ambisonic recordings. To the best of our knowledge, this is the first method proposal specifically focusing on that problem.   The method is based on a Multichannel Auto-Regressive model of the late reverberation, which allows for an effective dereverberation of the ambisonic sound scene, and enables computation of the reverberation time from an estimation of the room impulse response. The evaluation metrics show a method performance similar to other state-of-the-art methods. 
@@ -91,14 +169,16 @@ Finally, \textbf{Chapter~\ref{chap:data}} presents some libraries and software u
 In order to place the different chapters within the problem context described in Section~\ref{sec:context}, we add to Figure~\ref{fig:scheme1} the Chapter numbers with our contributions, obtaining Figure~\ref{fig:scheme1_numbers}.
 
 
-\begin{figure}[hbt]
-  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1_NUMBERS.png}
-  \caption{\todo{todo caption}}
-  \label{fig:scheme1_numbers}
-\end{figure}
 
-%\newpage
-\subsection{List of Publications}
+
+\section{Context}
+\label{sec:context}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Contributions}
+
 
 In the following list we show the main scientific contributions of the Thesis, organised by Chapters:
 
@@ -118,6 +198,8 @@ In the following list we show the main scientific contributions of the Thesis, o
 	\textbf{A hybrid parametric-deep learning approach for sound event localization and detection.}
 	\underline{A. P\'erez-L\'opez}, E. Fonseca and X. Serra.
 	In \textit{Proceedings of the Detection and Classification of Acoustic Scenes and Events 2019 Workshop (DCASE2019)}.
+	
+	\todo{DCASE2020}
 	
 	\item Chapter 6:\\
 	\textbf{Ambiscaper: A Tool for Automatic Generation and Annotation of Reverberant Ambisonics Sound Scenes}.\\
