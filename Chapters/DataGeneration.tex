@@ -1,9 +1,214 @@
 \chapter{Data generation and storage}
 \label{chap:data}
 
+\section{Introduction}
+\label{sec:intro_data}
+
+This chapter gathers several proposals related with the creation, storage and transmission of ambisonic data for research purposes. The main objective of the contributions described here is the support for the generation of parametrizable ambisonic datasets, using both synthetic and recorded materials, and specifically emphasizing the usage of Room Impulse Responses.\\ 
+
+Most of the contributions listed here (and also most of the code developed for this thesis) have been implemented in Python. Indeed, Python has recently become one of the most used programming languages worldwide \cite{theoverflow, PYPL, TIOBE}; as shown also in Figure~\ref{fig:popularity}.\\
+
+\begin{figure}
+\label{fig_architecture}
+  \centering
+    \includegraphics[width=\textwidth]{Figures/DataGeneration/projections-1-1400x1200.png}
+    \caption{2018 projections of future internet traffic for major programming languages. Adapted from \cite{theoverflow}.}
+    \label{fig:popularity}
+\end{figure}
+
+
+One of the reasons behind this tendency shift is the popularity of the language among machine learning and data science communities, fields where Python holds the first place by usage \cite{githubblog}. 
+Since data-driven paradigms currently conform the state-of-the-art of many applied sciences, including audio signal processing, the availability of convenience Python packages and libraries is therefore of the highest interest to the research community. 
+
+It is important to remark the predominant position that Matlab has always had regarding scientific computing. Indeed, it is still the tool of choice for many researchers, and the availability of libraries is accordingly very high. 
+But the aforementioned tendency shift towards Python causes, as a side effect, the lack of many tools developed in Matlab by the research community.
+
+Although Matlab code can be called and executed from Python, in practice this approach is suboptimal under several criteria. A better solution in the long run is the effective port of the code towards native Python code. Some of the libraries presented in this Chapter are partially or totally  motivated by this scenario.
+
+	
+
+\section{MASP: a Python library for multichannel acoustic signal processing}
+
+\subsection{Description}
+
+The Multichannel Acoustic Signal Processing (\textit{MASP}) is a Python library consisting of a collection of methods related with acoustics and microphone array processing.
+The library is mostly a transcoding from several Matlab libraries by A. Politis\cite{politis2016microphone, github_politis}. 
+It can be conveniently installed using \textit{pip}.
+
+\textit{MASP} implements a variety of methods for the simulation and analysis of reverberant acoustic scenes, with emphasis on microphone arrays with spherical geometries.More specifically, MASP is structured in submodules, with the following structure :
+
+\begin{description}
+
+	\item [Array Response Simulator] Simulation ofspherical microphones:
+	\begin{itemize}
+		\item Rigid/open configurations.
+		\item Scattering simulation.
+		\item Arbitrary capsule distances, positions and directivities.
+	\end{itemize}
+	
+	\item [Shoebox Room Model] Fast implementation of the Image Source Method \cite{imagemethod}:
+	\begin{itemize}
+		\item Convex 3D rooms.
+		\item Arbitrary number of sources and receivers, with arbitrary positions, orientations and directivities.
+		\item ISM expansion limited by order or time.
+		\item Frequency-dependent wall absorption.
+		\item RIR with spherical harmonic expansion.
+	\end{itemize}
+	
+	\item [Spherical Array Processing] Transformation and analysis of signals measured with a spherical microphone array:
+	\begin{itemize}
+		\item A2B conversion with theoretical or measured filters.
+		\item Signal-independent beamforming.
+		\item Signal-dependent and adaptive beamforming.
+		\item Direction of Arrival estimation.
+		\item Diffuseness estimation.
+	\end{itemize}
+	
+	\item [Spherical Harmonic Transform] Mathematical convenience tools.
+\end{description}
+The library implements a Unit Testing system, which numerically assesses the validity of the methods. 
+More specifically, each function test calls the equivalent Matlab code under the hood. The numeric result is then sent back to Python, whereit is evaluated against the own result.\\
+
+Two example applications of the library are shown in Figures~\ref{fig:array_response} and \ref{fig:sht_filters}.
+In Figure~\ref{fig:array_response} , obtained with the Array Response Simulator package, the frequency response of a spherical microphone array to an impinging plane-wave with varying incidence angle is shown. The microphone array consists of a 2nd order supercardioid and a 3rd order hypercardioid, located at opposite directions of an open sphere, and both of them facing to the front direction. \\
+
+\begin{figure}[h!]
+\label{fig_architecture}
+  \centering
+    \includegraphics[width=\textwidth]{Figures/DataGeneration/array_response.png}
+    \caption{Frequency response of an arbitrary spherical array.}
+    \label{fig:array_response}
+\end{figure}
+
+
+One of the features of the Spherical Array Processing package is shown in Figure~\ref{fig:sht_filters}. The plot shows the evaluation of radial filters $\Gamma_n(kR)$ for an arbitrary spherical array, generated by inverting the theoretical response of the array \cite{Bertet2006}. 
+The evaluation is performed following the metrics presented in the same paper, which compare spatial correlation, level difference and maximum amplification with respect to the ideal case. \\
+
+\begin{figure}[h!]
+\label{fig_architecture}
+  \centering
+    \includegraphics[width=1\textwidth]{Figures/DataGeneration/sht_filters.png}
+    \caption{Evaluation of radial filters for an arbitrary spherical microphone array.}
+    \label{fig:sht_filters}
+\end{figure}
+
+\subsection{Related software}
+
+There exists another recent Python library which covers a similar scope: \textit{pyroomacoustics} \cite{scheibler2018pyroomacoustics}.
+This framework provides an object-oriented interface with two main application scopes: allow RIR simulation of complex rooms based on the image source method, and provide a reference implementation of standard microphone array processing algorithms. 
+
+Although some of the features are common to both libraries, there is a significant difference regarding their target usage. While \textit{MASP} primarily focuses on spherical geometries, \textit{pyroomacoustics} is more concerned about arbitrary room geometries and computational performance. 
+Therefore, both libraries might be considered as complementary to some extent. 
+A comparative list of their features is shown in Table~\ref{tab:masp_features}.
+
+
+
+\begin{table}[th!]
+\centering
+\caption{Features of \textit{MASP} compared to \textit{pyroomacoustics}.}
+
+\begin{tabular}{cccc}
+  \toprule
+Package & Feature &  MASP & PRA \\
+\midrule
+Shoebox & Convex 3D room         & \checkmark	& \checkmark \\
+Room    & Non-convex 3D room     & -    			& \checkmark   \\
+Model   & Arbitrary \#sources    & \checkmark   & \checkmark      \\
+ & Arbitrary \#receivers, arrays & \checkmark   & \checkmark   \\
+& ISM by max\_order                                 & \checkmark                              & \checkmark                              \\
+& ISM by max\_time                                  & \checkmark                              & -                              \\
+& Wall absorption                                   & \checkmark                              & \checkmark                              \\
+& Frequency-dependent absorption                    & \checkmark                              & -                              \\
+& Plot methods                                      & -                              & \checkmark                              \\
+& RIR rendering                                     & \checkmark                              & \checkmark                              \\
+& Audio simulation                                  & \checkmark                              & \checkmark                              \\
+& Acoustic descriptor estimation                    & \checkmark                              & -                              \\
+& Microphone orientation                            & \checkmark                              & -                              \\
+& Custom microphone directivity                     & \checkmark                              & -                              \\
+& RIR Spherical Harmonic Expansion                  & \checkmark                              & -                              \\
+
+\midrule
+Array   	& Rigid spherical arrays   & \checkmark                              & -     \\
+Simulator 	& Arbitrary capsule geometries & \checkmark   & -  \\
+           	& Recorded array IRs  & \checkmark                              & - \\
+\midrule
+Spherical & A2B conversion   & \checkmark      & -       \\
+Processing  & Beamforming          		 & \checkmark      & \checkmark                              \\
+ & Plane-wave decomposition         		 & \checkmark      & -                              \\
+ & Nullformer                            & \checkmark      & -                              \\
+& Adaptive Beamforming                   & \checkmark      & -                              \\
+ & Adaptive Filtering             		 & -               & \checkmark                              \\
+& DoA Estimation                         & \checkmark      & \checkmark                              \\
+ & Diffuseness Estimation             	 & \checkmark      & -                              \\
+ & Diffuse-field coherence               & \checkmark      & -                              \\
+ & Blind Source Separation               & -               & \checkmark          \\                   
+\bottomrule
+ 
+\end{tabular}
+\label{tab:masp_features}
+\end{table}
+
+
+
+\section{SOFA}
+
+\subsection{Problem statement}
+
+The availability of recorded room impulse responses is of great importance to many acoustic signal processing problems. 
+Many different RIRs can be obtained from the same room, just by varying the position of the source and the receiver; when the number of source and receiver positions increases, the total amount of measurements increases geometrically. 
+Besides that, the final format and organisation of the produced data (not only the RIR themselves, but also the source/position annotations) can be arbitrarily different when produced by different groups of people.
+
+In order to overcome potential interoperatibility and reusability issues, the \textit{Spatially Oriented Format for Acoustics} (SOFA) convention \cite{majdak2013spatially}, also known as the \textit{AES-69} standard \cite{majdak2015aes69}, proposes a unified file format for the storage of IR-related data. 
+Despite that SOFA was initially created with an emphasis on \textit{Head-Related Impulse Response} (HRIR) data, the framework that SOFA provides can be potentially applied to a variety of recording procedures and audio-related data. 
+Such variety is associated with the concept of \textit{conventions}: a specific data structure designed to hold a concrete type of data or measurement. Some examples of widespread conventions might be \textit{SimpleFreeFieldHRIR} (for anechoic binaural measurements), \textit{SimpleHeadphoneIR} (intended for storing headphone impulse responses), or \textit{MultiSpeakerBRIR} (for binaural RIRs measured from loudspeaker arrays), to name a few of them.
+
+
+\subsection{Ambisonics Directional Room Impulse Response as a SOFA convention}
+
+Given the intrinsic spatial characterization capabilities of ambisonics, Gerzon proposed the technique as a potentially successful candidate format for acoustical heritage preservation, as early as 1975 \cite{gerzon1975recording}.
+
+The increase in popularity of ambisonics since the beginning of the present century has turned this idea into reality; OpenAIRlib, a freely accesible dataset that gathers dozens of RIRs, might be a good example of it \cite{openair}.
+
+In any case, the usage of recorded ambisonic RIRs is not limited to the field of acoustic heritage. Among others, the availability of such recordings has powered works in a variety of works, auralization \cite{postma2016virtual}, room acoustics analysis \cite{embrechts2015measurement,clapp2011investigations} and modelling \cite{romblom2017diffuse}, spatial audio synthesis \cite{coleman2017object} or source separation \cite{baque2016separation}. \\
+
+
+In general, all publicly available ambisonic RIR measurements share some common approaches for describing and organizing the recorded data. 
+For instance, recordings from different rooms are usually stored as separated folders. 
+Each combination of emitter and receiver positions is often saved as an individual file, and the different spherical harmonics match the audio channels.
+Moreover, it is also usual to provide a \textit{metadata} file, describing the different emitter and receiver positions, and potentially some information about the measurement setup, methodology, etc. Such files might be formatted as plain text or delimiter-separated files.
+ 
+Despite the common approach, it can be easily foreseen that each database generated by a different individual or institution might potentially have a different naming convention, folder structure, file format, and so on. 
+This is exactly the same situation that motivated the development of the SOFA conventions. 
+
+On the other hand, the SOFA specification defines some criteria that must be fulfilled in order to propose a new convention \cite{sofaconventions}. These criteria are:
+\begin{enumerate}
+    \item Data must exist.
+    \item Data can not be described by existing SOFA conventions.
+    \item Relevant information about the data must be available.
+\end{enumerate} 
+
+Given that the described situation meets all requirements, the \textit{Ambisonics Directional Room Impulse Response} (AmbisonicsDRIR) convention has been therefore proposed as a new member of SOFA.\\
+
+The technical specifications of the proposed convention in its current state (version 0.2) are available online \cite{ambisonicsdrir}. 
+Despite a timid adoption of the convention, the AmbisonicsDRIR proposal has arisen interest in the community. At the moment of writing, the \textit{Standardisation Committee on AES-69 Standard} is discussing potential modifications to the SOFA file format required for the adoption of several new features; and the support for spherical harmonic-based measurements is among the topics for deliberation.
+
+
+\subsection{pysofaconventions}
+
+The situation described in Section~\label{sec:intro_data}, regarding the availability of acoustic signal processing libraries in the Python programming language, can be easily extended to the case of SOFA APIs.
+ 
+The library \textit{pysofaconventions} has been created with the aim to provide an alternative to the existing Matlab/Octave and C/C++ implementations. 
+For ease of installation, it is integrated in the standard python package manager, \textit{pip}. 
+
+The current software version is 0.1.5. The library structure is inspired by the C++ implementation \cite{api_cpp}. 
+It features all functionalities described by SOFA version 1.0, plus the proposed AmbisonicsDRIR convention. 
+The implementation is based on extensive error checking, to ensure code consistency.
+ 
+\textit{pysofaconventions} has gained a moderate amount of attraction. Among others, it is being used as a dependency for the \textit{Real-Time Spherical Microphone Renderer (ReTiSAR) for binaural reproduction}, developed by Chalmers University in collaboration with Facebook Reality Labs \cite{helmholz2019real}.
+
+
 \section{Ambiscaper}
-\section{Ambisonic SOFA convention, pysofaconventions}
-\section{masp library}
+
 
 %
 %Explain about mono files plus ambisonics IRs.

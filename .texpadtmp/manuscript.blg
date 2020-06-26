@@ -3,43 +3,71 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: /Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux
 The style file: apalike.bst
 Database file #1: ../Bibliography/CoherenceEstimation.bib
-I was expecting a `,' or a `}'---line 203 of file ../Bibliography/CoherenceEstimation.bib
- : 
- : @inproceedings{stefanakis_foreground_2015,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Database file #2: ../Bibliography/SELD.bib.bib
-You're missing a field name---line 171 of file ../Bibliography/SELD.bib.bib
- : 
- : %   howpublished = {\url{http://www.ieee.org/portal/pages/pubs/confpubcenter/register.html}}
+You're missing a field name---line 17 of file ../Bibliography/SELD.bib.bib
+ :     
+ :     % url = "https://arxiv.org/abs/2006.01919"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 176 of file ../Bibliography/SELD.bib.bib
- : 
- : %   howpublished = {{PDF} specification for {IEEE} {X}plore,
+Repeated entry---line 61 of file ../Bibliography/SELD.bib.bib
+ : @article{epain2016spherical
+ :                            ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 107 of file ../Bibliography/SELD.bib.bib
+ :     
+ :     % url = "https://ieeexplore.ieee.org/abstract/document/8567942"
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Database file #3: ../Bibliography/Ambiscaper.bib.bib
-Repeated entry---line 268 of file ../Bibliography/Ambiscaper.bib.bib
- : @article{gerzon1973periphony
- :                             ,
+I was expecting a `,' or a `}'---line 139 of file ../Bibliography/SELD.bib.bib
+ :   
+ :   year         = 2016,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 150 of file ../Bibliography/SELD.bib.bib
+ :   
+ :   organization={International Society for Music Information Retrieval (ISMIR)}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 153 of file ../Bibliography/SELD.bib.bib
+ : @article{epain2016spherical
+ :                            ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 190 of file ../Bibliography/SELD.bib.bib
+ :   
+ :   address={Vienna, Austria}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 228 of file ../Bibliography/SELD.bib.bib
+ :   
+ :   address = "Barcelona, Spain",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Database file #3: ../Bibliography/Data.bib.bib
+Repeated entry---line 43 of file ../Bibliography/Data.bib.bib
+ : @inproceedings{thiergart_localization_2009
+ :                                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 144 of file ../Bibliography/Data.bib.bib
+ : @article{Pulkki07
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 281 of file ../Bibliography/Data.bib.bib
+ : @article{Bertet2006
+ :                    ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 353 of file ../Bibliography/Data.bib.bib
+ :     
+ :     howpublished={\url{http://pypl.github.io/PYPL.html}}
+(Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #4: ../Bibliography/AmbisonicsDRIR.bib.bib
-Repeated entry---line 18 of file ../Bibliography/AmbisonicsDRIR.bib.bib
- : @misc{coleman2015s3a
- :                     ,
-I'm skipping whatever remains of this entry
 Repeated entry---line 50 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @article{gerzon1975recording
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 113 of file ../Bibliography/AmbisonicsDRIR.bib.bib
- : @inproceedings{murphy2010openair
- :                                 ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 132 of file ../Bibliography/AmbisonicsDRIR.bib.bib
- : @article{stan2002comparison
- :                            ,
+Repeated entry---line 69 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : %@misc{openair
+ :               ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 143 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @article{gerzon1973periphony
@@ -50,56 +78,108 @@ Repeated entry---line 154 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  :                    ,
 I'm skipping whatever remains of this entry
 Database file #5: ../Bibliography/ReverberationTimeEstimation.bib.bib
-Warning--to sort, need author or key in code
-Warning--to sort, need author or key in openair
-Warning--empty year in code
-Warning--empty journal in daniel2000representation
-Warning--empty journal in gerzon_design_1975
+Repeated entry---line 88 of file ../Bibliography/ReverberationTimeEstimation.bib.bib
+ : @inproceedings{bryan2020impulse
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 145 of file ../Bibliography/ReverberationTimeEstimation.bib.bib
+ : @article{epain2016spherical
+ :                            ,
+I'm skipping whatever remains of this entry
+Database file #6: ../Bibliography/Introduction.bib.bib
+Repeated entry---line 50 of file ../Bibliography/Introduction.bib.bib
+ : @article{gerzon1973periphony
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 61 of file ../Bibliography/Introduction.bib.bib
+ : @phdthesis{daniel2000representation
+ :                                    ,
+I'm skipping whatever remains of this entry
+Database file #7: ../Bibliography/ScientificBackground.bib.bib
+Repeated entry---line 41 of file ../Bibliography/ScientificBackground.bib.bib
+ : @article{majdak2015aes69
+ :                         ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 56 of file ../Bibliography/ScientificBackground.bib.bib
+ : @book{zotter2019ambisonics
+ :                           ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 82 of file ../Bibliography/ScientificBackground.bib.bib
+ : @article{gerzon1973periphony
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 94 of file ../Bibliography/ScientificBackground.bib.bib
+ : @phdthesis{daniel2000representation
+ :                                    ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 102 of file ../Bibliography/ScientificBackground.bib.bib
+ : @inproceedings{gerzon1975design
+ :                                ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 122 of file ../Bibliography/ScientificBackground.bib.bib
+ : @inproceedings{carpentier2017ambisonic
+ :                                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 137 of file ../Bibliography/ScientificBackground.bib.bib
+ : @article{Pulkki07
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 148 of file ../Bibliography/ScientificBackground.bib.bib
+ : @article{merimaa2005spatial
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 193 of file ../Bibliography/ScientificBackground.bib.bib
+ : @article{epain2016spherical
+ :                            ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 210 of file ../Bibliography/ScientificBackground.bib.bib
+ : 
+ : organization={Audio Engineering Society}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "epain_spherical_2016"
+Warning--empty journal in begault20003
 Warning--empty journal in habets_comments_2010
-Warning--empty year in kingma2014adam
-Warning--there's a number but no volume in Politis2018
-Warning--empty journal in pulkki_directional_2006
-Warning--empty journal in schorkhuber_ambisonic_2017
-Warning--empty booktitle in thiergart_localization_2009
-You've used 108 entries,
+Warning--empty journal in murphy2017acoustic
+You've used 103 entries,
             1935 wiz_defined-function locations,
-            1018 strings with 24179 characters,
-and the built_in function-call counts, 44701 in all, are:
-= -- 4476
-> -- 1756
-< -- 87
-+ -- 609
-- -- 586
-* -- 3521
-:= -- 7518
-add.period$ -- 346
-call.type$ -- 108
-change.case$ -- 822
-chr.to.int$ -- 101
-cite$ -- 121
-duplicate$ -- 1894
-empty$ -- 3216
-format.name$ -- 742
-if$ -- 9041
-int.to.chr$ -- 8
+            996 strings with 23727 characters,
+and the built_in function-call counts, 42350 in all, are:
+= -- 4246
+> -- 1718
+< -- 88
++ -- 611
+- -- 576
+* -- 3328
+:= -- 7230
+add.period$ -- 348
+call.type$ -- 103
+change.case$ -- 789
+chr.to.int$ -- 102
+cite$ -- 106
+duplicate$ -- 1754
+empty$ -- 2957
+format.name$ -- 725
+if$ -- 8492
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 97
+missing$ -- 92
 newline$ -- 528
-num.names$ -- 320
-pop$ -- 906
+num.names$ -- 311
+pop$ -- 806
 preamble$ -- 1
-purify$ -- 831
+purify$ -- 799
 quote$ -- 0
-skip$ -- 1356
+skip$ -- 1287
 stack$ -- 0
-substring$ -- 2959
-swap$ -- 346
-text.length$ -- 31
+substring$ -- 2706
+swap$ -- 309
+text.length$ -- 30
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 638
-warning$ -- 11
-while$ -- 355
+type$ -- 604
+warning$ -- 3
+while$ -- 337
 width$ -- 0
-write$ -- 1370
-(There were 10 error messages)
+write$ -- 1362
+(There were 30 error messages)

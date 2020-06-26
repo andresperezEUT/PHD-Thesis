@@ -158,23 +158,46 @@ The captured frequency-domain signals $X_q(k)$ can be represented as the spheric
 \end{equation}
 \todo{is that actually valid? or Y should be the complex-valued spherical harmonics?}
 
-where the term $\Gamma_n(kR)$ models the radial transfer function, and depends on the microphone geometry. There are several possible sampling schemes of capsules along the sphere, each one having different properties; the reader is referred to  \cite{rafaely2004analysis} for a deeper insight. \\
+where the term $\Gamma_n(kR)$ models the radial transfer function, and depends on a number of factors, being the \textit{sphere configuration} one of the most prominent considerations. 
+Sphere configuration, in its basic form, refers to the physical properties of the baffle where the capsules are mounted, and it can be either \textit{open} or \textit{rigid}. 
+While open configuration is the simplest solution, it might present numerical problems in the form of zeros in its frequency response. Conversely, a rigid baffle interferes with the sound field and might create undesired interferences, but it improves the numerical condition from the open case. Fig.~\ref{fig:magnitude_kr} shows the simulated magnitude response of $\Gamma_n(kR)$  for a spherical array considering both configurations. 
+The reader is referred to \cite{moreau20063d} and \cite{rafaely2004analysis}  for a deeper insight into the topic of spherical microphone array design.
 
-By using this model, the maximum spherical harmonic order $N$ that can be retrieved with negligible spatial aliasing depends on the number of microphone capsules \cite{moreau20063d}:
+%\begin{figure}[h!]
+%  \includegraphics[width=\textwidth]{Figures/ScientificBackground/magnitude_kr.png}  
+%  \caption{Magnitude of $\Gamma_n(kR)$ for different ambisonic orders, in the case of (a) rigid sphere, and (b) open sphere configurations. Adapted from \cite{rafaely2004analysis}. }
+%  \label{fig:magnitude_kr}
+%\end{figure}
+%
+
+
+\begin{figure}[hbt]
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{Figures/ScientificBackground/magnitude_kr.png}
+  \caption{Magnitude of $\Gamma_n(kR)$ for different ambisonic orders, in the case of (a) rigid sphere, and (b) open sphere configurations. Adapted from \cite{rafaely2004analysis}. }
+	\label{fig:magnitude_kr}
+	\end{center}
+\end{figure}
+
+
+
+%and depends on the microphone geometry, the directivity of the capsules and the physical properties of the baffle where the capsules are mounted.
+%
+% There are several possible sampling schemes of capsules along the sphere, each one having different properties; the reader is referred to  \cite{rafaely2004analysis} for a deeper insight. \\
+
+By using the model from Eq.~\ref{eq:a2b}, the maximum spherical harmonic order $N$ that can be retrieved with negligible spatial aliasing depends on the number of microphone capsules \cite{moreau20063d}:
 \begin{equation}
 	N \geq (Q + 1)^2.
 \end{equation}
 
-Furthermore, the sphere radius $R$ has also an effect on the operational bandwidth of the microphone. More precisely, for a given spherical harmonic order $n$, the maximum aliasing-free operational frequency is given by:
+Furthermore, the sphere radius $R$ has also an effect on the operational bandwidth of the microphone. According to \cite{moreau20063d}, the maximum aliasing-free operational frequency of a spherical microphone array is given by:
 \begin{equation}
-	f_{max} = \frac{n c} {2 \pi R},
+	f_{max} = \frac{c} {2 R \gamma},
 	\label{eq:falias}
 \end{equation}
 
-with $c$ being the sound speed.
-
-\todo{moreau has c/2Rgamma}.
-
+with $c$ being the sound speed, and $\gamma$ the maximum aperture angle between two capsules. 
+It is important to notice the existence of a practical minimum frequency of the spherical microphone array, given by the low magnitude in low frequencies of high ambisonic order components, as shown in Fig.~\ref{fig:magnitude_kr}. 
 
 
 
@@ -621,14 +644,17 @@ At a psychoacoustic level, the direct to reverberant ratio is one of the main cu
 Since the direct path and early reflections (but not the late reverberation) depend on the relative position between source and receiver , the filter $h_D(t)$ and therefore the DRR are as well location-dependent. For a given room, the source-receiver distance that produces a DRR of 0 dB is known as the \textit{critical distance}. 
 
 
-\subsection{SOFA Conventions}
+%\subsection{SOFA Conventions}
+%
+%The availability of recorded room impulse responses is of great importance to many acoustic signal processing problems. 
+%As we have seen, many different RIRs can be obtained from the same room, by just varying the position of the source and the receiver; when the number of source and receiver positions increases, the total amount of measurements increases geometrically. 
+%Besides that, the actual format and organisation of the produced data (not only the RIR themselves, but also the source/position annotations) can be arbitrarily different when produced by different groups of people.
+%
+%In order to overcome potential interoperatibility and reusability issues, the \textit{Spatially Oriented Format for Acoustics} (SOFA) convention \cite{majdak2013spatially}, also known as the \textit{AES-69} standard \cite{majdak2015aes69}, proposes a unified file format for the storage of IR-related data. 
+%Despite that SOFA was initially created with a focus on \textit{Head-Related Impulse Response} (HRIR) data, its structure is very convenient to any kind of multi-location impulse responses, including ambisonics.
 
-The availability of recorded room impulse responses is of great importance to many acoustic signal processing problems. 
-As we have seen, many different RIRs can be obtained from the same room, by just varying the position of the source and the receiver; when the number of source and receiver positions increases, the total amount of measurements increases geometrically. 
-Besides that, the actual format and organisation of the produced data (not only the RIR themselves, but also the source/position annotations) can be arbitrarily different when produced by different groups of people.
 
-In order to overcome potential interoperatibility and reusability issues, the \textit{Spatially Oriented Format for Acoustics} (SOFA) convention \cite{majdak2013spatially}, also known as the \textit{AES-69} standard \cite{majdak2015aes69}, proposes a unified file format for the storage of IR-related data. 
-Despite that SOFA was initially created with a focus on \textit{Head-Related Impulse Response} (HRIR) data, its structure is very convenient to any kind of multi-location impulse responses, including ambisonics.
+\todo{RIR SIMULATION: IMAGE METHOD}
 
 
 \section{Signal Models}

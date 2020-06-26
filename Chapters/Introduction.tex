@@ -13,7 +13,7 @@ Ambisonics is a spatial audio theory based on the directional decomposition of t
 %\end{figure}
 
 Nevertheless, the greatest contributor to the current interest in ambisonics has been the rise of Virtual Reality (VR) in recent years.
-Although VR focuses primarily on visual cues, the immersive experience might be greatly enhanced by spatial audio \todo{CITE REQUIRED, begault?}. In this context, Ambisonics has been rapidly adopted as \textit{de facto} standard for spatial audio transmission, supposedly due to a variety of factors:
+Although VR focuses primarily on visual cues, the immersive experience might be greatly enhanced by spatial audio \cite{begault20003}	. In this context, Ambisonics has been rapidly adopted as \textit{de facto} standard for spatial audio transmission, supposedly due to a variety of factors:
 
 \begin{description}
 
@@ -23,13 +23,13 @@ Although VR focuses primarily on visual cues, the immersive experience might be 
 
   \item [Ease of manipulations] Signal-independent transformations of the ambisonic stream, and specifically rotations, are computationally inexpensive.
 
-  \item [Binaural transformation] Spatial audio in VR is mostly consumed as binaural; methods for ambisonic to binaural conversion have been known for a long time \todo{cite?}. Furthermore, VR headsets can easily provide head rotation information, which can be used in combination with scene rotations to provide head-locked audio, which greatly improves immersiveness \todo{cite required!}. This is a key feature of ambisonics when compared to static binaural recordings.
+  \item [Binaural transformation] Spatial audio in VR is mostly consumed as binaural; methods for ambisonic to binaural conversion have been known for a long time \cite{noisternig20033d}. Furthermore, VR headsets can easily provide head rotation information, which can be used in combination with scene rotations to provide head-locked audio, which greatly improves localization accuracy and inmersiveness \cite{begault20003}. This is a key feature of ambisonics when compared to static binaural recordings.
 
 \end{description}
 
 Coming back to the Virtual Reality popularity, the following three events might be representative of the growth that it experienced in the second half of the 2010s: 
 (i) the billionaire acquisition by Facebook of the VR headset manufacturer Oculus, in March 2014 \cite{facebookoculus}; 
-(ii) the Time cover page devoted to VR: \textit{""The surprising joy of Virtual Reality. And why it's about to change the world"} (August 2015) \cite{time};
+(ii) the Time cover page devoted to VR: \textit{"The surprising joy of Virtual Reality. And why it's about to change the world"} (August 2015) \cite{time};
 and (ii) M. Zuckerberg's invited talk at the \textit{Samsung Unpacked} event within the World Mobile Congress 2016 in Barcelona: \textit{"VR is the next platform where anyone can experience anything they want"} \cite{bbcnews}.
 
 
@@ -82,7 +82,7 @@ At the present time, however, the high expectations in VR have significantly low
 
 In any case, the current high availability and affordability of ambisonic microphones brings new challenges from the signal processing perspective. More specifically, ambisonic microphones conform a subset of near-coincident spherical microphone arrays, a category which possesses some specific characteristics.
 
-Although the VR momentum has also reached spherical microphone array processing, many challenges remain still opened, and the number of research works specifically focusing on such geometry are still low. 
+Although the VR momentum has also reached spherical microphone array processing, many challenges remain still open, and the number of research works specifically focusing on such geometry are low yet. 
 Besides that, the growing interest in AR posses new problems related to acoustical signal processing. But since ambisonics is still the standard choice for immersive audio, existing solutions might be successfully adapted. 
 
 Lastly, the advance in signal processing methods for ambisonics can give rise to applications that enhance the work of immersive audio producers, providing meaningful information about the recorded scenes and automating some of the repetitive tasks, thus allowing a more flexible and creative workflow.
@@ -98,48 +98,59 @@ Lastly, the advance in signal processing methods for ambisonics can give rise to
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Problem Description}
+\label{sec:problemdescription}
 
-\begin{figure}[hbt]
+The scientific context of the work developed in the present dissertation is depicted in Figure~\ref{fig:scheme1}, which has been inspired by \cite{jarrett2017theory}. 
+As we can observe, there are two main topics related with B-Format audio: \textit{generation} and \textit{analysis}, with the signal flow going from the former to the latter.
+Although the conceptual approach of the scheme might be very similar for any type of audio, the specific spatial information conveyed by the ambisonic signal places an emphasis on the informed analysis and description of the sound scene. \\
+
+\begin{figure}[th]
   \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1.png}
-  \caption{\todo{todo caption}}
+  \caption{General scheme of the B-Format audio generation and analysis framework.  Solid lines represent audio signals, while outlined arrows refer to non-audio information.}
   \label{fig:scheme1}
 \end{figure}
 
-EXPLAIN PARTS OF FIGURE:
 
-Different levels of applications in multichannel acoustic signal processing (inspired by \cite{jarrett2017theory})
+The problem of B-Format generation is mostly related with dataset generation, which is a common issue for many audio signal processing problems. 
+In our case, we consider two different approaches to the data generation problem:
+\begin{description}
+	\item[Recording] Using spherical microphone arrays for the recording of ambisonic material.
+	\item[Simulation] Using numerical methods for the simulation of acoustic scenes.
+\end{description}
+While recordings are by definition more similar to real scenarios, they are expensive to perform, and can only provide a limited set of parameter possibilities. Simulations, on the other hand, have the potential to cover any desired condition. 
+Therefore, it is of our interest to consider the strengths of both signal generation paths.\\
 
-\begin{itemize}
-	\item Acoustic Parameter Estimation (low level, audio2data)
-	\begin{itemize}
-		\item Direction of Arrival estimation
-		\item Coherence analysis
-		\item Acoustic description (RT60, etc)
-		\item Source counting
-	\end{itemize}
 
-	\item Signal Enhancement  (high level, audio2audio)
-	\begin{itemize}
-		\item Source Separation
-		\item Dereverberation / denoising
-		\item IR estimation
-	\end{itemize}
+B-Format analysis has been divided into three different categories:
+\begin{description}
+	\item[Acoustic Parameter Estimation] Low-level analysis of the sound field, which yields quantitative information about different acoustic parameters used to model the acoustic scene.
+	\item[Signal Enhancement] Modification of the sound field in order to obtain a set of output signals with desired attributes. 
+	\item[Scene Description] Textual representation of different high-level characteristics of the sound field.
+\end{description}
 
-	\item Scene Description (high level, audio2data)
-	\begin{itemize}
-		\item Event Detection
-		\item Acoustic Scene Classification
-	\end{itemize}
-\end{itemize}
+The knowledge about the acoustic parameters of a sound field can be considered either as a goal by itself, or alternatively as a preprocessing step which complements the other analysis categories. Examples of typical estimated acoustic parameters are the \textit{Direction-of-Arrival} (DOA), the sound field diffuseness, or the reverberation time of the enclosure \cite{jarrett2017theory}.  
+
+There are a variety of well known signal enhancement problems, including dereverberation \cite{braun2018speech}, source separation \cite{gannot2017consolidated}, or foreground-background segmentation \cite{stefanakis_foreground_2015}. 
+As it has been shown, many of them benefit (or even depend) from the knowledge derived by the acoustic parameter estimation step.
+
+Finally, under the scene description typology we can find a set of applications that provide abstract representations of the sound scene under analysis. Most of the recent research performed in this scope is grouped around the Detection and Classification of Acoustic Scenes and Events (DCASE) community\footnote{\url{http://dcase.community/community_info}}. 
+Examples of the problems under consideration are acoustic scene classification \cite{Mesaros2018_DCASE}, sound event localization and detection \cite{Adavanne2018_JSTSP} or audio captioning \cite{drossos2017automated}.
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Scientific Objectives}
 
-preguntas cientificas concretas, coincidiendo con contribuciones
 
-(base para la conclusion)
+The list that follows concentrates the main scientific objectives to be developed on this thesis:
 
+\begin{itemize}
+	\item To develop methods for the characterisation of acoustic parameters from recordings originated from ambisonic microphones. 
+	\item To propose methodologies for sound event localization and detection in ambisonic domain which are grounded on spatial parametric analysis. 
+	\item To contribute in the generation and storage of ambisonic sound scenes, for their usage in controlled experimental environments. 
+\end{itemize}
 %\section{Goals}
 %
 %Research question: How can we exploit the characteristics of ambisonic recordings in order to extract signal-dependent, meaningful information from them? 
@@ -150,29 +161,23 @@ preguntas cientificas concretas, coincidiendo con contribuciones
 
 \begin{figure}[t]
   \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1_NUMBERS.png}
-  \caption{\todo{todo caption}}
+  \caption{General scheme of the B-Format audio generation and analysis framework, including the thesis contributions in form of Chapter numbers.}
   \label{fig:scheme1_numbers}
 \end{figure}
 
-The present Thesis is organised as follows. 
+The present dissertation is organised as follows. 
 
-\textbf{Chapter~\ref{chap:scientific}} introduces the basic concepts that will be developed throughout the Thesis, including spherical harmonics and ambisonics, coherence estimation, parametric analysis or room acoustics. The Chapter also defines the signal models and the mathematical terminology.
+\textbf{Chapter~\ref{chap:scientific}} introduces the basic concepts that will be developed throughout this thesis, including spherical harmonics and ambisonics, coherence estimation, parametric analysis or room acoustics. The Chapter also defines the signal models and the mathematical terminology.
 
 
-Chapters~\ref{chap:rt60}, \ref{chap:coherence} and \ref{chap:seld2019} develop the most significant academic contributions of the Thesis. 
+Chapters~\ref{chap:rt60}, \ref{chap:coherence} and \ref{chap:seld2019} develop the most significant academic contributions of this thesis. 
 \textbf{Chapter~\ref{chap:rt60}} presents a novel method for blind reverberation time in ambisonic recordings. To the best of our knowledge, this is the first method proposal specifically focusing on that problem.   The method is based on a Multichannel Auto-Regressive model of the late reverberation, which allows for an effective dereverberation of the ambisonic sound scene, and enables computation of the reverberation time from an estimation of the room impulse response. The evaluation metrics show a method performance similar to other state-of-the-art methods. 
 \textbf{Chapter~\ref{chap:coherence}} analyses the response of tetrahedral microphone arrays, which are the simplest and most common form of ambisonic microphones, under spherically isotropic sound field. The analysis is performed using both simulated and recorded diffuse field, and the results quantify the differences between ideal and real values under a variety of conditions and estimators.  
 In \textbf{Chapter~\ref{chap:seld2019}}, a complete system for Sound Event Localization and Detection of ambisonic sound scenes is described. The algorithm comprises two different parts. First, a parametric analysis is performed on the ambisonic signal. The analysis yields spatial localization and temporal activities of the sound events present in the scene. Then, each of those events is assigned to a class label by means of a deep-learning classifier. The method is able to perform in a similar way to the baseline system, while greatly improving its localization capabilities.
 
-Finally, \textbf{Chapter~\ref{chap:data}} presents some libraries and software utilities developed throughout the Thesis. All the code has been publicly released under open source licenses. The libraries include utilities for the creation of datasets, the storage and exchange of impulse response files in a standard way, and the implementation of convenience tools for acoustic and microphone array signal processing analysis. Although the libraries do not directly involve any scientific contribution, they can be a great help for scientific and innovative purposes; given the industial nature of the candidate's doctoral program, we have considered relevant to include them in the present Thesis. \todo{check}
+Finally, \textbf{Chapter~\ref{chap:data}} presents some libraries and software utilities developed throughout this thesis. All the code has been publicly released under open source licenses. The libraries include utilities for the creation of datasets, the storage and exchange of impulse response files in a standard way, and the implementation of convenience tools for acoustic and microphone array signal processing analysis. Although the libraries do not directly involve any scientific contribution, they can be a great help for scientific and innovative purposes; given the industrial nature of this thesis, we have considered relevant to include them in the present dissertation.\\
 
-In order to place the different chapters within the problem context described in Section~\ref{sec:context}, we add to Figure~\ref{fig:scheme1} the Chapter numbers with our contributions, obtaining Figure~\ref{fig:scheme1_numbers}.
-
-
-
-
-\section{Context}
-\label{sec:context}
+In order to provide a schematic representation of the thesis structure and scope, Figure~\ref{fig:scheme1_numbers} features the problem structure stated in Figure~\ref{fig:scheme1}, with the addition of the Chapter numbers with the contributions of this thesis. 
 
 
 
@@ -180,7 +185,7 @@ In order to place the different chapters within the problem context described in
 \section{Contributions}
 
 
-In the following list we show the main scientific contributions of the Thesis, organised by Chapters:
+In the following list we show the main scientific contributions of this dissertation, organised by Chapters:
 
 \begin{itemize}
 
@@ -195,37 +200,51 @@ In the following list we show the main scientific contributions of the Thesis, o
 	\textit{The Journal of the Acoustical Society of America 146.4 (2019): EL329-EL334.}
 
 	\item Chapter 5:\\
-	\textbf{A hybrid parametric-deep learning approach for sound event localization and detection.}
+	
+	\textbf{"PAPAFIL: a low complexity sound event localization and detection method with parametric particle filtering and gradient boosting".}
+	\underline{A. P\'erez-L\'opez} and R. Ibañez-Usach.
+	Submitted to \textit{Detection and Classification of Acoustic Scenes and Events 2020 Workshop (DCASE2020)}.
+	
+	\textbf{"A hybrid parametric-deep learning approach for sound event localization and detection".}
 	\underline{A. P\'erez-L\'opez}, E. Fonseca and X. Serra.
 	In \textit{Proceedings of the Detection and Classification of Acoustic Scenes and Events 2019 Workshop (DCASE2019)}.
 	
-	\todo{DCASE2020}
 	
 	\item Chapter 6:\\
-	\textbf{Ambiscaper: A Tool for Automatic Generation and Annotation of Reverberant Ambisonics Sound Scenes}.\\
+	\textbf{"Ambiscaper: A Tool for Automatic Generation and Annotation of Reverberant Ambisonics Sound Scenes".}\\
 	\underline{A. P\'erez-L\'opez}.
 	In \textit{16th International Workshop on Acoustic Signal Enhancement (IWAENC). IEEE, 2018.}
 	
-	\textbf{Ambisonics directional room impulse response as a new convention of the spatially oriented format for acoustics.}
+	\textbf{"Ambisonics directional room impulse response as a new convention of the spatially oriented format for acoustics".}
 	\underline{A. P\'erez-L\'opez} and J. De Muynke.
 	In \textit{Audio Engineering Society Convention 144. Audio Engineering Society, 2018.}
 	
-	\textbf{pysofaconventions, a Python API for SOFA.}
+	\textbf{"pysofaconventions, a Python API for SOFA".}
 	\underline{A. P\'erez-L\'opez}.
 	In \textit{Audio Engineering Society Convention 148. Audio Engineering Society, 2020.}
 	
-	\textbf{A Python library for Multichannel Acoustic Signal Processing.}
+	\textbf{"A Python library for Multichannel Acoustic Signal Processing".}
 	\underline{A. P\'erez-L\'opez} and A. Politis.
 	In \textit{Audio Engineering Society Convention 148. Audio Engineering Society, 2020.}
 	
 \end{itemize}
 
-
-Moreover, as a result of the development of the Thesis, the following open-source libraries have been implemented and released. All of them are available through the author's GitHub page, \url{https://github.com/andresperezlopez}: \todo{describir cada uno? con respecto a paper o chapter?}
+Moreover, although not strictly aligned with the research direction of this thesis, the author has collaborated in the following publications:
 
 \begin{itemize}
+	\item \textbf{"Sound event localization and detection based on CRNN using dense rectangular filters and channel rotation data augmentation".}
+	F. Ronchini, D. Arteaga and \underline{A. P\'erez-L\'opez}.
+	Submitted to \textit{Detection and Classification of Acoustic Scenes and Events 2020 Workshop (DCASE2020)}.
+	
+\end{itemize}
 
-	\item rt60 estimation: \todo{todo}
+
+Finally, as a result of the development of this thesis, the following open-source libraries have been implemented and released. All of them are available through the author's GitHub page\footnote{\url{https://github.com/andresperezlopez}}:
+\begin{itemize}
+
+	\item \href{https://github.com/andresperezlopez/ambisonic_rt_estimation}{ambisonic\_rt\_estimation}
+	
+	\item \href{https://github.com/andresperezlopez/DCASE2020}{DCASE2020}
 	
 	\item \href{https://github.com/andresperezlopez/DCASE2019_task3}{DCASE2019\_task3}
 

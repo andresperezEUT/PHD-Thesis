@@ -278,7 +278,7 @@
 %    {\LARGE \@title \par}%
     {\LARGE \sffamily \@title \par}%
 %    \vspace*{2cm}
-%    {\Large \sffamily \@subtitle \par}%
+    {\Large \sffamily \@subtitle \par}%
 
 %    \vskip 3em%
    \vskip 2cm%
