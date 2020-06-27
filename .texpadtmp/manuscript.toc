@@ -55,16 +55,16 @@
 \contentsline {section}{\numberline {4.4}Conclusions}{62}{section.4.4}
 \contentsline {chapter}{\numberline {5}Sound Event Localization and Detection}{63}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
-\contentsline {section}{\numberline {5.2}SYSTEM DESCRIPTION}{64}{section.5.2}
+\contentsline {section}{\numberline {5.2}System description}{64}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Single-source estimation}{65}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Particle tracking}{66}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Signal filter}{68}{subsection.5.2.3}
 \contentsline {subsection}{\numberline {5.2.4}Event classification}{68}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}EXPERIMENTS}{70}{section.5.3}
+\contentsline {section}{\numberline {5.3}Experiments}{70}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Dataset and baseline system}{70}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Experimental setup}{71}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Evaluation metrics}{73}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}RESULTS}{73}{section.5.4}
+\contentsline {section}{\numberline {5.4}Results}{73}{section.5.4}
 \contentsline {section}{\numberline {5.5}Conclusion}{77}{section.5.5}
 \contentsline {chapter}{\numberline {6}Data generation and storage}{79}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
@@ -74,9 +74,12 @@
 \contentsline {section}{\numberline {6.3}SOFA}{86}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Problem statement}{86}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Ambisonics Directional Room Impulse Response as a SOFA convention}{86}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}pysofaconventions}{88}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Pysofaconventions}{88}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Ambiscaper}{89}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions}{91}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of Contributions}{91}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusion}{92}{section.7.2}
-\contentsline {section}{\numberline {7.3}Future work}{92}{section.7.3}
+\contentsline {subsection}{\numberline {6.4.1}Motivation}{89}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{91}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Experiment reproducibility}{93}{subsection.6.4.3}
+\contentsline {chapter}{\numberline {7}Conclusions}{95}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of Contributions}{95}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conclusion}{96}{section.7.2}
+\contentsline {section}{\numberline {7.3}Future work}{96}{section.7.3}

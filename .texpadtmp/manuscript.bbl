@@ -7,8 +7,15 @@ Adavanne, S., Politis, A., Nikunen, J., and Virtanen, T. (2018).
 \newblock {\em IEEE Journal of Selected Topics in Signal Processing},
   13(1):34--48.
 
-\bibitem[Adavanne et~al., 2019]{adavanne2019localization}
-Adavanne, S., Politis, A., and Virtanen, T. (2019).
+\bibitem[Adavanne et~al., 2019a]{adavanne2019multi}
+Adavanne, S., Politis, A., and Virtanen, T. (2019a).
+\newblock Aamulti-room reverberant dataset for sound event localization and
+  detection.
+\newblock In {\em Acoustic Scenes and Events 2019 Workshop (DCASE2019)},
+  page~10.
+
+\bibitem[Adavanne et~al., 2019b]{adavanne2019localization}
+Adavanne, S., Politis, A., and Virtanen, T. (2019b).
 \newblock Localization, detection and tracking of multiple moving sound sources
   with a convolutional recurrent neural network.
 \newblock {\em arXiv preprint arXiv:1904.12769}.
@@ -114,6 +121,12 @@ Chartrand, R. and Yin, W. (2008).
 \newblock In {\em 2008 IEEE International Conference on Acoustics, Speech and
   Signal Processing}, pages 3869--3872. IEEE.
 
+\bibitem[Chen et~al., 2015]{Chen2015}
+Chen, X., Wang, W., Wang, Y., Zhong, X., and Alinaghi, A. (2015).
+\newblock Reverberant speech separation with probabilistic time-frequency
+  masking for b-format recordings.
+\newblock {\em Speech Communication}, 68:41--54.
+
 \bibitem[Clapp et~al., 2011]{clapp2011investigations}
 Clapp, S.~W., Guthrie, A.~E., Braasch, J., and Xiang, N. (2011).
 \newblock Investigations of room acoustics with a spherical microphone array.
@@ -125,6 +138,12 @@ Coleman, P., Franck, A., Menzies, D., and Jackson, P.~J. (2017).
 \newblock Object-based reverberation encoding from first-order ambisonic rirs.
 \newblock In {\em Audio Engineering Society Convention 142}. Audio Engineering
   Society.
+
+\bibitem[Coleman et~al., 2015]{coleman2015s3a}
+Coleman, P., Remaggi, L., and Jackson, P. J.~B. (2015).
+\newblock S3a room impulse responses [dataset].
+\newblock \url{http://epubs.surrey.ac.uk/808465/}.
+\newblock Accessed on June 26th, 2020.
 
 \bibitem[Daniel, 2000]{daniel2000representation}
 Daniel, J. (2000).
@@ -176,6 +195,13 @@ Epain, N. and Jin, C.~T. (2016).
 \newblock Spherical harmonic signal covariance and sound field diffuseness.
 \newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
   Processing}, 24(10):1796--1807.
+
+\bibitem[Evers et~al., 2020]{evers2020locata}
+Evers, C., Loellmann, H., Mellmann, H., Schmidt, A., Barfuss, H., Naylor,
+  P.~A., and Kellermann, W. (2020).
+\newblock The locata challenge: Acoustic source localization and tracking.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}.
 
 \bibitem[Facebook, 2014]{facebookoculus}
 Facebook (2014).
@@ -239,6 +265,13 @@ Grondin, F., Glass, F., Sobieraj, I., and Plumbley, M.~D. (2019).
   Scenes and Events 2019 Workshop (DCASE2019)}, pages 84--88, New York
   University, NY, USA.
 
+\bibitem[Gunel et~al., 2008]{Gunel2008}
+Gunel, B., Hachabiboglu, H., and Kondoz, A.~M. (2008).
+\newblock Acoustic source separation of convolutive mixtures based on intensity
+  vector statistics.
+\newblock {\em IEEE Transactions on Audio, Speech, and Language Processing},
+  16(4):748--756.
+
 \bibitem[Haas, 1972]{haas1972influence}
 Haas, H. (1972).
 \newblock The influence of a single echo on the audibility of speech.
@@ -254,11 +287,25 @@ Habets, E. A.~P. and Gannot, S. (2007).
 Habets, E. A.~P. and Gannot, S. (2010).
 \newblock Comments on generating sensor signals in isotropic noise fields.
 
+\bibitem[He and Chen, 2017]{He2017}
+He, S. and Chen, H. (2017).
+\newblock Closed-form doa estimation using first-order differential microphone
+  arrays via joint temporal-spectral-spatial processing.
+\newblock {\em IEEE Sensors Journal}, 17(4):1046--1060.
+
 \bibitem[Helmholz et~al., 2019]{helmholz2019real}
 Helmholz, H., Andersson, C., and Ahrens, J. (2019).
 \newblock Real\-time implementation of binaural rendering of high\-order
   spherical microphone array signals.
 \newblock {\em Fortschritte der Akustik\-DAGA 2019}.
+
+\bibitem[Humphrey et~al., 2014]{humphrey2014jams}
+Humphrey, E.~J., Salamon, J., Nieto, O., Forsyth, J., Bittner, R.~M., and
+  Bello, J.~P. (2014).
+\newblock Jams: A json annotated music specification for reproducible mir
+  research.
+\newblock In {\em 15th International Society for Music Information Retrieval
+  Conference}, pages 591--596. ISMIR.
 
 \bibitem[Ito et~al., 2010]{ito_designing_2010}
 Ito, N., Ono, N., Vincent, E., and Sagayama, S. (2010).
@@ -272,6 +319,20 @@ Jarrett, D.~P., Habets, E.~A., and Naylor, P.~A. (2017).
 \newblock {\em Theory and applications of spherical microphone array
   processing}, volume~9.
 \newblock Springer.
+
+\bibitem[Jarrett et~al., 2010]{Jarrett2010}
+Jarrett, D.~P., Habets, E. A.~P., and Naylor, P.~A. (2010).
+\newblock 3d source localization in the spherical harmonic domain using a
+  pseudointensity vector.
+\newblock In {\em 18th European Signal Processing Conference}, pages 442--446.
+  IEEE.
+
+\bibitem[Jarrett et~al., 2012]{smir}
+Jarrett, D.~P., Habets, E. A.~P., Thomas, M. R.~P., and Naylor, P.~A. (2012).
+\newblock Rigid sphere room impulse response simulation: Algorithm and
+  applications.
+\newblock {\em The Journal of the Acoustical Society of America},
+  132(3):1462--1472.
 
 \bibitem[Juki{\'c} et~al., 2015]{jukic2015group}
 Juki{\'c}, A., van Waterschoot, T., Gerkmann, T., and Doclo, S. (2015).
@@ -363,6 +424,13 @@ Mesaros, A., Heittola, T., and Virtanen, T. (2018).
 \newblock In {\em Proceedings of the Detection and Classification of Acoustic
   Scenes and Events 2018 Workshop (DCASE2018)}, pages 9--13.
 
+\bibitem[Moore et~al., 2015]{Moore2015}
+Moore, A.~H., Evers, C., Naylor, P.~A., Alon, D.~L., and Rafaely, B. (2015).
+\newblock Direction of arrival estimation using pseudo-intensity vectors with
+  direct-path dominance test.
+\newblock In {\em 23th European Signal Processing Conference}, pages
+  2296--2300. IEEE.
+
 \bibitem[Moreau et~al., 2006]{moreau20063d}
 Moreau, S., Daniel, J., and Bertet, S. (2006).
 \newblock 3d sound field recording with higher order ambisonics--objective
@@ -382,6 +450,18 @@ Murphy, D., Shelley, S., Foteinou, A., Brereton, J., and Daffern, H. (2017).
   sound in the representation, understanding and experience of past
   environments.
 
+\bibitem[Murphy and Shelley, 2010]{murphy2010openair}
+Murphy, D.~T. and Shelley, S. (2010).
+\newblock Openair: An interactive auralization web resource and database.
+\newblock In {\em 129th Audio Engineering Convention}. AES.
+
+\bibitem[Nadiri and Rafaely, 2014]{Nadiri2014}
+Nadiri, O. and Rafaely, B. (2014).
+\newblock Localization of multiple speakers under high reverberation using a
+  spherical microphone array and the direct-path dominance test.
+\newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
+  Processing}, 22(10):1494--1505.
+
 \bibitem[Nguyen et~al., 2020]{nguyen2020sequence}
 Nguyen, T. N.~T., Jones, D.~L., and Gan, W.-S. (2020).
 \newblock A sequence matching network for polyphonic sound event localization
@@ -394,8 +474,8 @@ Noisternig, M., Sontacchi, A., Musil, T., and Holdrich, R. (2003).
 \newblock In {\em Audio Engineering Society Conference: 24th International
   Conference: Multichannel Audio, The New Reality}. Audio Engineering Society.
 
-\bibitem[OpenAIRlib, 2020]{openair}
-OpenAIRlib (2020).
+\bibitem[OpenAIRlib, 2010]{openair}
+OpenAIRlib (2010).
 \newblock The open acoustic impulse response library.
 \newblock \url{www.openairlib.net}.
 \newblock Accessed on June 26th, 2020.
@@ -414,6 +494,13 @@ Panayotov, V., Chen, G., Povey, D., and Khudanpur, S. (2015).
 \newblock In {\em 2015 IEEE International Conference on Acoustics, Speech and
   Signal Processing (ICASSP)}, pages 5206--5210. IEEE.
 
+\bibitem[Pavlidi et~al., 2015]{Pavlidi2015}
+Pavlidi, D., Delikaris-Manias, S., Pulkki, V., and Mouchtaris, A. (2015).
+\newblock 3d localization of multiple sound sources with intensity vector
+  estimates in single source zones.
+\newblock In {\em 23th European Signal Processing Conference}, pages
+  1556--1560. IEEE.
+
 \bibitem[Pedregosa et~al., 2011]{scikit-learn}
 Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
   O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J.,
@@ -421,6 +508,19 @@ Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel,
   (2011).
 \newblock Scikit-learn: Machine learning in {P}ython.
 \newblock {\em Journal of Machine Learning Research}, 12:2825--2830.
+
+\bibitem[P\'erez-L\'opez, 2018a]{perez2018ambiscaper}
+P\'erez-L\'opez, A. (2018a).
+\newblock Ambiscaper: A tool for automatic generation and annotation of
+  reverberant ambisonics sound scenes.
+\newblock In {\em 2018 16th International Workshop on Acoustic Signal
+  Enhancement (IWAENC)}, pages 1--9. IEEE.
+
+\bibitem[P\'erez-L\'opez, 2018b]{ambiscaperDataset}
+P\'erez-L\'opez, A. (2018b).
+\newblock Ambiscaper example dataset [dataset].
+\newblock \url{https://zenodo.org/record/1186907}.
+\newblock Accessed on July 26th, 2020).
 
 \bibitem[P\'erez-L\'opez and de~Muynke, 2018]{ambisonicsdrir}
 P\'erez-L\'opez, A. and de~Muynke, J. (2018).
@@ -524,6 +624,12 @@ Rafaely, B. (2015).
 \newblock {\em Fundamentals of spherical array processing}, volume~8.
 \newblock Springer.
 
+\bibitem[Riaz, 2015]{Riaz2015}
+Riaz, A. (2015).
+\newblock {\em Adaptive blind source separation based on intensity vector
+  statistics}.
+\newblock PhD thesis, University of Surrey.
+
 \bibitem[Robinson, 2017]{theoverflow}
 Robinson, D. (2017).
 \newblock The overflow: The incredible growth of python.
@@ -546,6 +652,12 @@ Rudrich, D. and Frank, M. (2019).
 Sabine, W.~C. (1927).
 \newblock {\em Collected papers on acoustics}.
 \newblock Harvard University Press Cambridge, MA.
+
+\bibitem[Salamon et~al., 2017]{Salamon2017}
+Salamon, J., MacConnell, D., Cartwright, M., Li, P., and Bello, J.~P. (2017).
+\newblock Scaper: A library for soundscape synthesis and augmentation.
+\newblock In {\em Workshop on Applications of Signal Processing to Audio and
+  Acoustics (WASPAA)}, pages 344--348. IEEE.
 
 \bibitem[S{\"a}rkk{\"a} et~al., 2004]{sarkka2004rao}
 S{\"a}rkk{\"a}, S., Vehtari, A., and Lampinen, J. (2004).
@@ -573,6 +685,12 @@ Schroeder, M.~R. (1965).
 \newblock {\em The Journal of the Acoustical Society of America},
   37(6):1187--1188.
 
+\bibitem[Shujau et~al., 2011]{Shujau2011}
+Shujau, M., Ritz, C.~H., and Burnett, I.~S. (2011).
+\newblock Separation of speech sources using an acoustic vector sensor.
+\newblock In {\em 13th International Workshop on Multimedia Signal Processing}.
+  IEEE.
+
 \bibitem[SOFA, 2018]{sofaconventions}
 SOFA (Accessed on March 12th, 2018).
 \newblock Sofa conventions.
@@ -592,6 +710,12 @@ Stefanakis, N. and Mouchtaris, A. (2015).
 \newblock In {\em 2015 {IEEE} {International} {Conference} on {Acoustics},
   {Speech} and {Signal} {Processing} ({ICASSP})}, pages 51--55, South Brisbane,
   Queensland, Australia. IEEE.
+
+\bibitem[Tervo, 2009]{Tervo2009}
+Tervo, S. (2009).
+\newblock Direction estimation based on sound intensity vectors.
+\newblock In {\em 17th European Signal Processing Conference}, pages 700--704.
+  IEEE.
 
 \bibitem[TheVerge, 2018]{theverge}
 TheVerge (2018).

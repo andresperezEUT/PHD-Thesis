@@ -43,24 +43,28 @@ I was expecting a `,' or a `}'---line 228 of file ../Bibliography/SELD.bib.bib
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #3: ../Bibliography/Data.bib.bib
-Repeated entry---line 43 of file ../Bibliography/Data.bib.bib
+Repeated entry---line 42 of file ../Bibliography/Data.bib.bib
  : @inproceedings{thiergart_localization_2009
  :                                           ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 144 of file ../Bibliography/Data.bib.bib
+Repeated entry---line 143 of file ../Bibliography/Data.bib.bib
  : @article{Pulkki07
  :                  ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 281 of file ../Bibliography/Data.bib.bib
+Repeated entry---line 275 of file ../Bibliography/Data.bib.bib
  : @article{Bertet2006
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 353 of file ../Bibliography/Data.bib.bib
+I was expecting a `,' or a `}'---line 347 of file ../Bibliography/Data.bib.bib
  :     
  :     howpublished={\url{http://pypl.github.io/PYPL.html}}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #4: ../Bibliography/AmbisonicsDRIR.bib.bib
+Repeated entry---line 18 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @misc{coleman2015s3a
+ :                     ,
+I'm skipping whatever remains of this entry
 Repeated entry---line 50 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @article{gerzon1975recording
  :                             ,
@@ -68,6 +72,10 @@ I'm skipping whatever remains of this entry
 Repeated entry---line 69 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : %@misc{openair
  :               ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 113 of file ../Bibliography/AmbisonicsDRIR.bib.bib
+ : @inproceedings{murphy2010openair
+ :                                 ,
 I'm skipping whatever remains of this entry
 Repeated entry---line 143 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @article{gerzon1973periphony
@@ -141,45 +149,45 @@ Warning--I didn't find a database entry for "epain_spherical_2016"
 Warning--empty journal in begault20003
 Warning--empty journal in habets_comments_2010
 Warning--empty journal in murphy2017acoustic
-You've used 103 entries,
+You've used 122 entries,
             1935 wiz_defined-function locations,
-            996 strings with 23727 characters,
-and the built_in function-call counts, 42350 in all, are:
-= -- 4246
-> -- 1718
-< -- 88
-+ -- 611
-- -- 576
-* -- 3328
-:= -- 7230
-add.period$ -- 348
-call.type$ -- 103
-change.case$ -- 789
-chr.to.int$ -- 102
-cite$ -- 106
-duplicate$ -- 1754
-empty$ -- 2957
-format.name$ -- 725
-if$ -- 8492
-int.to.chr$ -- 2
+            1096 strings with 27209 characters,
+and the built_in function-call counts, 51044 in all, are:
+= -- 5133
+> -- 2076
+< -- 103
++ -- 737
+- -- 698
+* -- 4016
+:= -- 8668
+add.period$ -- 416
+call.type$ -- 122
+change.case$ -- 944
+chr.to.int$ -- 119
+cite$ -- 125
+duplicate$ -- 2117
+empty$ -- 3561
+format.name$ -- 872
+if$ -- 10272
+int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 92
-newline$ -- 528
-num.names$ -- 311
-pop$ -- 806
+missing$ -- 108
+newline$ -- 625
+num.names$ -- 368
+pop$ -- 972
 preamble$ -- 1
-purify$ -- 799
+purify$ -- 955
 quote$ -- 0
-skip$ -- 1287
+skip$ -- 1554
 stack$ -- 0
-substring$ -- 2706
-swap$ -- 309
-text.length$ -- 30
+substring$ -- 3301
+swap$ -- 394
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 604
+type$ -- 718
 warning$ -- 3
-while$ -- 337
+while$ -- 407
 width$ -- 0
-write$ -- 1362
-(There were 30 error messages)
+write$ -- 1617
+(There were 32 error messages)
