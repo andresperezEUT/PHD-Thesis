@@ -53,7 +53,7 @@ Given the periodic nature of the azimuth angle, the descriptive statistic operat
 
 
 \subsection{Nomenclature}
-\todo{is this name correct? }
+
 Throughout the Thesis, we refer to time-domain signals with lowercase, e.g. $x(t)$, with $t$ as the time index. 
 
 Time-domain signals transformed by the Short-Time Fourier Transform (STFT) are represented with uppercase, e.g. $X(k,n)$, where $k$ is the frequency bin index, and $n$ the time frame index. 
@@ -320,7 +320,7 @@ is a $M \times L$ matrix known as the \textit{decoding matrix}, and $\text{diag}
 Although the matrix $D$ is frequency-independent and depends solely on the loudspeaker array geometry, in practical scenarios it is usual to include frequency-dependent weightings, $\alpha_n(k)$, to improve the broadband sound field reconstruction \cite{daniel2000representation}.
 
 Furthermore, sound field reconstruction with Eq.~\ref{eq:decodingequation2} is only possible when the loudspeakers are evenly located on the 3D space; in other words, the speaker layout must take the form of one of the five \textit{Platonic solids}: tetrahedron, cube, octahedron, dodecahedron or icosahedron.
-Provided that this condition is usually difficult to fulfil in real scenarios, there are several methods which allow ambisonic decoding for such \textit{irregular} layouts. One of the most commonly used is the AllRAD method \todo{cite zotter}. AllRAD proposes a two step decoding: first, the ambisonic signal is decoded to a nearly-uniform layout of virtual speakers. Then, the signals of the virtual speakers are further distributed into the real speakers by the \textit{Vector-Based Amplitude Panning (VBAP)} method \todo{cite pulkki}.
+Provided that this condition is usually difficult to fulfil in real scenarios, there are several methods which allow ambisonic decoding for such \textit{irregular} layouts. One of the most commonly used is the AllRAD method \cite{zotter2012all}. AllRAD proposes a two step decoding: first, the ambisonic signal is decoded to a nearly-uniform layout of virtual speakers. Then, the signals of the virtual speakers are further distributed into the real speakers by the \textit{Vector-Based Amplitude Panning (VBAP)} method \cite{pulkki1997virtual}.
 
 
 % The reader is referred to [zotter? daniel? idhoa?] for more information about the vast field of study of ambisonic decoding.

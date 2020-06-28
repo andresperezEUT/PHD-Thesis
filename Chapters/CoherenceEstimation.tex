@@ -6,7 +6,7 @@
 
 A number of practical applications benefit of the knowledge about the diffuseness of a sound field, including speech enhancement and dereverberation \cite{p_habets_dual-microphone_2006}, noise suppression \cite{ito_designing_2010}, source separation \cite{duong_under-determined_2009} or background estimation \cite{stefanakis_foreground_2015}. In the field of spatial audio, diffuseness estimation is often used for parametrization \cite{pulkki2006directional, politis_compass_2018}, Direction-of-Arrival estimation \cite{thiergart_localization_2009} or source separation \cite{motlicek_real-time_2013}.
 
-\todo{In this chapter}, we study diffuseness estimation by subjecting a tetrahedral microphone array to spherically isotropic noise fields.
+In this Chapter, we study diffuseness estimation by subjecting a tetrahedral microphone array to spherically isotropic noise fields.
 The motivation for this work is, first, that tetrahedral arrays are a well known type of microphone arrays, which have today become popular for applications related to Virtual and Augmented Reality. 
 Second, the spherical isotropic sound field is known to be a good approximation to the reverberant part of the sound field in a room \cite{elko_spatial_2001, mccowan_microphone_2003}, and therefore it would be interesting to investigate how different microphone arrays behave under such conditions.
 
@@ -26,8 +26,7 @@ In the following sections, we present several experiments that illustrate the be
 \section{Methods}
 
 \subsection{Simulation}
-Spherical isotropic noise has been generated following the \textit{geometrical method} \cite{habets_generating_2007, habets_comments_2010}, using $I = 1024$ plane waves. The resulting \textit{A-Format} signals correspond to a virtual tetrahedral microphone array mimicking the Ambeo\footnote{Sennheiser Ambeo VR Mic. 
-\todo{https://en-us.sennheiser.com/microphone-3d-audio-ambeo-vr-mic}}
+Spherical isotropic noise has been generated following the \textit{geometrical method} \cite{habets_generating_2007, habets_comments_2010}, using $I = 1024$ plane waves. The resulting \textit{A-Format} signals correspond to a virtual tetrahedral microphone array mimicking the Ambeo\footnote{Sennheiser Ambeo VR Mic \cite{sennheiser}.}
 characteristics ($R=0.015$ meter, $\alpha=0.5$). 
 The generated audio has a duration of 60 seconds. 
 
@@ -71,10 +70,6 @@ Two error metrics are considered: the frequency-dependent squared error $\vareps
 \section{Results and discussion}
 \subsection{\label{subsec:results_aformat}A-Format}
 
-\begin{figure}
-	\includegraphics[width=\textwidth]{Figures/CoherenceEstimation/Figure1}
-    \caption{\label{fig:Fig1}\textit{A-Format} coherence between microphone signals. Left: $\text{MSC}$ as a function of the frequency of theoretical, simulated and recorded \textit{((BLD,BRU)},  $N=5, I=64$) signals. Right: mean error $\bar{\varepsilon}$ of the recorded signals' $MSC$ \textit{(BLD,BRU)} compared to the simulated values, for all values of $N$ and $I$.\todo{REDO FIGURE WITH N AND I}}
-\end{figure}
 
 
 The coherence of the generated \textit{A-Format} signals is exemplified in Fig.~\ref{fig:Fig1} (left), which shows the $MSC$ between the capsule pair (\textit{BLD,BRU}) for the theoretical, simulated and recorded cases.
@@ -86,18 +81,24 @@ Above this frequency, the recorded $MSC$ presents several spectral peaks, which 
 The squared error $\varepsilon(k)$ with respect to the simulated curve is shown in Fig.~\ref{fig:Fig1} (left), while Fig.~\ref{fig:Fig1} (right) represents the same error averaged over frequency $\bar{\varepsilon}$ for different spatial resolution values of the diffuse field reproduction algorithm.
 As expected, $\bar{\varepsilon}$ decreases with increasing values of $N$ and $I$.
 
+\begin{figure}[th]
+	\includegraphics[width=\textwidth]{Figures/CoherenceEstimation/Untitled1}
+    \caption{\label{fig:Fig1}\textit{A-Format} coherence between microphone signals. Left: $\text{MSC}$ as a function of the frequency of theoretical, simulated and recorded \textit{((BLD,BRU)},  $N=5, I=64$) signals. Right: mean error $\bar{\varepsilon}$ of the recorded signals' $MSC$ \textit{(BLD,BRU)} compared to the simulated values, for all values of $N$ and $I$.}
+\end{figure}
 
 
 
 \subsection{B-Format} 
+
+In order to evaluate the dependency of the \textit{B-Format coherence} $\Delta$ on the number of time frames used for averaging, the following procedure is presented.
+The simulated \textit{A-Format} sound field has been transformed into the spherical harmonic domain, with and without the application of radial filters $\Gamma_n(kR)$ (Eq.~\ref{eq:a2b}). Then, $\Delta$ has been computed with Eq.~(\ref{eq:delta}) for exponentially growing values of $r$ between 1 (8 ms) and 2048 (10.92 s), where $r$ is the vicinity radius used for time averaging, and the number of time windows is given by $T = 2r+1$.
+The time-frequency representation is derived by applying the STFT with the same window parameters as in Subsection \ref{subsec:results_aformat}.\\
+
 \begin{figure}
 	\includegraphics[width=\textwidth]{Figures/CoherenceEstimation/Figure2}
 	\caption{\label{fig:Fig2} Estimated \textit{B-Format} coherence ($\Delta$) of a simulated diffuse sound field, as a function of the temporal averaging vicinity radius $r$. Left: $\Delta(k)$ for different values of $r$, with (coarse) and without (fine) application of radial filters. Right: mean and standard deviation of $\Delta(k)$ as a function of $r$.}
 \end{figure}
 
-In order to evaluate the dependency of the \textit{B-Format coherence} $\Delta$ on the number of time frames used for averaging, the following procedure is presented.
-The simulated \textit{A-Format} sound field has been transformed into the spherical harmonic domain, with and without the application of radial filters $\Gamma_n(kR)$ (Eq.~\ref{eq:a2b}). Then, $\Delta$ has been computed with Eq.~(\ref{eq:delta}) for exponentially growing values of $r$ between 1 (8 ms) and 2048 (10.92 s), where $r$ is the vicinity radius used for time averaging, and the number of time windows is given by $T = 2r+1$.
-The time-frequency representation is derived by applying the STFT with the same window parameters as in Subsection \ref{subsec:results_aformat}.\\
 
 Figure~\ref{fig:Fig2} (left) shows the great dependence of $\Delta$ on $r$.  The estimated coherence tends to the theoretical values with increasing values of $r$. This tendency is better appreciated in Fig.~\ref{fig:Fig2} (right): the curve asymptotically decreases to a value $\Delta_{min}\approx0$.
 
@@ -107,13 +108,12 @@ Above this value, the coherence response looses the flatness due to spatial alia
 The coherence level differences along frequency are inversely proportional to $r$ --- the effect is better depicted by the standard deviation values (right).
 The effect of the radial filters in the coherence measurement is also shown: for a given $r$, the shape of the coherence is always less flat if no filters are applied. Conversely, in this case, coherence values are always smaller for the same $r$. This effect might be explained taking into account the inter-channel coherence introduced by microphone and encoder imperfections in real scenarios \cite{schorkhuber_ambisonic_2017}.
 
-As a remark, the comparison between Figs.~\ref{fig:Fig1} and \ref{fig:Fig2} provides evidence that the application of the spherical harmonic transform might be able to yield more accurate diffuseness estimations, due to a better signal conditioning \cite{epain_spherical_2016}.\\
-
+As a remark, the comparison between Figs.~\ref{fig:Fig1} and \ref{fig:Fig2} provides evidence that the application of the spherical harmonic transform might be able to yield more accurate diffuseness estimations, due to a better signal conditioning \cite{epain2016spherical}.\\
 
 
 \begin{figure}
-	\includegraphics[width=\textwidth]{Figures/CoherenceEstimation/Figure3}
-	\caption{\label{fig:Fig3}\textit{B-Format coherence} between microphone signals. Left: $\Delta$ of simulated and recorded ($N=5, I=64$) signals. Right: $\bar{\varepsilon}$ of the recorded signals coherence across all values of $N$ and $I$.\todo{REDO FIGURE} }
+	\includegraphics[width=\textwidth]{Figures/CoherenceEstimation/Untitled2}
+	\caption{\label{fig:Fig3}\textit{B-Format coherence} between microphone signals. Left: $\Delta$ of simulated and recorded ($N=5, I=64$) signals. Right: $\bar{\varepsilon}$ of the recorded signals coherence across all values of $N$ and $I$.}
 \end{figure}
 
 Figure~\ref{fig:Fig3} (left) shows the estimated coherence for the recorded sound field with $N=5$ and $I=64$, using a vicinity radius of $r=1024$ ($\approx$ 5 s).

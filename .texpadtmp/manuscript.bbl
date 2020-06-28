@@ -590,6 +590,11 @@ Prego, T. d.~M., de~Lima, A.~A., Netto, S.~L., Lee, B., Said, A., Schafer,
 \newblock {\em The Journal of the Acoustical Society of America},
   131(4):2811--2816.
 
+\bibitem[Pulkki, 1997]{pulkki1997virtual}
+Pulkki, V. (1997).
+\newblock Virtual sound source positioning using vector base amplitude panning.
+\newblock {\em Journal of the audio engineering society}, 45(6):456--466.
+
 \bibitem[Pulkki, 2006]{pulkki2006directional}
 Pulkki, V. (2006).
 \newblock Directional audio coding in spatial sound reproduction and stereo
@@ -685,6 +690,12 @@ Schroeder, M.~R. (1965).
 \newblock {\em The Journal of the Acoustical Society of America},
   37(6):1187--1188.
 
+\bibitem[Sennheiser, 2020]{sennheiser}
+Sennheiser (2020).
+\newblock Ambeo vr mic.
+\newblock \url{https://en-us.sennheiser.com/microphone-3d-audio-ambeo-vr-mic}.
+\newblock Accessed on June 26th, 2020.
+
 \bibitem[Shujau et~al., 2011]{Shujau2011}
 Shujau, M., Ritz, C.~H., and Burnett, I.~S. (2011).
 \newblock Separation of speech sources using an acoustic vector sensor.
@@ -768,6 +779,11 @@ Wikipedia (2020).
 \newblock List of ambisonic hardware.
 \newblock \url{https://en.wikipedia.org/wiki/List_of_Ambisonic_hardware}.
 \newblock Accessed on June 11th, 2020.
+
+\bibitem[Zotter and Frank, 2012]{zotter2012all}
+Zotter, F. and Frank, M. (2012).
+\newblock All-round ambisonic panning and decoding.
+\newblock {\em Journal of the audio engineering society}, 60(10):807--820.
 
 \bibitem[Zotter and Frank, 2019]{zotter2019ambisonics}
 Zotter, F. and Frank, M. (2019).

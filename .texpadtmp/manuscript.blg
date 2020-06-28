@@ -145,49 +145,48 @@ I was expecting a `,' or a `}'---line 210 of file ../Bibliography/ScientificBack
  : organization={Audio Engineering Society}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "epain_spherical_2016"
 Warning--empty journal in begault20003
 Warning--empty journal in habets_comments_2010
 Warning--empty journal in murphy2017acoustic
-You've used 122 entries,
+You've used 125 entries,
             1935 wiz_defined-function locations,
-            1096 strings with 27209 characters,
-and the built_in function-call counts, 51044 in all, are:
-= -- 5133
-> -- 2076
-< -- 103
-+ -- 737
-- -- 698
-* -- 4016
-:= -- 8668
-add.period$ -- 416
-call.type$ -- 122
-change.case$ -- 944
-chr.to.int$ -- 119
-cite$ -- 125
-duplicate$ -- 2117
-empty$ -- 3561
-format.name$ -- 872
-if$ -- 10272
+            1109 strings with 27490 characters,
+and the built_in function-call counts, 52065 in all, are:
+= -- 5241
+> -- 2103
+< -- 106
++ -- 745
+- -- 706
+* -- 4099
+:= -- 8849
+add.period$ -- 426
+call.type$ -- 125
+change.case$ -- 963
+chr.to.int$ -- 122
+cite$ -- 128
+duplicate$ -- 2155
+empty$ -- 3636
+format.name$ -- 885
+if$ -- 10469
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 108
-newline$ -- 625
-num.names$ -- 368
-pop$ -- 972
+missing$ -- 110
+newline$ -- 641
+num.names$ -- 377
+pop$ -- 981
 preamble$ -- 1
-purify$ -- 955
+purify$ -- 974
 quote$ -- 0
-skip$ -- 1554
+skip$ -- 1585
 stack$ -- 0
-substring$ -- 3301
-swap$ -- 394
+substring$ -- 3387
+swap$ -- 396
 text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 718
+type$ -- 736
 warning$ -- 3
-while$ -- 407
+while$ -- 417
 width$ -- 0
-write$ -- 1617
+write$ -- 1657
 (There were 32 error messages)

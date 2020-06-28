@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  27 JUN 2020 22:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  29 JUN 2020 00:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,12 +800,12 @@ Overfull \hbox (14.64948pt too wide) in paragraph at lines 10--10
 Chapter 1.
 [1
 
-] <Figures/Introduction/num_mics_ticks.png, id=656, 383.4325pt x 269.005pt>
+] <Figures/Introduction/num_mics_ticks.png, id=655, 383.4325pt x 269.005pt>
 File: Figures/Introduction/num_mics_ticks.png Graphic file (type png)
  <use Figures/Introduction/num_mics_ticks.png>
 Package pdftex.def Info: Figures/Introduction/num_mics_ticks.png used on input line 37.
 (pdftex.def)             Requested size: 350.5364pt x 245.94012pt.
- [2] <Figures/Introduction/vr_funding.png, id=676, 803.0pt x 523.9575pt>
+ [2] <Figures/Introduction/vr_funding.png, id=675, 803.0pt x 523.9575pt>
 File: Figures/Introduction/vr_funding.png Graphic file (type png)
  <use Figures/Introduction/vr_funding.png>
 Package pdftex.def Info: Figures/Introduction/vr_funding.png used on input line 76.
@@ -818,7 +818,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-[4] <Figures/Introduction/SCHEME1.png, id=691, 356.83313pt x 217.5628pt>
+[4] <Figures/Introduction/SCHEME1.png, id=690, 356.83313pt x 217.5628pt>
 File: Figures/Introduction/SCHEME1.png Graphic file (type png)
  <use Figures/Introduction/SCHEME1.png>
 Package pdftex.def Info: Figures/Introduction/SCHEME1.png used on input line 108.
@@ -851,7 +851,7 @@ File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
 )
 LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 150.
- <Figures/Introduction/SCHEME1_NUMBERS.png, id=730, 399.74344pt x 217.5628pt>
+ <Figures/Introduction/SCHEME1_NUMBERS.png, id=729, 399.74344pt x 217.5628pt>
 File: Figures/Introduction/SCHEME1_NUMBERS.png Graphic file (type png)
  <use Figures/Introduction/SCHEME1_NUMBERS.png>
 Package pdftex.def Info: Figures/Introduction/SCHEME1_NUMBERS.png used on input line 163.
@@ -910,12 +910,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[16] <Figures/ScientificBackground/Spherical_Harmonics_deg3.png, id=814, 527.0892pt x 301.125pt>
+[16] <Figures/ScientificBackground/Spherical_Harmonics_deg3.png, id=813, 527.0892pt x 301.125pt>
 File: Figures/ScientificBackground/Spherical_Harmonics_deg3.png Graphic file (type png)
  <use Figures/ScientificBackground/Spherical_Harmonics_deg3.png>
 Package pdftex.def Info: Figures/ScientificBackground/Spherical_Harmonics_deg3.png used on input line 144.
 (pdftex.def)             Requested size: 350.5364pt x 200.26857pt.
- [17 <./Figures/ScientificBackground/Spherical_Harmonics_deg3.png (PNG copy)>] <Figures/ScientificBackground/magnitude_kr.png, id=826, 609.27625pt x 932.48375pt>
+ [17 <./Figures/ScientificBackground/Spherical_Harmonics_deg3.png (PNG copy)>] <Figures/ScientificBackground/magnitude_kr.png, id=825, 609.27625pt x 932.48375pt>
 File: Figures/ScientificBackground/magnitude_kr.png Graphic file (type png)
  <use Figures/ScientificBackground/magnitude_kr.png>
 Package pdftex.def Info: Figures/ScientificBackground/magnitude_kr.png used on input line 176.
@@ -930,17 +930,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-[21] <Figures/Introduction/basic.png, id=875, 616.3025pt x 320.19624pt>
+[21] <Figures/Introduction/basic.png, id=874, 616.3025pt x 320.19624pt>
 File: Figures/Introduction/basic.png Graphic file (type png)
  <use Figures/Introduction/basic.png>
 Package pdftex.def Info: Figures/Introduction/basic.png used on input line 288.
 (pdftex.def)             Requested size: 315.48062pt x 163.90863pt.
- <Figures/Introduction/maxre.png, id=876, 625.33624pt x 320.19624pt>
+ <Figures/Introduction/maxre.png, id=875, 625.33624pt x 320.19624pt>
 File: Figures/Introduction/maxre.png Graphic file (type png)
  <use Figures/Introduction/maxre.png>
 Package pdftex.def Info: Figures/Introduction/maxre.png used on input line 291.
 (pdftex.def)             Requested size: 315.48062pt x 161.54391pt.
- <Figures/Introduction/inphase.png, id=877, 616.3025pt x 320.19624pt>
+ <Figures/Introduction/inphase.png, id=876, 616.3025pt x 320.19624pt>
 File: Figures/Introduction/inphase.png Graphic file (type png)
  <use Figures/Introduction/inphase.png>
 Package pdftex.def Info: Figures/Introduction/inphase.png used on input line 294.
@@ -962,7 +962,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
-[25] <Figures/ScientificBackground/normalization.png, id=917, 721.69624pt x 768.8725pt>
+[25] <Figures/ScientificBackground/normalization.png, id=920, 721.69624pt x 768.8725pt>
 File: Figures/ScientificBackground/normalization.png Graphic file (type png)
  <use Figures/ScientificBackground/normalization.png>
 Package pdftex.def Info: Figures/ScientificBackground/normalization.png used on input line 363.
@@ -1002,7 +1002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
-[30] <Figures/Introduction/spectrograms.png, id=988, 930.47626pt x 839.135pt>
+[30] <Figures/Introduction/spectrograms.png, id=991, 930.47626pt x 839.135pt>
 File: Figures/Introduction/spectrograms.png Graphic file (type png)
  <use Figures/Introduction/spectrograms.png>
 Package pdftex.def Info: Figures/Introduction/spectrograms.png used on input line 488.
@@ -1040,7 +1040,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--565
 
  []
 
-[33] <Figures/Introduction/Acoustic_room_impulse_response.jpg, id=1015, 1133.23375pt x 549.05125pt>
+[33] <Figures/Introduction/Acoustic_room_impulse_response.jpg, id=1018, 1133.23375pt x 549.05125pt>
 File: Figures/Introduction/Acoustic_room_impulse_response.jpg Graphic file (type jpg)
  <use Figures/Introduction/Acoustic_room_impulse_response.jpg>
 Package pdftex.def Info: Figures/Introduction/Acoustic_room_impulse_response.jpg used on input line 568.
@@ -1065,7 +1065,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
  []
 
-<Figures/Introduction/edt.png, id=1045, 982.67125pt x 434.62375pt>
+<Figures/Introduction/edt.png, id=1048, 982.67125pt x 434.62375pt>
 File: Figures/Introduction/edt.png Graphic file (type png)
  <use Figures/Introduction/edt.png>
 Package pdftex.def Info: Figures/Introduction/edt.png used on input line 630.
@@ -1107,12 +1107,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--337
 
  []
 
-<Figures/ReverberationTimeEstimation/96.png, id=1201, 650.43pt x 433.62pt>
+<Figures/ReverberationTimeEstimation/96.png, id=1205, 650.43pt x 433.62pt>
 File: Figures/ReverberationTimeEstimation/96.png Graphic file (type png)
  <use Figures/ReverberationTimeEstimation/96.png>
 Package pdftex.def Info: Figures/ReverberationTimeEstimation/96.png used on input line 360.
 (pdftex.def)             Requested size: 455.6984pt x 303.8032pt.
- <Figures/ReverberationTimeEstimation/94.png, id=1202, 650.43pt x 289.08pt>
+ <Figures/ReverberationTimeEstimation/94.png, id=1206, 650.43pt x 289.08pt>
 File: Figures/ReverberationTimeEstimation/94.png Graphic file (type png)
  <use Figures/ReverberationTimeEstimation/94.png>
 Package pdftex.def Info: Figures/ReverberationTimeEstimation/94.png used on input line 365.
@@ -1127,53 +1127,46 @@ Chapter 4.
 
 Underfull \vbox (badness 3849) has occurred while \output is active []
 
- [55]
-Underfull \vbox (badness 3780) has occurred while \output is active []
-
- [56] [57] <Figures/CoherenceEstimation/Figure1.jpg, id=1279, 308.352pt x 115.632pt>
-File: Figures/CoherenceEstimation/Figure1.jpg Graphic file (type jpg)
- <use Figures/CoherenceEstimation/Figure1.jpg>
-Package pdftex.def Info: Figures/CoherenceEstimation/Figure1.jpg used on input line 75.
+ [55] [56] [57] <Figures/CoherenceEstimation/Untitled1.png, id=1289, 308.352pt x 115.632pt>
+File: Figures/CoherenceEstimation/Untitled1.png Graphic file (type png)
+ <use Figures/CoherenceEstimation/Untitled1.png>
+Package pdftex.def Info: Figures/CoherenceEstimation/Untitled1.png used on input line 85.
 (pdftex.def)             Requested size: 350.5364pt x 131.45308pt.
- [58 <./Figures/CoherenceEstimation/Figure1.jpg>] <Figures/CoherenceEstimation/Figure2.jpg, id=1289, 963.6pt x 481.8pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 93--96
+
+ []
+
+[58] <Figures/CoherenceEstimation/Figure2.jpg, id=1298, 963.6pt x 481.8pt>
 File: Figures/CoherenceEstimation/Figure2.jpg Graphic file (type jpg)
  <use Figures/CoherenceEstimation/Figure2.jpg>
-Package pdftex.def Info: Figures/CoherenceEstimation/Figure2.jpg used on input line 94.
+Package pdftex.def Info: Figures/CoherenceEstimation/Figure2.jpg used on input line 98.
 (pdftex.def)             Requested size: 350.5364pt x 175.26372pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 98--101
-
- []
-
-[59 <./Figures/CoherenceEstimation/Figure2.jpg (PNG copy)>]
-
-LaTeX Warning: Citation `epain_spherical_2016' on page 60 undefined on input line 110.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+ [59 <./Figures/CoherenceEstimation/Untitled1.png (PNG copy)>] [60 <./Figures/CoherenceEstimation/Figure2.jpg (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-[60] <Figures/CoherenceEstimation/Figure3.jpg, id=1311, 308.352pt x 115.632pt>
-File: Figures/CoherenceEstimation/Figure3.jpg Graphic file (type jpg)
- <use Figures/CoherenceEstimation/Figure3.jpg>
-Package pdftex.def Info: Figures/CoherenceEstimation/Figure3.jpg used on input line 115.
+<Figures/CoherenceEstimation/Untitled2.png, id=1317, 308.352pt x 115.632pt>
+File: Figures/CoherenceEstimation/Untitled2.png Graphic file (type png)
+ <use Figures/CoherenceEstimation/Untitled2.png>
+Package pdftex.def Info: Figures/CoherenceEstimation/Untitled2.png used on input line 115.
 (pdftex.def)             Requested size: 350.5364pt x 131.45308pt.
- [61 <./Figures/CoherenceEstimation/Figure3.jpg>]) (./Chapters/SELD.tex [62]
+ [61 <./Figures/CoherenceEstimation/Untitled2.png (PNG copy)>]) (./Chapters/SELD.tex [62]
 Chapter 5.
 [63
 
-] [64] <Figures/SELD/ARCH.png, id=1355, 580.41844pt x 539.76656pt>
+] [64] <Figures/SELD/ARCH.png, id=1362, 580.41844pt x 539.76656pt>
 File: Figures/SELD/ARCH.png Graphic file (type png)
  <use Figures/SELD/ARCH.png>
 Package pdftex.def Info: Figures/SELD/ARCH.png used on input line 48.
 (pdftex.def)             Requested size: 262.9023pt x 244.49052pt.
- [65 <./Figures/SELD/ARCH.png>] <Figures/SELD/plots.png, id=1374, 667.49374pt x 551.05875pt>
+ [65 <./Figures/SELD/ARCH.png>] <Figures/SELD/plots.png, id=1381, 667.49374pt x 551.05875pt>
 File: Figures/SELD/plots.png Graphic file (type png)
  <use Figures/SELD/plots.png>
 Package pdftex.def Info: Figures/SELD/plots.png used on input line 76.
 (pdftex.def)             Requested size: 350.5364pt x 289.39426pt.
- [66] [67 <./Figures/SELD/plots.png>] [68] <Figures/SELD/gbm.png, id=1406, 1217.54875pt x 668.4975pt>
+ [66] [67 <./Figures/SELD/plots.png>] [68] <Figures/SELD/gbm.png, id=1413, 1217.54875pt x 668.4975pt>
 File: Figures/SELD/gbm.png Graphic file (type png)
  <use Figures/SELD/gbm.png>
 Package pdftex.def Info: Figures/SELD/gbm.png used on input line 130.
@@ -1181,7 +1174,7 @@ Package pdftex.def Info: Figures/SELD/gbm.png used on input line 130.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./Figures/SELD/gbm.png>] [70] <Figures/SELD/numclasses2_tight.png, id=1428, 466.74374pt x 265.99374pt>
+ [69 <./Figures/SELD/gbm.png>] [70] <Figures/SELD/numclasses2_tight.png, id=1435, 466.74374pt x 265.99374pt>
 File: Figures/SELD/numclasses2_tight.png Graphic file (type png)
  <use Figures/SELD/numclasses2_tight.png>
 Package pdftex.def Info: Figures/SELD/numclasses2_tight.png used on input line 207.
@@ -1204,7 +1197,7 @@ LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 336.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 336.
- <Figures/SELD/importance_new_tight.png, id=1465, 491.8375pt x 367.3725pt>
+ <Figures/SELD/importance_new_tight.png, id=1472, 491.8375pt x 367.3725pt>
 File: Figures/SELD/importance_new_tight.png Graphic file (type png)
  <use Figures/SELD/importance_new_tight.png>
 Package pdftex.def Info: Figures/SELD/importance_new_tight.png used on input line 364.
@@ -1226,7 +1219,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<Figures/DataGeneration/projections-1-1400x1200.png, id=1489, 1405.25pt x 1204.5pt>
+<Figures/DataGeneration/projections-1-1400x1200.png, id=1497, 1405.25pt x 1204.5pt>
 File: Figures/DataGeneration/projections-1-1400x1200.png Graphic file (type png)
  <use Figures/DataGeneration/projections-1-1400x1200.png>
 Package pdftex.def Info: Figures/DataGeneration/projections-1-1400x1200.png used on input line 13.
@@ -1241,7 +1234,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-<Figures/DataGeneration/array_response.png, id=1521, 963.6pt x 481.8pt>
+<Figures/DataGeneration/array_response.png, id=1528, 963.6pt x 481.8pt>
 File: Figures/DataGeneration/array_response.png Graphic file (type png)
  <use Figures/DataGeneration/array_response.png>
 Package pdftex.def Info: Figures/DataGeneration/array_response.png used on input line 80.
@@ -1255,7 +1248,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
-[82] <Figures/DataGeneration/sht_filters.png, id=1529, 642.4pt x 481.8pt>
+[82] <Figures/DataGeneration/sht_filters.png, id=1536, 642.4pt x 481.8pt>
 File: Figures/DataGeneration/sht_filters.png Graphic file (type png)
  <use Figures/DataGeneration/sht_filters.png>
 Package pdftex.def Info: Figures/DataGeneration/sht_filters.png used on input line 91.
@@ -1314,7 +1307,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-<Figures/DataGeneration/figure_architecture_V2.png, id=1646, 882.497pt x 567.721pt>
+<Figures/DataGeneration/figure_architecture_V2.png, id=1653, 882.497pt x 567.721pt>
 File: Figures/DataGeneration/figure_architecture_V2.png Graphic file (type png)
  <use Figures/DataGeneration/figure_architecture_V2.png>
 Package pdftex.def Info: Figures/DataGeneration/figure_architecture_V2.png used on input line 348.
@@ -1398,28 +1391,43 @@ Underfull \hbox (badness 10000) in paragraph at lines 526--530
 \T1/zpltlf/m/n/12 de Muynke, J. (2018).  Am-bison-ics-drir.  [][]$\T1/npxtt/m/n/12 https :
  []
 
-[108] [109] [110] [111]
-Underfull \hbox (badness 1210) in paragraph at lines 721--727
+[108] [109] [110]
+Underfull \hbox (badness 10000) in paragraph at lines 694--698
+[]\T1/zpltlf/m/n/12 Sennheiser (2020).  Am-beo
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 694--698
+\T1/zpltlf/m/n/12 vr mic.  [][]$\T1/npxtt/m/n/12 https : / / en-[]us . sennheiser . com /
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 694--698
+\T1/npxtt/m/n/12 microphone-[]3d-[]audio-[]ambeo-[]vr-[]mic$[][]\T1/zpltlf/m/n/12 .  Ac-cessed on June
+ []
+
+[111]
+Underfull \hbox (badness 1210) in paragraph at lines 732--738
 []\T1/zpltlf/m/n/12 TheVerge (2018).  For-mer vr film com-pany
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 721--727
+Underfull \hbox (badness 1675) in paragraph at lines 732--738
 \T1/zpltlf/m/n/12 jaunt is giv-ing up on vr to fo-cus on aug-mented re-al-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--727
+Underfull \hbox (badness 10000) in paragraph at lines 732--738
 \T1/zpltlf/m/n/12 ity.  [][]$\T1/npxtt/m/n/12 https : / / www . theverge . com / 2018 / 10 / 15 / 17980420 /
  []
 
 
-Overfull \hbox (35.80182pt too wide) in paragraph at lines 721--727
+Overfull \hbox (35.80182pt too wide) in paragraph at lines 732--738
 \T1/npxtt/m/n/12 jaunt-[]vr-[]layoffs-[]ar-[]focus-[]switch-[]restructuring-[]xr-[]platform$[][]\T1/zpltlf/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 737--743
+Underfull \hbox (badness 10000) in paragraph at lines 748--754
 []\T1/zpltlf/m/n/12 Thiergart, O., Schultz-Amling, R.,
  []
 
@@ -1435,26 +1443,23 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 73773229319970D0F85D2E44D77988F9;5654.
 
 
-LaTeX Warning: There were undefined references.
-
-
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12081 strings out of 492995
- 183754 string characters out of 6132705
- 288330 words of memory out of 5000000
- 14840 multiletter control sequences out of 15000+600000
+ 12087 strings out of 492995
+ 183863 string characters out of 6132705
+ 288534 words of memory out of 5000000
+ 14843 multiletter control sequences out of 15000+600000
  82650 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  59i,12n,94p,863b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1
 xtt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (134 pages, 3325984 bytes).
+Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (134 pages, 3107573 bytes).
 PDF statistics:
- 1986 PDF objects out of 2073 (max. 8388607)
- 1749 compressed objects within 18 object streams
- 461 named destinations out of 1000 (max. 500000)
+ 1996 PDF objects out of 2073 (max. 8388607)
+ 1759 compressed objects within 18 object streams
+ 464 named destinations out of 1000 (max. 500000)
  749 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -47,11 +47,11 @@
 \contentsline {subsection}{\numberline {4.1.1}Problem definition}{56}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}Methods}{56}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Simulation}{56}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Recording}{57}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Recording}{56}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Data processing and metrics}{57}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Results and discussion}{58}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}A-Format}{58}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}B-Format}{59}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}B-Format}{58}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Conclusions}{62}{section.4.4}
 \contentsline {chapter}{\numberline {5}Sound Event Localization and Detection}{63}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
