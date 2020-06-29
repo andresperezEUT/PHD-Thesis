@@ -15,7 +15,7 @@
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from \cite {carpentier2017ambisonic}.\relax }}{26}{figure.2.4}
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Parametric time-frequency spatial audio analysis of a first order ambisonic recording. From top to bottom: 1.) Magnitude spectrogram of the omnidirectional channel. 2.) and 3.) Azimuth and elevation of the estimated instantaneous narrowband DOAs $\Omega (k,n)$. 4.) Instantaneous narrowband diffuseness $\Psi (k,n)$.\relax }}{31}{figure.2.5}
 \contentsline {figure}{\numberline {2.6}{\ignorespaces Room impulse response model, from \cite {murphy2017acoustic}.\relax }}{34}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Room impulse response model, adapted from \url {http://www.bnoack.com/}.\relax }}{37}{figure.2.7}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Room impulse response model, adapted from \cite {avinfo}.\relax }}{37}{figure.2.7}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Estimation error computed for each audio clip.\relax }}{51}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Total estimation error across audio clips and acoustic conditions. Top: boxplot. Bottom: histogram and density plot\relax }}{52}{figure.3.2}
@@ -29,9 +29,11 @@
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Gradient boosting machine learning process. Adding weak estimators allows reducing overall error in the predictions.\relax }}{69}{figure.5.3}
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Number of occurrences of each event class in the training set, for both proposed methods. \relax }}{72}{figure.5.4}
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Most representative features in event classifier.\relax }}{76}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Event durations of all elements in the \textit {PAPAFIL2} training set.\relax }}{77}{figure.5.6}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {6.1}{\ignorespaces 2018 projections of future internet traffic for major programming languages. Adapted from \cite {theoverflow}.\relax }}{80}{figure.6.1}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Frequency response of an arbitrary spherical array.\relax }}{83}{figure.6.2}
 \contentsline {figure}{\numberline {6.3}{\ignorespaces Evaluation of radial filters for an arbitrary spherical microphone array.\relax }}{84}{figure.6.3}
 \contentsline {figure}{\numberline {6.4}{\ignorespaces \textit {AmbiScaper} architecture.\relax }}{92}{figure.6.4}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces General scheme of the B-Format audio generation and analysis framework, including the thesis contributions in form of Chapter numbers.\relax }}{97}{figure.7.1}

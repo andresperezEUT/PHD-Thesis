@@ -38,6 +38,12 @@ Avargel, Y. and Cohen, I. (2007).
   fourier transform domain.
 \newblock {\em IEEE Signal Processing Letters}, 14(5):337--340.
 
+\bibitem[AV\_INFO, 1995]{avinfo}
+AV\_INFO (1995).
+\newblock Reverberation time.
+\newblock \url{http://www.bnoack.com/}.
+\newblock Accessed on June 26th, 2020.
+
 \bibitem[Baqu{\'e} et~al., 2016]{baque2016separation}
 Baqu{\'e}, M., Gu{\'e}rin, A., and Melon, M. (2016).
 \newblock Separation of direct sounds from early reflections using the entropy
@@ -522,6 +528,12 @@ P\'erez-L\'opez, A. (2018b).
 \newblock \url{https://zenodo.org/record/1186907}.
 \newblock Accessed on July 26th, 2020).
 
+\bibitem[P\'erez-L\'opez, 2020]{andresgithub}
+P\'erez-L\'opez, A. (2020).
+\newblock Andres perez-lopez github page.
+\newblock \url{https://github.com/andresperezlopez}.
+\newblock Accessed on June 27th, 2020.
+
 \bibitem[P\'erez-L\'opez and de~Muynke, 2018]{ambisonicsdrir}
 P\'erez-L\'opez, A. and de~Muynke, J. (2018).
 \newblock Ambisonicsdrir.
@@ -721,6 +733,12 @@ Stefanakis, N. and Mouchtaris, A. (2015).
 \newblock In {\em 2015 {IEEE} {International} {Conference} on {Acoustics},
   {Speech} and {Signal} {Processing} ({ICASSP})}, pages 51--55, South Brisbane,
   Queensland, Australia. IEEE.
+
+\bibitem[Su et~al., 2020]{su2020acoustic}
+Su, J., Jin, Z., and Finkelstein, A. (2020).
+\newblock Acoustic matching by embedding impulse responses.
+\newblock In {\em ICASSP 2020-2020 IEEE International Conference on Acoustics,
+  Speech and Signal Processing (ICASSP)}, pages 426--430. IEEE.
 
 \bibitem[Tervo, 2009]{Tervo2009}
 Tervo, S. (2009).

@@ -55,7 +55,7 @@ Repeated entry---line 275 of file ../Bibliography/Data.bib.bib
  : @article{Bertet2006
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 347 of file ../Bibliography/Data.bib.bib
+I was expecting a `,' or a `}'---line 340 of file ../Bibliography/Data.bib.bib
  :     
  :     howpublished={\url{http://pypl.github.io/PYPL.html}}
 (Error may have been on previous line)
@@ -103,6 +103,8 @@ Repeated entry---line 61 of file ../Bibliography/Introduction.bib.bib
  : @phdthesis{daniel2000representation
  :                                    ,
 I'm skipping whatever remains of this entry
+Warning--entry type for "andresgithub" isn't style-file defined
+--line 127 of file ../Bibliography/Introduction.bib.bib
 Database file #7: ../Bibliography/ScientificBackground.bib.bib
 Repeated entry---line 41 of file ../Bibliography/ScientificBackground.bib.bib
  : @article{majdak2015aes69
@@ -145,48 +147,49 @@ I was expecting a `,' or a `}'---line 210 of file ../Bibliography/ScientificBack
  : organization={Audio Engineering Society}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Database file #8: ../Bibliography/Conclusion.bib.bib
 Warning--empty journal in begault20003
 Warning--empty journal in habets_comments_2010
 Warning--empty journal in murphy2017acoustic
-You've used 125 entries,
+You've used 128 entries,
             1935 wiz_defined-function locations,
-            1109 strings with 27490 characters,
-and the built_in function-call counts, 52065 in all, are:
-= -- 5241
-> -- 2103
-< -- 106
-+ -- 745
-- -- 706
-* -- 4099
-:= -- 8849
-add.period$ -- 426
-call.type$ -- 125
-change.case$ -- 963
-chr.to.int$ -- 122
-cite$ -- 128
-duplicate$ -- 2155
-empty$ -- 3636
-format.name$ -- 885
-if$ -- 10469
+            1123 strings with 27809 characters,
+and the built_in function-call counts, 53130 in all, are:
+= -- 5357
+> -- 2135
+< -- 109
++ -- 755
+- -- 716
+* -- 4169
+:= -- 9034
+add.period$ -- 438
+call.type$ -- 128
+change.case$ -- 983
+chr.to.int$ -- 125
+cite$ -- 131
+duplicate$ -- 2202
+empty$ -- 3708
+format.name$ -- 898
+if$ -- 10686
 int.to.chr$ -- 4
 int.to.str$ -- 0
-missing$ -- 110
-newline$ -- 641
-num.names$ -- 377
-pop$ -- 981
+missing$ -- 111
+newline$ -- 658
+num.names$ -- 386
+pop$ -- 996
 preamble$ -- 1
-purify$ -- 974
+purify$ -- 994
 quote$ -- 0
-skip$ -- 1585
+skip$ -- 1624
 stack$ -- 0
-substring$ -- 3387
-swap$ -- 396
-text.length$ -- 38
+substring$ -- 3455
+swap$ -- 406
+text.length$ -- 39
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 736
+type$ -- 754
 warning$ -- 3
-while$ -- 417
+while$ -- 426
 width$ -- 0
-write$ -- 1657
+write$ -- 1699
 (There were 32 error messages)

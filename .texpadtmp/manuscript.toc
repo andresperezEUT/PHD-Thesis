@@ -81,5 +81,4 @@
 \contentsline {subsection}{\numberline {6.4.3}Experiment reproducibility}{93}{subsection.6.4.3}
 \contentsline {chapter}{\numberline {7}Conclusions}{95}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of Contributions}{95}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusion}{96}{section.7.2}
-\contentsline {section}{\numberline {7.3}Future work}{96}{section.7.3}
+\contentsline {section}{\numberline {7.2}Conclusion and Future Work}{96}{section.7.2}

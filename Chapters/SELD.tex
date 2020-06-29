@@ -368,7 +368,17 @@ As in that case, the results suggest the need for more sophisticated source dete
 
 To conclude the analysis, Fig.~\ref{fig:importance} shows the relative importance of the fifteen most relevant acoustic features for the \textit{PAPAFIL2} classifier model.
 Event duration is clearly the feature with the highest importance, and effective duration (duration of the signal discarding silence) also appears in the eighth position.
-This fact can help to explain the better performance of \textit{PAPAFIL2} over \textit{PAPAFIL1}: the temporal activities of the events in training and prediction are much more similar to each other in the former method, as a consequence of the training set generation approach.
+This fact can help to explain the better performance of \textit{PAPAFIL2} over \textit{PAPAFIL1}: the temporal activities of the events in training and prediction are much more similar to each other in the former method, as a consequence of the training set generation approach. 
+In order to provide a deeper insight on the temporal characteristics of the data under consideration, the durations of all sound events in the \textit{PAPAFIL2} training set are summarized in Figure~\ref{fig:eventdurations}. 
+
+\begin{figure}[t]
+  \centering
+  \centerline{\includegraphics[width=\columnwidth]{Figures/SELD/event_durations.png}}
+  \caption{Event durations of all elements in the \textit{PAPAFIL2} training set.}
+  \label{fig:eventdurations}
+\end{figure}
+
+
 Furthermore, it is interesting to notice the high relevance of low-level features, and specifically several MFCC combinations (eight of the fifteen reported features) and  various extractors related to the spectral structure. The absence of pitch, harmonic and envelope features in the list represents a significant finding as well. 
 
 

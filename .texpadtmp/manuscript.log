@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  29 JUN 2020 00:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.8)  29 JUN 2020 20:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -702,7 +702,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 24.88pt on input line 99.
- <logo_upf.png, id=309, 240.9pt x 87.6876pt>
+ <logo_upf.png, id=305, 240.9pt x 87.6876pt>
 File: logo_upf.png Graphic file (type png)
  <use logo_upf.png>
 Package pdftex.def Info: logo_upf.png used on input line 99.
@@ -754,12 +754,10 @@ LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 Underfull \vbox (badness 1043) has occurred while \output is active []
 
  [15]
-LaTeX Font Info:    Try loading font information for T1+npxtt on input line 18.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/newpx/t1npxtt.fd
-File: t1npxtt.fd 2000/12/14 v1.0
-)
-LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 18.
+Overfull \hbox (22.99908pt too wide) in paragraph at lines 18--18
+ [][] [][][]\T1/zpltlf/m/n/12 Room im-pulse re-sponse model, adapted from [[][]AV_INFO, 
+ []
+
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 8.0pt on input line 23.
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -800,12 +798,12 @@ Overfull \hbox (14.64948pt too wide) in paragraph at lines 10--10
 Chapter 1.
 [1
 
-] <Figures/Introduction/num_mics_ticks.png, id=655, 383.4325pt x 269.005pt>
+] <Figures/Introduction/num_mics_ticks.png, id=657, 383.4325pt x 269.005pt>
 File: Figures/Introduction/num_mics_ticks.png Graphic file (type png)
  <use Figures/Introduction/num_mics_ticks.png>
 Package pdftex.def Info: Figures/Introduction/num_mics_ticks.png used on input line 37.
 (pdftex.def)             Requested size: 350.5364pt x 245.94012pt.
- [2] <Figures/Introduction/vr_funding.png, id=675, 803.0pt x 523.9575pt>
+ [2] <Figures/Introduction/vr_funding.png, id=677, 803.0pt x 523.9575pt>
 File: Figures/Introduction/vr_funding.png Graphic file (type png)
  <use Figures/Introduction/vr_funding.png>
 Package pdftex.def Info: Figures/Introduction/vr_funding.png used on input line 76.
@@ -818,7 +816,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
  []
 
-[4] <Figures/Introduction/SCHEME1.png, id=690, 356.83313pt x 217.5628pt>
+[4] <Figures/Introduction/SCHEME1.png, id=692, 356.83313pt x 217.5628pt>
 File: Figures/Introduction/SCHEME1.png Graphic file (type png)
  <use Figures/Introduction/SCHEME1.png>
 Package pdftex.def Info: Figures/Introduction/SCHEME1.png used on input line 108.
@@ -842,37 +840,41 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/zplsups/m/n' will be
 (Font)              scaled to size 10.0pt on input line 136.
+LaTeX Font Info:    Try loading font information for T1+npxtt on input line 136.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/newpx/t1npxtt.fd
+File: t1npxtt.fd 2000/12/14 v1.0
+)
 LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
 (Font)              scaled to size 10.0pt on input line 136.
- [7]
-LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 150.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
-File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
-)
-LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 150.
- <Figures/Introduction/SCHEME1_NUMBERS.png, id=729, 399.74344pt x 217.5628pt>
+ [7] <Figures/Introduction/SCHEME1_NUMBERS.png, id=732, 399.74344pt x 217.5628pt>
 File: Figures/Introduction/SCHEME1_NUMBERS.png Graphic file (type png)
  <use Figures/Introduction/SCHEME1_NUMBERS.png>
-Package pdftex.def Info: Figures/Introduction/SCHEME1_NUMBERS.png used on input line 163.
+Package pdftex.def Info: Figures/Introduction/SCHEME1_NUMBERS.png used on input line 162.
 (pdftex.def)             Requested size: 350.5364pt x 190.7919pt.
  [8]
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
 
  []
 
 [9 <./Figures/Introduction/SCHEME1_NUMBERS.png>]
-Overfull \hbox (3.46187pt too wide) in paragraph at lines 192--196
+LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 191.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/newpx/ts1zpltlf.fd
+File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
+)
+LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 191.
+
+Overfull \hbox (3.46187pt too wide) in paragraph at lines 191--195
 \T1/zpltlf/b/n/12 "Blind re-ver-ber-a-tion time es-ti-ma-tion from am-bisonic record-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 202--203
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
 
  []
 
 [10]
-Overfull \hbox (9.74469pt too wide) in paragraph at lines 222--225
+Overfull \hbox (9.74469pt too wide) in paragraph at lines 221--224
 []\T1/zpltlf/b/n/12 "pysofaconventions, a Python API for SOFA". $[]$\T1/zpltlf/m/n/12 .
  []
 
@@ -910,12 +912,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[16] <Figures/ScientificBackground/Spherical_Harmonics_deg3.png, id=813, 527.0892pt x 301.125pt>
+[16] <Figures/ScientificBackground/Spherical_Harmonics_deg3.png, id=820, 527.0892pt x 301.125pt>
 File: Figures/ScientificBackground/Spherical_Harmonics_deg3.png Graphic file (type png)
  <use Figures/ScientificBackground/Spherical_Harmonics_deg3.png>
 Package pdftex.def Info: Figures/ScientificBackground/Spherical_Harmonics_deg3.png used on input line 144.
 (pdftex.def)             Requested size: 350.5364pt x 200.26857pt.
- [17 <./Figures/ScientificBackground/Spherical_Harmonics_deg3.png (PNG copy)>] <Figures/ScientificBackground/magnitude_kr.png, id=825, 609.27625pt x 932.48375pt>
+ [17 <./Figures/ScientificBackground/Spherical_Harmonics_deg3.png (PNG copy)>] <Figures/ScientificBackground/magnitude_kr.png, id=832, 609.27625pt x 932.48375pt>
 File: Figures/ScientificBackground/magnitude_kr.png Graphic file (type png)
  <use Figures/ScientificBackground/magnitude_kr.png>
 Package pdftex.def Info: Figures/ScientificBackground/magnitude_kr.png used on input line 176.
@@ -930,17 +932,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 242--243
 
  []
 
-[21] <Figures/Introduction/basic.png, id=874, 616.3025pt x 320.19624pt>
+[21] <Figures/Introduction/basic.png, id=881, 616.3025pt x 320.19624pt>
 File: Figures/Introduction/basic.png Graphic file (type png)
  <use Figures/Introduction/basic.png>
 Package pdftex.def Info: Figures/Introduction/basic.png used on input line 288.
 (pdftex.def)             Requested size: 315.48062pt x 163.90863pt.
- <Figures/Introduction/maxre.png, id=875, 625.33624pt x 320.19624pt>
+ <Figures/Introduction/maxre.png, id=882, 625.33624pt x 320.19624pt>
 File: Figures/Introduction/maxre.png Graphic file (type png)
  <use Figures/Introduction/maxre.png>
 Package pdftex.def Info: Figures/Introduction/maxre.png used on input line 291.
 (pdftex.def)             Requested size: 315.48062pt x 161.54391pt.
- <Figures/Introduction/inphase.png, id=876, 616.3025pt x 320.19624pt>
+ <Figures/Introduction/inphase.png, id=883, 616.3025pt x 320.19624pt>
 File: Figures/Introduction/inphase.png Graphic file (type png)
  <use Figures/Introduction/inphase.png>
 Package pdftex.def Info: Figures/Introduction/inphase.png used on input line 294.
@@ -962,7 +964,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 360--361
 
  []
 
-[25] <Figures/ScientificBackground/normalization.png, id=920, 721.69624pt x 768.8725pt>
+[25] <Figures/ScientificBackground/normalization.png, id=927, 721.69624pt x 768.8725pt>
 File: Figures/ScientificBackground/normalization.png Graphic file (type png)
  <use Figures/ScientificBackground/normalization.png>
 Package pdftex.def Info: Figures/ScientificBackground/normalization.png used on input line 363.
@@ -1002,7 +1004,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--462
 
  []
 
-[30] <Figures/Introduction/spectrograms.png, id=991, 930.47626pt x 839.135pt>
+[30] <Figures/Introduction/spectrograms.png, id=998, 930.47626pt x 839.135pt>
 File: Figures/Introduction/spectrograms.png Graphic file (type png)
  <use Figures/Introduction/spectrograms.png>
 Package pdftex.def Info: Figures/Introduction/spectrograms.png used on input line 488.
@@ -1040,7 +1042,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 561--565
 
  []
 
-[33] <Figures/Introduction/Acoustic_room_impulse_response.jpg, id=1018, 1133.23375pt x 549.05125pt>
+[33] <Figures/Introduction/Acoustic_room_impulse_response.jpg, id=1025, 1133.23375pt x 549.05125pt>
 File: Figures/Introduction/Acoustic_room_impulse_response.jpg Graphic file (type jpg)
  <use Figures/Introduction/Acoustic_room_impulse_response.jpg>
 Package pdftex.def Info: Figures/Introduction/Acoustic_room_impulse_response.jpg used on input line 568.
@@ -1065,12 +1067,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 610--611
 
  []
 
-<Figures/Introduction/edt.png, id=1048, 982.67125pt x 434.62375pt>
+<Figures/Introduction/edt.png, id=1055, 982.67125pt x 434.62375pt>
 File: Figures/Introduction/edt.png Graphic file (type png)
  <use Figures/Introduction/edt.png>
 Package pdftex.def Info: Figures/Introduction/edt.png used on input line 630.
 (pdftex.def)             Requested size: 350.5364pt x 155.03859pt.
- [36] [37 <./Figures/Introduction/edt.png>]) (./Chapters/ReververationTimeEstimation.tex [38]
+
+Underfull \hbox (badness 1490) in paragraph at lines 631--631
+[]\T1/zpltlf/m/n/12 Figure 2.7: |[]Room im-pulse re-sponse model, adapted from
+ []
+
+[36] [37 <./Figures/Introduction/edt.png>]) (./Chapters/ReververationTimeEstimation.tex [38]
 Chapter 3.
 
 Overfull \hbox (3.3746pt too wide) in paragraph at lines 21--25
@@ -1107,12 +1114,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 332--337
 
  []
 
-<Figures/ReverberationTimeEstimation/96.png, id=1205, 650.43pt x 433.62pt>
+<Figures/ReverberationTimeEstimation/96.png, id=1211, 650.43pt x 433.62pt>
 File: Figures/ReverberationTimeEstimation/96.png Graphic file (type png)
  <use Figures/ReverberationTimeEstimation/96.png>
 Package pdftex.def Info: Figures/ReverberationTimeEstimation/96.png used on input line 360.
 (pdftex.def)             Requested size: 455.6984pt x 303.8032pt.
- <Figures/ReverberationTimeEstimation/94.png, id=1206, 650.43pt x 289.08pt>
+ <Figures/ReverberationTimeEstimation/94.png, id=1212, 650.43pt x 289.08pt>
 File: Figures/ReverberationTimeEstimation/94.png Graphic file (type png)
  <use Figures/ReverberationTimeEstimation/94.png>
 Package pdftex.def Info: Figures/ReverberationTimeEstimation/94.png used on input line 365.
@@ -1127,7 +1134,7 @@ Chapter 4.
 
 Underfull \vbox (badness 3849) has occurred while \output is active []
 
- [55] [56] [57] <Figures/CoherenceEstimation/Untitled1.png, id=1289, 308.352pt x 115.632pt>
+ [55] [56] [57] <Figures/CoherenceEstimation/Untitled1.png, id=1295, 308.352pt x 115.632pt>
 File: Figures/CoherenceEstimation/Untitled1.png Graphic file (type png)
  <use Figures/CoherenceEstimation/Untitled1.png>
 Package pdftex.def Info: Figures/CoherenceEstimation/Untitled1.png used on input line 85.
@@ -1137,7 +1144,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 93--96
 
  []
 
-[58] <Figures/CoherenceEstimation/Figure2.jpg, id=1298, 963.6pt x 481.8pt>
+[58] <Figures/CoherenceEstimation/Figure2.jpg, id=1304, 963.6pt x 481.8pt>
 File: Figures/CoherenceEstimation/Figure2.jpg Graphic file (type jpg)
  <use Figures/CoherenceEstimation/Figure2.jpg>
 Package pdftex.def Info: Figures/CoherenceEstimation/Figure2.jpg used on input line 98.
@@ -1147,7 +1154,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--112
 
  []
 
-<Figures/CoherenceEstimation/Untitled2.png, id=1317, 308.352pt x 115.632pt>
+<Figures/CoherenceEstimation/Untitled2.png, id=1323, 308.352pt x 115.632pt>
 File: Figures/CoherenceEstimation/Untitled2.png Graphic file (type png)
  <use Figures/CoherenceEstimation/Untitled2.png>
 Package pdftex.def Info: Figures/CoherenceEstimation/Untitled2.png used on input line 115.
@@ -1156,17 +1163,17 @@ Package pdftex.def Info: Figures/CoherenceEstimation/Untitled2.png used on input
 Chapter 5.
 [63
 
-] [64] <Figures/SELD/ARCH.png, id=1362, 580.41844pt x 539.76656pt>
+] [64] <Figures/SELD/ARCH.png, id=1369, 580.41844pt x 539.76656pt>
 File: Figures/SELD/ARCH.png Graphic file (type png)
  <use Figures/SELD/ARCH.png>
 Package pdftex.def Info: Figures/SELD/ARCH.png used on input line 48.
 (pdftex.def)             Requested size: 262.9023pt x 244.49052pt.
- [65 <./Figures/SELD/ARCH.png>] <Figures/SELD/plots.png, id=1381, 667.49374pt x 551.05875pt>
+ [65 <./Figures/SELD/ARCH.png>] <Figures/SELD/plots.png, id=1387, 667.49374pt x 551.05875pt>
 File: Figures/SELD/plots.png Graphic file (type png)
  <use Figures/SELD/plots.png>
 Package pdftex.def Info: Figures/SELD/plots.png used on input line 76.
 (pdftex.def)             Requested size: 350.5364pt x 289.39426pt.
- [66] [67 <./Figures/SELD/plots.png>] [68] <Figures/SELD/gbm.png, id=1413, 1217.54875pt x 668.4975pt>
+ [66] [67 <./Figures/SELD/plots.png>] [68] <Figures/SELD/gbm.png, id=1419, 1217.54875pt x 668.4975pt>
 File: Figures/SELD/gbm.png Graphic file (type png)
  <use Figures/SELD/gbm.png>
 Package pdftex.def Info: Figures/SELD/gbm.png used on input line 130.
@@ -1174,7 +1181,7 @@ Package pdftex.def Info: Figures/SELD/gbm.png used on input line 130.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [69 <./Figures/SELD/gbm.png>] [70] <Figures/SELD/numclasses2_tight.png, id=1435, 466.74374pt x 265.99374pt>
+ [69 <./Figures/SELD/gbm.png>] [70] <Figures/SELD/numclasses2_tight.png, id=1441, 466.74374pt x 265.99374pt>
 File: Figures/SELD/numclasses2_tight.png Graphic file (type png)
  <use Figures/SELD/numclasses2_tight.png>
 Package pdftex.def Info: Figures/SELD/numclasses2_tight.png used on input line 207.
@@ -1197,17 +1204,17 @@ LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <10> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 336.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 336.
- <Figures/SELD/importance_new_tight.png, id=1472, 491.8375pt x 367.3725pt>
+ <Figures/SELD/importance_new_tight.png, id=1478, 491.8375pt x 367.3725pt>
 File: Figures/SELD/importance_new_tight.png Graphic file (type png)
  <use Figures/SELD/importance_new_tight.png>
 Package pdftex.def Info: Figures/SELD/importance_new_tight.png used on input line 364.
 (pdftex.def)             Requested size: 350.5364pt x 261.83969pt.
- [75]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [76 <./Figures/SELD/importance_new_tight.png>]) (./Chapters/DataGeneration.tex [77] [78
-
-]
+ [75] <Figures/SELD/event_durations.png, id=1485, 361.35pt x 216.81pt>
+File: Figures/SELD/event_durations.png Graphic file (type png)
+ <use Figures/SELD/event_durations.png>
+Package pdftex.def Info: Figures/SELD/event_durations.png used on input line 376.
+(pdftex.def)             Requested size: 350.5364pt x 210.32198pt.
+ [76 <./Figures/SELD/importance_new_tight.png>]) (./Chapters/DataGeneration.tex [77 <./Figures/SELD/event_durations.png>] [78]
 Chapter 6.
 
 Underfull \hbox (badness 10000) in paragraph at lines 7--8
@@ -1219,12 +1226,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
-<Figures/DataGeneration/projections-1-1400x1200.png, id=1497, 1405.25pt x 1204.5pt>
+<Figures/DataGeneration/projections-1-1400x1200.png, id=1506, 1405.25pt x 1204.5pt>
 File: Figures/DataGeneration/projections-1-1400x1200.png Graphic file (type png)
  <use Figures/DataGeneration/projections-1-1400x1200.png>
 Package pdftex.def Info: Figures/DataGeneration/projections-1-1400x1200.png used on input line 13.
 (pdftex.def)             Requested size: 350.5364pt x 300.46262pt.
- [79] [80 <./Figures/DataGeneration/projections-1-1400x1200.png>] [81]
+ [79
+
+] [80 <./Figures/DataGeneration/projections-1-1400x1200.png>] [81]
 Underfull \hbox (badness 10000) in paragraph at lines 71--74
 
  []
@@ -1234,7 +1243,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
-<Figures/DataGeneration/array_response.png, id=1528, 963.6pt x 481.8pt>
+<Figures/DataGeneration/array_response.png, id=1537, 963.6pt x 481.8pt>
 File: Figures/DataGeneration/array_response.png Graphic file (type png)
  <use Figures/DataGeneration/array_response.png>
 Package pdftex.def Info: Figures/DataGeneration/array_response.png used on input line 80.
@@ -1248,7 +1257,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 
  []
 
-[82] <Figures/DataGeneration/sht_filters.png, id=1536, 642.4pt x 481.8pt>
+[82] <Figures/DataGeneration/sht_filters.png, id=1545, 642.4pt x 481.8pt>
 File: Figures/DataGeneration/sht_filters.png Graphic file (type png)
  <use Figures/DataGeneration/sht_filters.png>
 Package pdftex.def Info: Figures/DataGeneration/sht_filters.png used on input line 91.
@@ -1307,7 +1316,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 343--344
 
  []
 
-<Figures/DataGeneration/figure_architecture_V2.png, id=1653, 882.497pt x 567.721pt>
+<Figures/DataGeneration/figure_architecture_V2.png, id=1662, 882.497pt x 567.721pt>
 File: Figures/DataGeneration/figure_architecture_V2.png Graphic file (type png)
  <use Figures/DataGeneration/figure_architecture_V2.png>
 Package pdftex.def Info: Figures/DataGeneration/figure_architecture_V2.png used on input line 348.
@@ -1323,122 +1332,151 @@ Underfull \hbox (badness 10000) in paragraph at lines 386--391
 ) (./Chapters/Conclusions.tex [94]
 Chapter 7.
 
-Overfull \hbox (12.81145pt too wide) in paragraph at lines 14--15
-[]\T1/zpltlf/m/n/12 Blind re-ver-ber-a-tion time es-ti-ma-tion from am-bisonic record-
- []
-
-
-Overfull \hbox (2.29974pt too wide) in paragraph at lines 22--23
-\T1/zpltlf/m/n/12 ter-i-za-tion of co-her-ence with tetra-he-dral mi-cro-phones
+Overfull \hbox (1.48152pt too wide) in paragraph at lines 11--12
+[]\T1/zpltlf/m/n/12 The de-vel-op-ment of meth-ods for the char-ac-ter-i-za-tion of acous-
  []
 
 [95
 
-]) (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.bbl [96] [97
+]
+Overfull \hbox (0.60095pt too wide) in paragraph at lines 28--29
+[]\T1/zpltlf/m/n/12 Contribution to the char-ac-ter-i-za-tion
+ []
+
+File: Figures/Introduction/SCHEME1_NUMBERS.png Graphic file (type png)
+<use Figures/Introduction/SCHEME1_NUMBERS.png>
+Package pdftex.def Info: Figures/Introduction/SCHEME1_NUMBERS.png used on input line 52.
+(pdftex.def)             Requested size: 350.5364pt x 190.7919pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[96]
+Underfull \hbox (badness 10000) in paragraph at lines 69--72
+
+ []
+
+[97]
+Underfull \hbox (badness 10000) in paragraph at lines 74--76
+
+ []
+
+
+Underfull \vbox (badness 5105) has occurred while \output is active []
+
+ [98]
+Underfull \hbox (badness 10000) in paragraph at lines 84--85
+
+ []
+
+[99]) (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.bbl [100] [101
 
 ]
-Underfull \hbox (badness 1132) in paragraph at lines 50--54
+LaTeX Font Info:    Font shape `T1/npxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 44.
+
+Underfull \hbox (badness 1132) in paragraph at lines 56--60
 []\T1/zpltlf/m/n/12 BBCNews (2016).  Mwc 2016: Zucker-berg
  []
 
-[98] [99]
-Underfull \hbox (badness 6348) in paragraph at lines 181--186
+[102] [103]
+Underfull \hbox (badness 6348) in paragraph at lines 187--192
 []\T1/zpltlf/m/n/12 Elliott, T. (2019).  The state of the oc-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 181--186
+Underfull \hbox (badness 10000) in paragraph at lines 187--192
 \T1/zpltlf/m/n/12 to-verse: ma-chine learn-ing.  [][]$\T1/npxtt/m/n/12 https : / / github . blog /
  []
 
 
-Overfull \hbox (17.32986pt too wide) in paragraph at lines 181--186
+Overfull \hbox (17.32986pt too wide) in paragraph at lines 187--192
 \T1/npxtt/m/n/12 2019-[]01-[]24-[]the-[]state-[]of-[]the-[]octoverse-[]machine-[]learning/$[][]\T1/zpltlf/m/n/12 .
  []
 
-[100]
-Underfull \hbox (badness 1596) in paragraph at lines 200--205
+[104]
+Underfull \hbox (badness 1596) in paragraph at lines 206--211
 []\T1/zpltlf/m/n/12 Evers, C., Loell-mann, H., Mell-mann, H.,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--211
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
 []\T1/zpltlf/m/n/12 Facebook (2014).  Face-book to ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 207--211
+Underfull \hbox (badness 10000) in paragraph at lines 213--217
 \T1/zpltlf/m/n/12 quire ocu-lus.  [][]$\T1/npxtt/m/n/12 https : / / about . fb . com / news / 2014 / 03 /
  []
 
 
-Underfull \hbox (badness 1960) in paragraph at lines 207--211
+Underfull \hbox (badness 1960) in paragraph at lines 213--217
 \T1/npxtt/m/n/12 facebook-[]to-[]acquire-[]oculus/$[][]\T1/zpltlf/m/n/12 .  Ac-cessed on June 11th,
  []
 
-[101] [102] [103] [104]
-Underfull \hbox (badness 1527) in paragraph at lines 393--397
+[105] [106] [107] [108]
+Underfull \hbox (badness 1527) in paragraph at lines 399--403
 []\T1/zpltlf/m/n/12 Majdak, P. and Nois-ternig, M.
  []
 
-[105] [106] [107]
-Underfull \hbox (badness 10000) in paragraph at lines 526--530
+[109] [110] [111]
+Underfull \hbox (badness 10000) in paragraph at lines 538--542
 []\T1/zpltlf/m/n/12 Pérez-López, A. and
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 526--530
+Underfull \hbox (badness 10000) in paragraph at lines 538--542
 \T1/zpltlf/m/n/12 de Muynke, J. (2018).  Am-bison-ics-drir.  [][]$\T1/npxtt/m/n/12 https :
  []
 
-[108] [109] [110]
-Underfull \hbox (badness 10000) in paragraph at lines 694--698
+[112] [113] [114]
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
 []\T1/zpltlf/m/n/12 Sennheiser (2020).  Am-beo
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 694--698
+Underfull \hbox (badness 10000) in paragraph at lines 706--710
 \T1/zpltlf/m/n/12 vr mic.  [][]$\T1/npxtt/m/n/12 https : / / en-[]us . sennheiser . com /
  []
 
 
-Underfull \hbox (badness 2617) in paragraph at lines 694--698
+Underfull \hbox (badness 2617) in paragraph at lines 706--710
 \T1/npxtt/m/n/12 microphone-[]3d-[]audio-[]ambeo-[]vr-[]mic$[][]\T1/zpltlf/m/n/12 .  Ac-cessed on June
  []
 
-[111]
-Underfull \hbox (badness 1210) in paragraph at lines 732--738
+[115]
+Underfull \hbox (badness 1210) in paragraph at lines 750--756
 []\T1/zpltlf/m/n/12 TheVerge (2018).  For-mer vr film com-pany
  []
 
 
-Underfull \hbox (badness 1675) in paragraph at lines 732--738
+Underfull \hbox (badness 1675) in paragraph at lines 750--756
 \T1/zpltlf/m/n/12 jaunt is giv-ing up on vr to fo-cus on aug-mented re-al-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 732--738
+Underfull \hbox (badness 10000) in paragraph at lines 750--756
 \T1/zpltlf/m/n/12 ity.  [][]$\T1/npxtt/m/n/12 https : / / www . theverge . com / 2018 / 10 / 15 / 17980420 /
  []
 
 
-Overfull \hbox (35.80182pt too wide) in paragraph at lines 732--738
+Overfull \hbox (35.80182pt too wide) in paragraph at lines 750--756
 \T1/npxtt/m/n/12 jaunt-[]vr-[]layoffs-[]ar-[]focus-[]switch-[]restructuring-[]xr-[]platform$[][]\T1/zpltlf/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--754
+Underfull \hbox (badness 10000) in paragraph at lines 766--772
 []\T1/zpltlf/m/n/12 Thiergart, O., Schultz-Amling, R.,
  []
 
-[112]) [113] [114
+[116]) [117] [118
 
 ] (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.ind)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 224.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 224.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 225.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 225.
  (/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 224.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 224.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 225.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 225.
 Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 73773229319970D0F85D2E44D77988F9;5654.
 
@@ -1447,19 +1485,19 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12087 strings out of 492995
- 183863 string characters out of 6132705
- 288534 words of memory out of 5000000
- 14843 multiletter control sequences out of 15000+600000
+ 12103 strings out of 492995
+ 184182 string characters out of 6132705
+ 288963 words of memory out of 5000000
+ 14852 multiletter control sequences out of 15000+600000
  82650 words of font info for 100 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 59i,12n,94p,863b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,12n,94p,950b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newpx/ecsups.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qhvr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qplr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/txfonts/t1
 xtt.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/newpx/zplri.pfb>
-Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (134 pages, 3107573 bytes).
+Output written on "/Users/andres.perez/Documents/UPF/PHD/thesis manuscript/.texpadtmp/manuscript.pdf" (138 pages, 3134201 bytes).
 PDF statistics:
- 1996 PDF objects out of 2073 (max. 8388607)
- 1759 compressed objects within 18 object streams
- 464 named destinations out of 1000 (max. 500000)
- 749 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2035 PDF objects out of 2073 (max. 8388607)
+ 1792 compressed objects within 18 object streams
+ 470 named destinations out of 1000 (max. 500000)
+ 746 words of extra memory for PDF output out of 10000 (max. 10000000)
 
