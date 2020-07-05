@@ -202,7 +202,7 @@ The current software version is 0.1.5. The library structure is inspired by the 
 It features all functionalities described by SOFA version 1.0, plus the proposed AmbisonicsDRIR convention. 
 The implementation is based on extensive error checking, to ensure code consistency.
  
-\textit{pysofaconventions} has gained a moderate amount of attraction. Among others, it is being used as a dependency for the \textit{Real-Time Spherical Microphone Renderer (ReTiSAR) for binaural reproduction}, developed by Chalmers University in collaboration with Facebook Reality Labs \cite{helmholz2019real}. Furthermore, given the open nature of the project, several external researchers have contributed with bug fixes or new feature implementations.
+%\textit{pysofaconventions} has gained a moderate amount of attraction. Among others, it is being used as a dependency for the \textit{Real-Time Spherical Microphone Renderer (ReTiSAR) for binaural reproduction}, developed by Chalmers University in collaboration with Facebook Reality Labs \cite{helmholz2019real}. Furthermore, given the open nature of the project, several external researchers have contributed with bug fixes or new feature implementations.
 
 
 \section{Ambiscaper}
@@ -368,6 +368,7 @@ Furthermore, the anechoic case allows the modification of the directivity of the
 
 
 \subsection{Experiment reproducibility}
+\label{experiment_reproducibility}
 
 As already mentioned, there is a generalized lack of publicly available datasets of ambisonic reverberant sound scenes. 
 Even when using general purpose audio/speech datasets, the actual evaluation data is usually not available.
@@ -388,6 +389,30 @@ Reverberation is provided by the \textit{AudioBooth} recorded RIR from the S3A c
 
 
 \todo{explain current state, discussion, etc?}
+
+
+\section{Conclusion}
+
+The present Chapter has presented the main contributions of the Thesis regarding the availability of ambisonic data, specifically targeting software packages and libraries developed for the generation and storage of ambisonic sound scenes.
+
+The concept of \textit{research reproducibility} is directly related with these topics. According to \cite{cannam2012sound}, providing just an article as a research outcome would not be sufficient for reproducing the research in a feasible way. Instead, supplementary material, such as the code implementation, the dataset, and instructions on how to set up the environment, should be also conveniently provided. 
+
+In this regard, the software discussed in this Chapter try to foster reproducible methods and procedures in several different ways.
+First, all code is freely available online with open source licenses. 
+Second, the contributed software is completely written in Python, which is itself an open-source project. Actually, all code used in this follows the same path, with with the exception of the particle tracker used in Chapter~\ref{chap:seld2019}. 
+And third, the motivation of the Ambiscaper project itself is the reproducibility of experimental conditions for signal processing methods using ambisonic data, as explained in detail in Section~\ref{experiment_reproducibility}.\\
+
+Regarding the lifecycle of the libraries described in this Chapter, their status is diverse. Although \textit{pysofaconventions} has been recently published in an academic context (AES Convention in May 2020), it has been available online for more than a year. In fact, during that time it has gained a moderate amount of attraction: among others, it is being used as a dependency for the \textit{Real-Time Spherical Microphone Renderer (ReTiSAR) for binaural reproduction}, developed by Chalmers University in collaboration with Facebook Reality Labs \cite{helmholz2019real}. Furthermore, given the open nature of the project, several external researchers have contributed with bug fixes or new feature implementations.
+
+The \textit{masp} library has been also presented in the same context. However, in this case, the library has not been available beforehand, so the interest generated in the community has been moderate. 
+
+For its part, \textit{Ambiscaper} has not been able to attract the community in a significant way. This might be due to a number of reasons, including not enough dissemination among potentially interested communities, or a lack of a paradigmatic use-case situation. 
+On the contrary, the library that inspired this work, \textit{Scaper}, has been used for the creation of the dataset in Task 4 of DCASE 2019 and 2020 (sound event detection in domestic environments). This situation generates a feedback loop for the maintenance and improvement of the software, motivated by requests from the community.
+Given this situation, the future of \textit{Ambiscaper} is linked to the evolution of the research topics and tools in the communities which miggt be potentially interested in using it. 
+
+
+
+
 
 
 %\subsection{Current state}

@@ -8,12 +8,22 @@ In what follows, we will make use of a right-handed coordinate system, where the
 
 Any position in the unit sphere may be described in spherical coordinates by two angles: the \textit{inclination} angle $\vartheta$, which accounts for the aperture with respect to the \textit{z}-axis, and the \textit{azimuth} angle $\varphi$, which represents the counter-clockwise angle with respect to the \textit{x}-axis from the top-view. 
 The value ranges are $0 \leq \vartheta \leq \pi$ for the inclination, and $0 \leq \varphi \leq 2\pi$ for the azimuth. 
+The spherical coordinate system used in this thesis is depicted in Figure~\ref{fig:sphericalreference}.
+
+\begin{figure}[h]
+\begin{center}
+  \includegraphics[width=0.5\textwidth]{Figures/ScientificBackground/path829_2.png}
+  \caption{Spherical coordinate system used.}
+	\label{fig:sphericalreference}
+	\end{center}
+\end{figure}
+
 
 Table~\ref{tab:cartesian} shows the spherical coordinate values for some reference points on the unit sphere.
-Notice that the poles ($\vartheta = ±\pi$) are a special case for the spherical coordinate system -- in that case, the azimuth angle is not defined. \\
+Notice that the poles ($\vartheta = 0, \pi$) are a special case for the spherical coordinate system -- in that case, the azimuth angle is not defined. \\
 
 
-\begin{table}[!htbp]
+\begin{table}[h]
 \centering
 \caption{Cartesian and spherical representation of characteristic points along the unit sphere.}
   \begin{tabular}{cccc}
@@ -49,14 +59,14 @@ The \textit{elevation} angle $\theta$ provides an alternative way of describing 
 
 For the sake of compactness, a point in the unit sphere will be often represented by $\Omega = (\vartheta, \varphi)$.\\
 
-Given the periodic nature of the azimuth angle, the descriptive statistic operations applied to $\vartheta$ will refer to the $2\pi$-\textit{periodic} version or the operator; this situation does not affect the inclination/elevation coordinate.
+Given the periodic nature of the azimuth angle, the descriptive statistic operations applied to $\varphi$ will refer to the $2\pi$-\textit{periodic} version or the operator; this situation does not affect the inclination/elevation coordinate.
 
 
 \subsection{Nomenclature}
 
 Throughout the Thesis, we refer to time-domain signals with lowercase, e.g. $x(t)$, with $t$ as the time index. 
 
-Time-domain signals transformed by the Short-Time Fourier Transform (STFT) are represented with uppercase, e.g. $X(k,n)$, where $k$ is the frequency bin index, and $n$ the time frame index. 
+Time-domain signals transformed by the Short-Time Fourier Transform (STFT) are represented with uppercase, e.g. $X(k,n)$, where $k \in [0, K-1]$ is the frequency bin index, and $n \in [0, N-1]$ the time frame index. 
 
 Multichannel signals are in general denoted by a subscript variable index, usually with the letter $m$; for example, $x_m(t)$ or $X_m(k,n)$.
 Signals with an integer subscript index, such as $x_0(t)$, represent a specific channel of the corresponding multichannel signal.
@@ -209,7 +219,8 @@ It is important to notice the existence of a practical minimum frequency of the 
 Ambisonics is a spatial sound recording and playback technology initially developed during the 1970s \cite{gerzon1973periphony}, and further expanded into its modern formulation around the 2000s \cite{daniel2000representation}.  
 Ambisonics is based on the idea of decomposing a sound field into its spherical harmonic representation. 
 
-Originally, the decomposition was limited to first-order spherical harmonics, as the so-called \textit{First Order Ambisonics} (FOA); mainly because of practical limitations. The technique was later formalized for arbitrary spherical harmonic orders, known as \textit{Higher Order Ambisonics} (HOA).
+Originally, the decomposition was limited to first-order spherical harmonics, as the so-called \textit{First Order Ambisonics} (FOA); mainly because of practical limitations. 
+The technique was later formalized for arbitrary spherical harmonic orders, known as \textit{Higher Order Ambisonics} (HOA).
 In general, with the term \textit{ambisonics} we will be referring to the latter definition.\\
 
 \subsubsection{Ambisonic encoding}
