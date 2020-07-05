@@ -307,6 +307,14 @@ Haas, H. (1972).
 \newblock The influence of a single echo on the audibility of speech.
 \newblock {\em Journal of the Audio Engineering Society}, 20(2):146--159.
 
+\bibitem[Habets et~al., 2006]{p_habets_dual-microphone_2006}
+Habets, E., Gannot, S., and Cohen, I. (2006).
+\newblock Dual-{Microphone} {Speech} {Dereverberation} in a {Noisy}
+  {Environment}.
+\newblock In {\em 2006 {IEEE} {International} {Symposium} on {Signal}
+  {Processing} and {Information} {Technology}}, pages 651--655, Vancouver, BC,
+  Canada. IEEE.
+
 \bibitem[Habets and Gannot, 2007]{habets_generating_2007}
 Habets, E. A.~P. and Gannot, S. (2007).
 \newblock Generating sensor signals in isotropic noise fields.
@@ -516,14 +524,6 @@ OpenAIRlib (2010).
 \newblock \url{www.openairlib.net}.
 \newblock Accessed on June 26th, 2020.
 
-\bibitem[P.~Habets et~al., 2006]{p_habets_dual-microphone_2006}
-P.~Habets, E., Gannot, S., and Cohen, I. (2006).
-\newblock Dual-{Microphone} {Speech} {Dereverberation} in a {Noisy}
-  {Environment}.
-\newblock In {\em 2006 {IEEE} {International} {Symposium} on {Signal}
-  {Processing} and {Information} {Technology}}, pages 651--655, Vancouver, BC,
-  Canada. IEEE.
-
 \bibitem[Panayotov et~al., 2015]{panayotov2015librispeech}
 Panayotov, V., Chen, G., Povey, D., and Khudanpur, S. (2015).
 \newblock Librispeech: an asr corpus based on public domain audio books.
@@ -658,6 +658,7 @@ Pulkki, V., Delikaris-Manias, S., and Politis, A. (2018).
 \bibitem[PYPL, 2020]{PYPL}
 PYPL (2020).
 \newblock Pypl popularity of programming language.
+\newblock \url{http://pypl.github.io/PYPL.html}.
 \newblock Accessed on June 26th, 2020.
 
 \bibitem[Rafaely, 2004]{rafaely2004analysis}

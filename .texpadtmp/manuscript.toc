@@ -86,6 +86,5 @@
 \contentsline {paragraph}{Sound event localization and detection}{104}{section*.13}
 \contentsline {paragraph}{Data generation and management}{105}{section*.14}
 \contentsline {section}{\numberline {7.2}Future Work}{105}{section.7.2}
-\contentsline {chapter}{Appendices}{}{section*.15}
-\contentsline {chapter}{Appendix \numberline {A}List of Contributions}{111}{Appendix.1.A}
-\contentsline {chapter}{Appendix \numberline {B}List of Software Resources}{115}{Appendix.1.B}
+\contentsline {section}{\numberline {7.3}List of Contributions}{108}{section.7.3}
+\contentsline {section}{\numberline {7.4}List of Software Resources}{110}{section.7.4}

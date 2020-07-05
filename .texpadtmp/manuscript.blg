@@ -55,11 +55,6 @@ Repeated entry---line 275 of file ../Bibliography/Data.bib.bib
  : @article{Bertet2006
  :                    ,
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 340 of file ../Bibliography/Data.bib.bib
- :     
- :     howpublished={\url{http://pypl.github.io/PYPL.html}}
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Database file #4: ../Bibliography/AmbisonicsDRIR.bib.bib
 Repeated entry---line 18 of file ../Bibliography/AmbisonicsDRIR.bib.bib
  : @misc{coleman2015s3a
@@ -152,16 +147,16 @@ Warning--empty journal in habets_comments_2010
 Warning--empty journal in murphy2017acoustic
 You've used 133 entries,
             1935 wiz_defined-function locations,
-            1144 strings with 28766 characters,
-and the built_in function-call counts, 54945 in all, are:
-= -- 5542
+            1145 strings with 28800 characters,
+and the built_in function-call counts, 54954 in all, are:
+= -- 5544
 > -- 2208
 < -- 112
 + -- 780
 - -- 740
 * -- 4299
-:= -- 9355
-add.period$ -- 455
+:= -- 9357
+add.period$ -- 456
 call.type$ -- 133
 change.case$ -- 1021
 chr.to.int$ -- 129
@@ -169,13 +164,13 @@ cite$ -- 137
 duplicate$ -- 2279
 empty$ -- 3828
 format.name$ -- 927
-if$ -- 11046
+if$ -- 11048
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 113
-newline$ -- 684
+newline$ -- 685
 num.names$ -- 401
-pop$ -- 1033
+pop$ -- 1032
 preamble$ -- 1
 purify$ -- 1031
 quote$ -- 0
@@ -190,5 +185,5 @@ type$ -- 784
 warning$ -- 4
 while$ -- 439
 width$ -- 0
-write$ -- 1764
-(There were 32 error messages)
+write$ -- 1766
+(There were 31 error messages)
