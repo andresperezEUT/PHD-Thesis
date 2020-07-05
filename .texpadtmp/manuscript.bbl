@@ -26,6 +26,10 @@ Ahonen, J. and Pulkki, V. (2009).
 \newblock In {\em 2009 IEEE Workshop on Applications of Signal Processing to
   Audio and Acoustics}, pages 285--288. IEEE.
 
+\bibitem[Alary et~al., 2019]{alary2019assessing}
+Alary, B., Mass{\'e}, P., V{\"a}lim{\"a}ki, V., and Noisternig, M. (2019).
+\newblock Assessing the anisotropic features of spatial impulse responses.
+
 \bibitem[Allen and Berkley, 1979]{imagemethod}
 Allen, J. and Berkley, D. (1979).
 \newblock Image method for efficiently simulating small-room acoustics.
@@ -102,6 +106,12 @@ Bryan, N.~J. (2020).
   room acoustic parameter estimation.
 \newblock In {\em Proc. IEEE ICASSP}, Barcelona, Spain. IEEE.
 
+\bibitem[Cannam et~al., 2012]{cannam2012sound}
+Cannam, C., Figueira, L.~A., and Plumbley, M.~D. (2012).
+\newblock Sound software: Towards software reuse in audio and music research.
+\newblock In {\em 2012 IEEE International Conference on Acoustics, Speech and
+  Signal Processing (ICASSP)}, pages 2745--2748. IEEE.
+
 \bibitem[Cao et~al., 2019]{Cao2019}
 Cao, Y., Kong, Q., Iqbal, T., An, F., Wang, W., and Plumbley, M. (2019).
 \newblock Polyphonic sound event detection and localization using a two-stage
@@ -157,6 +167,20 @@ Daniel, J. (2000).
   transmission et {\`a} la reproduction de sc{\`e}nes sonores complexes dans un
   contexte multim{\'e}dia}.
 \newblock PhD thesis, University of Paris VI.
+
+\bibitem[DCASE, 2013]{dcase}
+DCASE (2013).
+\newblock Research on detection and classification of acoustic secenes and
+  events.
+\newblock \url{http://dcase.community/community_info}.
+\newblock Accessed on June 27th, 2020.
+
+\bibitem[DCASE, 2020]{dcasetask}
+DCASE (2020).
+\newblock Sound event localization and detection, task description.
+\newblock
+  \url{http://dcase.community/challenge2020/task-sound-event-localization-and-detection-results}.
+\newblock Accessed on July 2th, 2020.
 
 \bibitem[Drossos et~al., 2017]{drossos2017automated}
 Drossos, K., Adavanne, S., and Virtanen, T. (2017).
@@ -468,8 +492,14 @@ Nadiri, O. and Rafaely, B. (2014).
 \newblock {\em IEEE/ACM Transactions on Audio, Speech, and Language
   Processing}, 22(10):1494--1505.
 
-\bibitem[Nguyen et~al., 2020]{nguyen2020sequence}
-Nguyen, T. N.~T., Jones, D.~L., and Gan, W.-S. (2020).
+\bibitem[Nguyen et~al., 2020a]{Nguyen2020_task3_report}
+Nguyen, T. N.~T., Jones, D.~L., and Gan, W.~S. (2020a).
+\newblock Dcase 2020 task 3: Ensemble of sequence matching networks for dynamic
+  sound event localization, detection, and tracking.
+\newblock Technical report, DCASE2020 Challenge.
+
+\bibitem[Nguyen et~al., 2020b]{nguyen2020sequence}
+Nguyen, T. N.~T., Jones, D.~L., and Gan, W.-S. (2020b).
 \newblock A sequence matching network for polyphonic sound event localization
   and detection.
 \newblock In {\em Proc. IEEE ICASSP}, pages 71--75. IEEE.

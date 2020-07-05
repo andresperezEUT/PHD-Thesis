@@ -240,20 +240,22 @@ in the $[-5, -15] $ dB range ($T_{10}$ estimation method), after filtering $\hat
 \subsection{Dataset}
 
 The proposed method is evaluated using two different reverberant datasets, containing recordings of \textit{speech} and \textit{drums} respectively. 
-In order to have full control over the reverberation conditions in the experimental setup, the audio clips under consideration have been rendered by the convolutive mixture of clean monophonic recordings with FOA IRs.
+In order to have full control over the reverberation conditions in the experimental setup, the audio clips under consideration have been rendered by the convolutive mixture of clean monophonic recordings with FOA IRs.\\
 
 The \textit{speech} dataset is composed of the LibriSpeech \cite{panayotov2015librispeech} \textit{test-clean} audio samples longer than 25 s, making a total of 30 audio clips. It contains English language sentences by male and female speakers, often with a small level of background noise. We have used only a 20 s long excerpt of each clip, preceded by an initial offset of 5 s. 
 The \textit{drums} dataset is the \textit{test} subset of the isolated drum recordings from the DSD100 dataset \cite{SiSEC16}. It contains 50 different audio clips, covering a wide range of music and mixing styles. The same audio lengths and offsets as in the previous case are applied.
 
 The IRs are FOA room impulse responses simulated by the image method with the \textit{Multichannel Acoustic Signal Processing} library (Section~\ref{sec:masp}). There are 9 different IRs of 1 s, with random $T_{60}$ values in the range between 0.4 s and 1.1 s approximately, estimated by the $T_{10}$ method at the 1 kHz band. The angular position of the sources is randomized for each IR, while the receiver position is fixed at the room center, which has a size of $10.2 \times 7.1 \times 3.2$ m. The source distance is set to half the \textit{critical distance}, thus providing positive DRRs. 
 
-The combination of the dry audio clips with the IRs yields a total of 270 and 450 audio clips for the \textit{speech} and \textit{drums} datasets, respectively, after removing the audio clips which mostly contain silence. Those datasets will be referred in the following as the \textit{evaluation} datasets. 
+The combination of the dry audio clips with the IRs yields a total of 270 and 450 audio clips for the \textit{speech} and \textit{drums} datasets, respectively, after removing the audio clips which mostly contain silence. Those datasets will be referred in the following as the \textit{evaluation} datasets. \\
 
 Finally, the baseline method requires a previous \textit{fitting} step for the computation of the mapping parameters $\alpha$ and $\beta$ from Eq.~\ref{eq:expansion}. The procedure has been performed as follows.
 For the \textit{speech} dataset, we selected again the subset of audio clips longer than 25 s, but in this case on the \textit{dev-clean} dataset, which yields a total of 20 audio clips. 
 For the \textit{drums} dataset, we used the 50 clips of the \textit{development} subset.
 The generation of the convolutive mixes has followed the same procedure as in the previous case. We will refer to the resulting datasets as the \textit{development} datasets. 
 
+
+\newpage
 \subsection{Setup}
 \label{sec:setup}
 
@@ -282,8 +284,8 @@ Drums  & 8.2421 & -2.1939 & 1.0055  \\
 \end{center}
 \end{table}
 
-In the dereverberation stage, the STFT uses a small window size of 128 samples, with 64 samples overlap. The value of $p$ is set to 0.25, given the good results reported in \cite{jukic2015group}. Other parameter values are $\tau=2$, $i_{max} = 10$, $\eta=10^{-4}$ and  $\epsilon=10^{-4}$. After an exploratory search, the length of the IIR filter $L_g = 20$ has been chosen as a compromise between method performance and computation time. 
-We have observed a tendency towards poor dereverberation and non-convergence of the IRSL when using small values of $L_g$ and short audios.
+In the dereverberation stage, the STFT uses a small window size of 128 samples, with 64 samples overlap. The value of $p$ is 0.25, given the good results reported in \cite{jukic2015group}. Other parameter values are $\tau=2$, $i_{max} = 10$, $\eta=10^{-4}$ and  $\epsilon=10^{-4}$. After an exploratory search, the length of the IIR filter $L_g = 20$ has been chosen as a compromise between performance and computation time. 
+We have observed a tendency towards poor dereverberation and non-convergence of the IRSL when using small values of $L_g$.
 
 For the SID, the recorded and dereverberated signals are reshaped into much larger STFTs, with a window size of 8 s and a hop size of 0.5 s. The predicted filter size is 1 s. 
 
@@ -329,11 +331,11 @@ Nevertheless, an inspection of the statistical distribution of mean estimation e
 the variability of the results given by our method is substantially smaller than the results of the baseline system. This behaviour is consistent across datasets: the mean error distributions with the \textit{speech} dataset are approximately five times narrower than with the \textit{drums} dataset, regardless of the method. \\
 %The wide distribution of results with the baseline method might be a side effect of the dynamic range expansion of Eq.~\ref{eq:expansion}.
 
-Moreover, all methods behave significantly better on the \textit{speech} dataset. The main reason might be the heterogeneity of the \textit{drums} dataset dataset with respect to dynamic range or timbre, and the potential application of audio effects of any kind.
+Moreover, all methods behave significantly better on the \textit{speech} dataset. The main reason might be the heterogeneity of the \textit{drums} dataset with respect to dynamic range or timbre, and the potential application of audio effects of any kind.
 Furthermore, some audio clips of the \textit{drums} dataset contain sounds with a high degree of self-similarity, such as cymbal rolls or exaggerated reverbs; these characteristics would explain the outliers on the proposed method results.
-It is also interesting to notice the robustness of the proposed method against noise, present in the \textit{speech} dataset. 
+It is also interesting to notice the robustness of our method against noise, present in the \textit{speech} dataset; 
 %Although the signal model does not contemplate noise explicitly, such robustness is consistent with the behaviour described in \cite{jukic2015group}.
-Such robustness is consistent with the behavior reported in \cite{jukic2015group}.\\
+such robustness is consistent with the behavior reported in \cite{jukic2015group}.\\
 
 The performance of the \textit{ORACLE SID} method is close to ideal. The \textit{bias} is in all cases under 0.05 s (excepting a \textit{drums} clip containing mostly silence).
 This result validates the system identification, and allows, in practical terms, a direct evaluation of the proposed method against the groundtruth values.
@@ -375,9 +377,9 @@ Since all those methods perform single-channel estimation, and our method requie
 \section{Conclusion}
 \label{sec:conclusion}
 
-I n this Chapter, we have presented  a novel method for blind reverberation time estimation for multichannel audio, with the aim of applying it to the context of ambisonic recordings. Our method is based on a first dereverberation step,  performed by a multichannel autoregressive model of the late reverberation. The resulting dry signal is then used to estimate the impulse response decay by means of system identification. 
+In this Chapter, we have presented  a novel method for blind reverberation time estimation for multichannel audio, with the aim of applying it to the context of ambisonic recordings. Our method is based on a first dereverberation step,  performed by a multichannel autoregressive model of the late reverberation. The resulting dry signal is then used to estimate the impulse response decay by means of system identification. 
 The performance of the method is evaluated in a simulated experimental environment with two different reverberant datasets, and compared against a state-of-the-art method. 
 Results show that our method outperforms the baseline method in a majority of evaluation metrics and conditions, and consistently provides results with less variability than the baseline method. 
-In future work, we plan to extend the experimental setup by using recorded IRs. Furthermore, the proposed method could be extended to the case of moving sources by using an \textit{online} autoregressive model. 
-%Finally, an evaluation of the method in terms of the number of channels or the ambisonic order remains to be done.
-Finally, an extension of the method for higher ambisonic orders remains to be done.
+%In future work, we plan to extend the experimental setup by using recorded IRs. Furthermore, the proposed method could be extended to the case of moving sources by using an \textit{online} autoregressive model. 
+%%Finally, an evaluation of the method in terms of the number of channels or the ambisonic order remains to be done.
+%Finally, an extension of the method for higher ambisonic orders remains to be done.

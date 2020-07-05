@@ -74,10 +74,12 @@ Two error metrics are considered: the frequency-dependent squared error $\vareps
 
 The coherence of the generated \textit{A-Format} signals is exemplified in Fig.~\ref{fig:Fig1} (left), which shows the $MSC$ between the capsule pair (\textit{BLD,BRU}) for the theoretical, simulated and recorded cases.
 The theoretical coherence is derived from Eq.~(\ref{eq:closedform_msc}), while simulated and recorded MSC have been computed by Welch's method, using a \textit{hanning} window of 256 samples and 1/2 overlap.
+
 The difference between theoretical and simulated coherence is negligible for practical applications.
 However, there is a noticeable difference when compared to the recorded coherence. 
 In general, the recorded $\text{MSC}$ follows the tendency of the simulated curve up to around 5 kHz.
 Above this frequency, the recorded $MSC$ presents several spectral peaks, which might be partially explained by the interference of the microphone itself in the recorded sound field, and by the non-ideal directivity of the capsules.
+
 The squared error $\varepsilon(k)$ with respect to the simulated curve is shown in Fig.~\ref{fig:Fig1} (left), while Fig.~\ref{fig:Fig1} (right) represents the same error averaged over frequency $\bar{\varepsilon}$ for different spatial resolution values of the diffuse field reproduction algorithm.
 As expected, $\bar{\varepsilon}$ decreases with increasing values of $N$ and $I$.
 
@@ -87,6 +89,7 @@ As expected, $\bar{\varepsilon}$ decreases with increasing values of $N$ and $I$
 \end{figure}
 
 
+\newpage
 
 \subsection{B-Format} 
 
@@ -116,10 +119,12 @@ As a remark, the comparison between Figs.~\ref{fig:Fig1} and \ref{fig:Fig2} prov
 	\caption{\label{fig:Fig3}\textit{B-Format coherence} between microphone signals. Left: $\Delta$ of simulated and recorded ($N=5, I=64$) signals. Right: $\bar{\varepsilon}$ of the recorded signals coherence across all values of $N$ and $I$.}
 \end{figure}
 
+
 Figure~\ref{fig:Fig3} (left) shows the estimated coherence for the recorded sound field with $N=5$ and $I=64$, using a vicinity radius of $r=1024$ ($\approx$ 5 s).
 The curve is centred around $\Delta=0.25$ and presents several spectral peaks, as in the \textit{A-Format} case. 
 It is important to notice here that the deviations between the coherence of the simulated and the recorded sound fields are much stronger compared to those of Fig.~\ref{fig:Fig1}. 
 
+\newpage
 This effect can be also appreciated in Fig.~\ref{fig:Fig3} (right): the mean squared error is around two orders of magnitude higher in \textit{B-Format}.
 Nevertheless, similar as in Fig.~\ref{fig:Fig1} (right), $\bar{\varepsilon}$ decreases with increasing values of $N$ and $I$.
 This behavior suggests that the deviations between the recorded and the simulated coherence can be to a large degree explained by the low spatial resolution of the reproduction system; given a higher number of loudspeakers, we expect that the reproduced diffuseness will tend to the theoretical expression.

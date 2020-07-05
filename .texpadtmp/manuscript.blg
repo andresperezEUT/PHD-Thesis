@@ -103,8 +103,6 @@ Repeated entry---line 61 of file ../Bibliography/Introduction.bib.bib
  : @phdthesis{daniel2000representation
  :                                    ,
 I'm skipping whatever remains of this entry
-Warning--entry type for "andresgithub" isn't style-file defined
---line 127 of file ../Bibliography/Introduction.bib.bib
 Database file #7: ../Bibliography/ScientificBackground.bib.bib
 Repeated entry---line 41 of file ../Bibliography/ScientificBackground.bib.bib
  : @article{majdak2015aes69
@@ -148,48 +146,49 @@ I was expecting a `,' or a `}'---line 210 of file ../Bibliography/ScientificBack
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Database file #8: ../Bibliography/Conclusion.bib.bib
+Warning--empty booktitle in alary2019assessing
 Warning--empty journal in begault20003
 Warning--empty journal in habets_comments_2010
 Warning--empty journal in murphy2017acoustic
-You've used 128 entries,
+You've used 133 entries,
             1935 wiz_defined-function locations,
-            1123 strings with 27809 characters,
-and the built_in function-call counts, 53130 in all, are:
-= -- 5357
-> -- 2135
-< -- 109
-+ -- 755
-- -- 716
-* -- 4169
-:= -- 9034
-add.period$ -- 438
-call.type$ -- 128
-change.case$ -- 983
-chr.to.int$ -- 125
-cite$ -- 131
-duplicate$ -- 2202
-empty$ -- 3708
-format.name$ -- 898
-if$ -- 10686
-int.to.chr$ -- 4
+            1144 strings with 28766 characters,
+and the built_in function-call counts, 54945 in all, are:
+= -- 5542
+> -- 2208
+< -- 112
++ -- 780
+- -- 740
+* -- 4299
+:= -- 9355
+add.period$ -- 455
+call.type$ -- 133
+change.case$ -- 1021
+chr.to.int$ -- 129
+cite$ -- 137
+duplicate$ -- 2279
+empty$ -- 3828
+format.name$ -- 927
+if$ -- 11046
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 111
-newline$ -- 658
-num.names$ -- 386
-pop$ -- 996
+missing$ -- 113
+newline$ -- 684
+num.names$ -- 401
+pop$ -- 1033
 preamble$ -- 1
-purify$ -- 994
+purify$ -- 1031
 quote$ -- 0
-skip$ -- 1624
+skip$ -- 1682
 stack$ -- 0
-substring$ -- 3455
-swap$ -- 406
-text.length$ -- 39
+substring$ -- 3555
+swap$ -- 418
+text.length$ -- 40
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 754
-warning$ -- 3
-while$ -- 426
+type$ -- 784
+warning$ -- 4
+while$ -- 439
 width$ -- 0
-write$ -- 1699
+write$ -- 1764
 (There were 32 error messages)

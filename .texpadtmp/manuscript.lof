@@ -4,36 +4,39 @@
 \select@language {catalan}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Number of ambisonic microphones released in last years (from \cite {List_of_Ambisonic_hardware}). From left to right, the vertical lines correspond to (i) Oculus acquisition, (ii) Time cover page on VR, (iii) M. Zuckerberg's speech in MWC, and (iv) Jaunt announcement of shift towards AR.\relax }}{3}{figure.1.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Number of ambisonic microphones released in last years (from \cite {List_of_Ambisonic_hardware}). From left to right, the vertical lines correspond to (1) Oculus acquisition, (2) \textit {Time} cover page on VR, (3) M. Zuckerberg's speech in MWC, and (4) Jaunt announcement of shift towards AR.\relax }}{3}{figure.1.1}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Venture investments in VR in the period 2014-2018. Adapted from \cite {fortune}.\relax }}{5}{figure.1.2}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces General scheme of the B-Format audio generation and analysis framework. Solid lines represent audio signals, while outlined arrows refer to non-audio information.\relax }}{6}{figure.1.3}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces General scheme of the B-Format audio generation and analysis framework, including the thesis contributions in form of Chapter numbers.\relax }}{9}{figure.1.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Spherical harmonics up to order $N=3$. The rows correspond to the spherical harmonics of a given order $n$, and the columns span all possible degree values.\relax }}{17}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Magnitude of $\Gamma _n(kR)$ for different ambisonic orders, in the case of (a) rigid sphere, and (b) open sphere configurations. Adapted from \cite {rafaely2004analysis}. \relax }}{19}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Directive patterns of first-order ambisonic decoding.\relax }}{23}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from \cite {carpentier2017ambisonic}.\relax }}{26}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Parametric time-frequency spatial audio analysis of a first order ambisonic recording. From top to bottom: 1.) Magnitude spectrogram of the omnidirectional channel. 2.) and 3.) Azimuth and elevation of the estimated instantaneous narrowband DOAs $\Omega (k,n)$. 4.) Instantaneous narrowband diffuseness $\Psi (k,n)$.\relax }}{31}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Room impulse response model, from \cite {murphy2017acoustic}.\relax }}{34}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Room impulse response model, adapted from \cite {avinfo}.\relax }}{37}{figure.2.7}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Spherical coordinate system used.\relax }}{12}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Spherical harmonics up to order $N=3$. The rows correspond to the spherical harmonics of a given order $n$, and the columns span all possible degree values.\relax }}{16}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Magnitude of $\Gamma _n(kR)$ for different ambisonic orders, in the case of (a) rigid sphere, and (b) open sphere configurations. Adapted from \cite {rafaely2004analysis}. \relax }}{17}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Directive patterns of first-order ambisonic decoding.\relax }}{21}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Maximum value of each ambisonic channel up to order 5, for all different normalization schemes. Image from \cite {carpentier2017ambisonic}.\relax }}{25}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Parametric time-frequency spatial audio analysis of a first order ambisonic recording. From top to bottom: 1.) Magnitude spectrogram of the omnidirectional channel. 2.) and 3.) Azimuth and elevation of the estimated instantaneous narrowband DOAs $\Omega (k,n)$. 4.) Instantaneous narrowband diffuseness $\Psi (k,n)$.\relax }}{30}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Room impulse response model, from \cite {murphy2017acoustic}.\relax }}{33}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Room impulse response model, adapted from \cite {avinfo}.\relax }}{36}{figure.2.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Estimation error computed for each audio clip.\relax }}{51}{figure.3.1}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Total estimation error across audio clips and acoustic conditions. Top: boxplot. Bottom: histogram and density plot\relax }}{52}{figure.3.2}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Estimation error computed for each audio clip.\relax }}{52}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Experiment results for \textit {speech} (left column) and \textit {drums} (right column) datasets. Total estimation error across audio clips and acoustic conditions. Top: boxplot. Bottom: histogram and density plot\relax }}{53}{figure.3.2}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces \textit {A-Format} coherence between microphone signals. Left: $\text {MSC}$ as a function of the frequency of theoretical, simulated and recorded \textit {((BLD,BRU)}, $N=5, I=64$) signals. Right: mean error $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals' $MSC$ \textit {(BLD,BRU)} compared to the simulated values, for all values of $N$ and $I$.\relax }}{59}{figure.4.1}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Estimated \textit {B-Format} coherence ($\Delta $) of a simulated diffuse sound field, as a function of the temporal averaging vicinity radius $r$. Left: $\Delta (k)$ for different values of $r$, with (coarse) and without (fine) application of radial filters. Right: mean and standard deviation of $\Delta (k)$ as a function of $r$.\relax }}{60}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \textit {B-Format coherence} between microphone signals. Left: $\Delta $ of simulated and recorded ($N=5, I=64$) signals. Right: $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals coherence across all values of $N$ and $I$.\relax }}{61}{figure.4.3}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces \textit {B-Format coherence} between microphone signals. Left: $\Delta $ of simulated and recorded ($N=5, I=64$) signals. Right: $\mathaccentV {bar}016{\varepsilon }$ of the recorded signals coherence across all values of $N$ and $I$.\relax }}{62}{figure.4.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Architecture of the proposed methodology.\relax }}{65}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Estimation of localization and temporal activation. Top: azimuth spectrogram after diffuseness mask; color indicates estimated position of a TF bin passing the single-source test. Bottom: input/output of the particle tracking; the crosses represent the measurement space, and the continuous lines are the resulting events.\relax }}{67}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Gradient boosting machine learning process. Adding weak estimators allows reducing overall error in the predictions.\relax }}{69}{figure.5.3}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Number of occurrences of each event class in the training set, for both proposed methods. \relax }}{72}{figure.5.4}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Most representative features in event classifier.\relax }}{76}{figure.5.5}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Event durations of all elements in the \textit {PAPAFIL2} training set.\relax }}{77}{figure.5.6}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Architecture of the proposed methodology.\relax }}{67}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Estimation of localization and temporal activation. Top: azimuth spectrogram after diffuseness mask; color indicates estimated position of a TF bin passing the single-source test. Bottom: input/output of the particle tracking; the crosses represent the measurement space, and the continuous lines are the resulting events.\relax }}{69}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Gradient boosting machine learning process. Adding weak estimators allows reducing overall error in the predictions.\relax }}{72}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Number of occurrences of each event class in the training set, for both proposed methods. \relax }}{74}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Most representative features in event classifier.\relax }}{79}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Event durations of all elements in the \textit {PAPAFIL2} training set.\relax }}{80}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces DCASE 2020 Task 3 submissions: complexity versus SELD score.\relax }}{83}{figure.5.7}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces 2018 projections of future internet traffic for major programming languages. Adapted from \cite {theoverflow}.\relax }}{80}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Frequency response of an arbitrary spherical array.\relax }}{83}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Evaluation of radial filters for an arbitrary spherical microphone array.\relax }}{84}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces \textit {AmbiScaper} architecture.\relax }}{92}{figure.6.4}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces 2018 projections of future internet traffic for major programming languages. Adapted from \cite {theoverflow}.\relax }}{86}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Frequency response of an arbitrary spherical array.\relax }}{89}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Evaluation of radial filters for an arbitrary spherical microphone array.\relax }}{90}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \textit {AmbiScaper} architecture.\relax }}{98}{figure.6.4}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces General scheme of the B-Format audio generation and analysis framework, including the thesis contributions in form of Chapter numbers.\relax }}{97}{figure.7.1}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

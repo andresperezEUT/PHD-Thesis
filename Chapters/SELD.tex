@@ -13,19 +13,20 @@ Sound Event Localization and Detection (SELD) refers to the problem of identifyi
 
 The organization of a dedicated SELD task within the IEEE AASP Challenge on Detection and Classification of Acoustic Scenes and Events (DCASE) 2019 can be considered as a milestone for the development of the SELD research problem. 
 Indeed, a large number of novel methodologies were developed for the Challenge, most of them based on Convolutional Recurrent Neural Networks (CRNN). The performance of the baseline method, a CRNN that performed jointly the localization and classification tasks \cite{Adavanne2018_JSTSP}, was vastly exceeded by a variety of deep-learning based algorithms \cite{kapka2019sound, Cao2019, grondin2019sound}.
-Some of these improvements have been included in the baseline system for the SELD Challenge of DCASE 2020. 
+Some of these improvements have been included in the baseline system for the SELD Challenge of DCASE 2020. \\
 
 Despite the predominant trend towards high-complexity deep-learning architectures, some recent works have been able to match or even improve CRNN-based methods with regard to localization, by using parametric analysis of the ambisonic sound field \cite{perez2019hybrid, nguyen2020sequence}.  
-Apart from the benefit derived by their simplicity, these approaches are able to resolve the case of overlapping events of the same class, a situation difficult to disambiguate for CRNN-based methods \cite{politis2020dataset}.
+Apart from the benefit derived by their simplicity, these approaches are able to resolve the case of overlapping events of the same class, a situation difficult to disambiguate for CRNN-based methods \cite{politis2020dataset}.\\
 
 
-The present work continues the exploration of possibilities of parametric SELD methods, focusing on a low-complexity architecture that makes use of traditional, feature-based machine learning techniques. The method has been developed in the context of the SELD task within DCASE 2020 Challenge, and therefore utilizes the proposed dataset, baseline system and evaluation metrics.
+The present work continues the exploration of possibilities of parametric SELD methods, focusing on a low-complexity architecture that makes use of traditional, feature-based machine learning techniques. The method has been developed in the context of the SELD task within DCASE 2020 Challenge, and therefore utilizes the proposed dataset, baseline system and evaluation metrics.\\
 
 Finally, it is important to remark that the method described here is the continuation of an algorithm presented at the DCASE 2019 Challenge \cite{perez2019hybrid}; both algorithms share a common structure and a similar approach to the SELD problem. 
 However, the current proposal tries to solve some of the problems identified on our early approach, mainly related with a low frame recall derived from a naive approach to event segmentation. Moreover, the current method also presents a complexity reduction, regarding the single-source 
 DOA estimation and the classifier. 
 
 
+\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{System description}
@@ -56,15 +57,15 @@ A scheme of the method is shown in Fig.~\ref{fig:scheme}.
 
 The first step is the transformation of the B-Format input signal $x_n^m(t)$ using the Short-Time Fourier Transform (STFT) into the time-frequency (TF) signal $X_n^m(k,n)$.
 
-In the resulting spectrogram, the frequencies above a given limit $f_{max}$ are discarded; this procedure speeds up the method while maintaining the directional information, given that the microphone geometry aliases spatial measurements above approx. 5 kHz \cite{Bertet2006}.
+In the resulting spectrogram, the frequencies above a given limit $f_{max}$ are discarded; this procedure speeds up the method while maintaining the directional information, given that the microphone geometry produces spatial aliasing above approx. 5 kHz \cite{Bertet2006}.
 
 Assuming that the sources are sparse in time-frequency, it could be possible to identify TF bins which contain a significant energetic contribution from only one source.
 % i.e., without significant cross-talk from other sources or background noise. 
 These bins could be then used to produce accurate DOA estimates. The effectiveness of this approach has already been demonstrated \cite{tho2014robust, nguyen2020sequence}.
 
 Single-source TF bins are computed from the DirAC parametric analysis.
-A variety of alternative subspace methods are known \cite{epain2016spherical, madmoni2018direction}; however, those methods require local estimation of eigenvalues, which is a computationally expensive procedure. 
-% This is the main reason for the choice of DirAC-based analysis in this work. 
+A variety of alternative subspace methods are known \cite{epain2016spherical, madmoni2018direction}; however, those methods require local estimation of eigenvalues through the Spatial Covariance Matrix (SCM), which is a computationally expensive procedure;
+this is the main reason for the choice of DirAC-based analysis in this work. 
 
 A TF bin is counted as single-source if its diffuseness $\Psi(k,n)$ is lower than a threshold $\Psi_{max}$. Diffuseness is computed here using Eq.~\ref{eq:psidefinition}. 
  Finally, the DOA $\Omega(k,n)$ of the TF bins passing the aforementioned single-source test is computed as the angle of the active intensity vector by Eq.~\ref{eq:doa}.
@@ -89,9 +90,9 @@ In our case, we opted for the Rao-Blackwellized Monte-Carlo Data Association (RB
 This method has been recently used in the context of sound event localization and tracking with successful results \cite{Adavanne2018_JSTSP, adavanne2019localization}; the code used for our implementation has been adapted from the same authors\footnote{\url{https://github.com/sharathadavanne/multiple-target-tracking}}.
 
 The system takes as the input the set of TF DOA values passing the single source test, and produces spatio-temporal event trajectories, considering an event as an entity with contiguous temporal activation and continuous spatial position. 
-More specifically, for each time frame of the DOA masked spectrogram, the median\footnote{Circular median in the case of azimuth.} of all narrowband DOA estimates is computed. The resulting value is added to the measurement space of the tracker if the number of single-source frequency bins for that frame exceeds a minimum $K_{min}$. 
+More specifically, for each time frame, the median\footnote{Circular median in the case of azimuth.} of all narrowband masked DOA estimates is computed. The resulting value is added to the measurement space of the tracker if the number of single-source frequency bins for that frame exceeds a minimum $K_{min}$. 
 
-The performance of the RBMCDA algorithm is controlled by several parameters. Some of the most relevant include the angular velocity prior $v$, the standard deviation $\sigma_{\nu}$ and the spectral density $s_{\nu}$ of the measurement noise, the prior probabilities of birth $p_{birth}$ and noise percentage $p_{\nu}$, and the number of Monte-Carlo particles $N$. Position-related parameters are adjusted with respect to their ranges, so that azimuth-related magnitudes double elevation values.  
+The performance of the RBMCDA algorithm is controlled by several parameters. Some of the most relevant ones are the angular velocity prior $v$, the standard deviation $\sigma_{\nu}$ and the spectral density $s_{\nu}$ of the measurement noise, the prior probabilities of birth $p_{birth}$ and noise percentage $p_{\nu}$, and the number of Monte-Carlo particles $N$. Position-related parameters are adjusted with respect to their ranges, so that azimuth-related magnitudes double elevation values.  
 
 
 
@@ -353,7 +354,7 @@ The performance of the proposed methods deteriorates noticeably with overlapping
 % Although the performance is good in general terms with both \textit{PAPAFIL} approaches, the results deteriorate noticeably with overlapping sounds.
 A closer inspection to the development set results reveals that, in many occasions, the TF bins passing the single-source test mostly belong to one out of two simultaneous sources. 
 It is a known issue that performance of DirAC diffuseness is reduced when two sources are present \cite{epain2016spherical}; similar problems have been reported in \cite{adavanne2019localization}, where an instantaneous source number estimator is used in combination with the particle filter.
-As in that case, the results suggest the need for more sophisticated source detection and counting methods. 
+As in that case, the results suggest the need for more sophisticated source detection and counting methods. \\
 
 
 
@@ -388,7 +389,7 @@ As in that case, the results suggest the need for more sophisticated source dete
 Fig.~\ref{fig:importance} shows the relative importance of the fifteen most relevant acoustic features for the \textit{PAPAFIL2} classifier model.
 Event duration is clearly the feature with the highest importance, and effective duration (duration of the signal discarding silence) also appears in the eighth position.
 This fact can help to explain the better performance of \textit{PAPAFIL2} over \textit{PAPAFIL1}: the temporal activities of the events in training and prediction are much more similar to each other in the former method, as a consequence of the training set generation approach. 
-In order to provide a deeper insight on the temporal characteristics of the data under consideration, the durations of all sound events in the \textit{PAPAFIL2} training set are summarized in Figure~\ref{fig:eventdurations}. 
+In order to provide a deeper insight on the temporal characteristics of the data under consideration, the durations of all sound events in the \textit{PAPAFIL2} training set are summarized in Figure~\ref{fig:eventdurations}. \\
 
 \begin{figure}[t]
   \centering
@@ -398,7 +399,7 @@ In order to provide a deeper insight on the temporal characteristics of the data
 \end{figure}
 
 
-Furthermore, it is interesting to notice the high relevance of low-level features, and specifically several MFCC combinations (eight of the fifteen reported features) and  various extractors related to the spectral structure. The absence of pitch, harmonic and envelope features in the list represents a significant finding as well. \\
+Furthermore, it is interesting to notice the high relevance of low-level features; specifically, several MFCC combinations (eight of the fifteen reported features) and various extractors related to the spectral structure. The absence of pitch, harmonic and envelope features in the list represents also a significant finding. \\
 
 
 
@@ -438,8 +439,10 @@ Rank       & Method  & $\text{ER}_{20}$ & $\text{F}_{20}$   & $\text{LE}_{CD}$ &
 \end{table}
 
 It is important to remark that, apart from our proposed method, all other systems rely completely on deep learning algorithms, specially making use of different configurations and combinations of CRNNs. 
-The only exception to that tendency is the method presented by Nguyen and colleagues, which is an adaptation of their recently proposed methodology \cite{Nguyen2020_task3_report, nguyen2020sequence}. In this method, localization is also based on the identification of the single-source TF bins; instead of DirAC diffuseness, they use a subspace analysis to find the TF bins associated with nearly rank-1 spatial covariance matrices (SCM). 
-Furthermore, the instantaneous DOA estimates are obtained by finding the azimuth and elevation histogram peaks, with the steering directions obtained from the covariance matrix diagonals. 
+
+The only exception to that tendency is the method presented by Nguyen and colleagues, which is an adaptation of their recently proposed methodology \cite{Nguyen2020_task3_report, nguyen2020sequence}. In this method, localization is also based on the identification of the single-source TF bins; instead of DirAC diffuseness, they use a subspace analysis to find the TF bins associated with nearly rank-1 spatial covariance matrices. 
+Furthermore, the instantaneous DOA estimates are obtained by finding the azimuth and elevation histogram peaks, with the steering directions obtained from the covariance matrix diagonals. \\
+
 While this method might contribute to provide a smaller localization error compared with our approach (9.3$^{\circ}$ versus 14.2$^{\circ}$ in $\text{LE}_{CD}$), it is more expense computationally, since it involves building a SCM for each TF bin, plus peak picking in two 1D histograms (one for each spherical coordinate). 
 However, the $\text{LE}_{CD}$ results are also influenced by the classification accuracy; a deeper analysis would be required to perform a direct comparison of both approaches.
 
@@ -454,7 +457,7 @@ Figure~\ref{fig:importance} also highlights the great difference in complexity a
 
 \begin{figure}[t]
   \centering
-  \centerline{\includegraphics[width=\columnwidth]{Figures/SELD/seld_complexity_v4.png}}
+  \centerline{\includegraphics[width=0.8\columnwidth]{Figures/SELD/seld_complexity_v4.png}}
   \caption{DCASE 2020 Task 3 submissions: complexity versus SELD score.}
   \label{fig:importance}
 \end{figure}

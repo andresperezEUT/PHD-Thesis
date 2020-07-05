@@ -3,82 +3,89 @@
 \select@language {english}
 \select@language {catalan}
 \select@language {english}
-\contentsline {chapter}{List of figures}{xvii}{chapter*.4}
-\contentsline {chapter}{List of tables}{xix}{chapter*.5}
+\contentsline {chapter}{List of figures}{xvii}{chapter*.5}
+\contentsline {chapter}{List of tables}{xix}{chapter*.6}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Problem Description}{5}{section.1.2}
 \contentsline {section}{\numberline {1.3}Scientific Objectives}{8}{section.1.3}
 \contentsline {section}{\numberline {1.4}Outline}{8}{section.1.4}
-\contentsline {section}{\numberline {1.5}Contributions}{10}{section.1.5}
-\contentsline {chapter}{\numberline {2}Scientific Background}{13}{chapter.2}
-\contentsline {section}{\numberline {2.1}Conventions}{13}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Reference system}{13}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Nomenclature}{15}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Spherical Harmonics}{15}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Definition}{15}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Spherical array processing}{17}{subsection.2.2.2}
-\contentsline {section}{\numberline {2.3}Ambisonics}{19}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Ambisonics Theory}{19}{subsection.2.3.1}
-\contentsline {subsubsection}{Ambisonic encoding}{20}{section*.6}
-\contentsline {subsubsection}{Ambisonic Decoding}{21}{section*.7}
-\contentsline {subsection}{\numberline {2.3.2}Practical considerations}{24}{subsection.2.3.2}
-\contentsline {subsubsection}{Channel normalization}{25}{section*.8}
-\contentsline {subsubsection}{Channel ordering}{27}{section*.9}
-\contentsline {section}{\numberline {2.4}Parametric Spatial Audio Analysis}{28}{section.2.4}
-\contentsline {section}{\numberline {2.5}Spatial Coherence Analysis}{32}{section.2.5}
-\contentsline {section}{\numberline {2.6}Reverberation}{33}{section.2.6}
-\contentsline {section}{\numberline {2.7}Signal Models}{37}{section.2.7}
+\contentsline {chapter}{\numberline {2}Scientific Background}{11}{chapter.2}
+\contentsline {section}{\numberline {2.1}Conventions}{11}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Reference system}{11}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Nomenclature}{13}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Spherical Harmonics}{14}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Definition}{14}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Spherical array processing}{15}{subsection.2.2.2}
+\contentsline {section}{\numberline {2.3}Ambisonics}{18}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Ambisonics Theory}{18}{subsection.2.3.1}
+\contentsline {subsubsection}{Ambisonic encoding}{19}{section*.7}
+\contentsline {subsubsection}{Ambisonic Decoding}{20}{section*.8}
+\contentsline {subsection}{\numberline {2.3.2}Practical considerations}{23}{subsection.2.3.2}
+\contentsline {subsubsection}{Channel normalization}{24}{section*.9}
+\contentsline {subsubsection}{Channel ordering}{26}{section*.10}
+\contentsline {section}{\numberline {2.4}Parametric Spatial Audio Analysis}{27}{section.2.4}
+\contentsline {section}{\numberline {2.5}Spatial Coherence Analysis}{31}{section.2.5}
+\contentsline {section}{\numberline {2.6}Reverberation}{32}{section.2.6}
+\contentsline {section}{\numberline {2.7}Signal Models}{36}{section.2.7}
 \contentsline {chapter}{\numberline {3}Blind reverberation time estimation}{39}{chapter.3}
 \contentsline {section}{\numberline {3.1}Introduction}{39}{section.3.1}
-\contentsline {section}{\numberline {3.2}Signal Model}{40}{section.3.2}
+\contentsline {section}{\numberline {3.2}Signal Model}{41}{section.3.2}
 \contentsline {section}{\numberline {3.3}Baseline method}{41}{section.3.3}
 \contentsline {section}{\numberline {3.4}Proposed method}{42}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Dereverberation}{43}{subsection.3.4.1}
 \contentsline {subsection}{\numberline {3.4.2}System Identification}{45}{subsection.3.4.2}
 \contentsline {section}{\numberline {3.5}Experimental setup}{46}{section.3.5}
 \contentsline {subsection}{\numberline {3.5.1}Dataset}{46}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Setup}{47}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.2}Setup}{48}{subsection.3.5.2}
 \contentsline {subsection}{\numberline {3.5.3}Evaluation metrics}{49}{subsection.3.5.3}
-\contentsline {section}{\numberline {3.6}Results}{49}{section.3.6}
-\contentsline {section}{\numberline {3.7}Conclusion}{53}{section.3.7}
+\contentsline {section}{\numberline {3.6}Results}{50}{section.3.6}
+\contentsline {section}{\numberline {3.7}Conclusion}{51}{section.3.7}
 \contentsline {chapter}{\numberline {4}Coherence Estimation}{55}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{55}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Problem definition}{56}{subsection.4.1.1}
 \contentsline {section}{\numberline {4.2}Methods}{56}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Simulation}{56}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Recording}{56}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Recording}{57}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Data processing and metrics}{57}{subsection.4.2.3}
 \contentsline {section}{\numberline {4.3}Results and discussion}{58}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}A-Format}{58}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}B-Format}{58}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.2}B-Format}{59}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4}Conclusions}{62}{section.4.4}
-\contentsline {chapter}{\numberline {5}Sound Event Localization and Detection}{63}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introduction}{63}{section.5.1}
-\contentsline {section}{\numberline {5.2}System description}{64}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Single-source estimation}{65}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Particle tracking}{66}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Signal filter}{68}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Event classification}{68}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Experiments}{70}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Dataset and baseline system}{70}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Experimental setup}{71}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Evaluation metrics}{73}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Results}{73}{section.5.4}
-\contentsline {section}{\numberline {5.5}Conclusion}{77}{section.5.5}
-\contentsline {chapter}{\numberline {6}Data generation and storage}{79}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
-\contentsline {section}{\numberline {6.2}MASP: a Python library for multichannel acoustic signal processing}{81}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Description}{81}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Related software}{83}{subsection.6.2.2}
-\contentsline {section}{\numberline {6.3}SOFA}{86}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Problem statement}{86}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Ambisonics Directional Room Impulse Response as a SOFA convention}{86}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Pysofaconventions}{88}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Ambiscaper}{89}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Motivation}{89}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Implementation}{91}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Experiment reproducibility}{93}{subsection.6.4.3}
-\contentsline {chapter}{\numberline {7}Conclusions}{95}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of Contributions}{95}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusion and Future Work}{96}{section.7.2}
+\contentsline {chapter}{\numberline {5}Sound Event Localization and Detection}{65}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
+\contentsline {section}{\numberline {5.2}System description}{67}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Single-source estimation}{67}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Particle tracking}{68}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Signal filter}{70}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Event classification}{71}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Experiments}{72}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Dataset and baseline system}{72}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Experimental setup}{73}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Evaluation metrics}{75}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Results}{77}{section.5.4}
+\contentsline {section}{\numberline {5.5}Conclusion}{83}{section.5.5}
+\contentsline {chapter}{\numberline {6}Data generation and storage}{85}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introduction}{85}{section.6.1}
+\contentsline {section}{\numberline {6.2}MASP: a Python library for multichannel acoustic signal processing}{87}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Description}{87}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Related software}{89}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}SOFA}{92}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Problem statement}{92}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Ambisonics Directional Room Impulse Response as a SOFA convention}{93}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Pysofaconventions}{94}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Ambiscaper}{95}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Motivation}{95}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Implementation}{97}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Experiment reproducibility}{99}{subsection.6.4.3}
+\contentsline {section}{\numberline {6.5}Conclusion}{100}{section.6.5}
+\contentsline {chapter}{\numberline {7}Conclusions}{103}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of Contributions}{103}{section.7.1}
+\contentsline {paragraph}{Blind reverberation time estimation}{104}{section*.11}
+\contentsline {paragraph}{Coherence estimation}{104}{section*.12}
+\contentsline {paragraph}{Sound event localization and detection}{104}{section*.13}
+\contentsline {paragraph}{Data generation and management}{105}{section*.14}
+\contentsline {section}{\numberline {7.2}Future Work}{105}{section.7.2}
+\contentsline {chapter}{Appendices}{}{section*.15}
+\contentsline {chapter}{Appendix \numberline {A}List of Contributions}{111}{Appendix.1.A}
+\contentsline {chapter}{Appendix \numberline {B}List of Software Resources}{115}{Appendix.1.B}

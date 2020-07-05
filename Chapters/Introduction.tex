@@ -42,9 +42,11 @@ Coming back to the issue of the popularity of Virtual Reality, we have selected 
 
 
 \begin{figure}[t!]
-  \includegraphics[width=\textwidth]{Figures/Introduction/num_mics_ticks.png}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{Figures/Introduction/num_mics_ticks.png}
   \caption{Number of ambisonic microphones released in last years (from \cite{List_of_Ambisonic_hardware}). From left to right, the vertical lines correspond to (1) Oculus acquisition, (2) \textit{Time} cover page on VR, (3) M. Zuckerberg's speech in MWC, and (4) Jaunt announcement of shift towards AR.}
   \label{fig:nummics}
+\end{center}
 \end{figure}
 
 
@@ -77,13 +79,14 @@ Voyage Audio & Spatial Mic  & 2019    & 2  \\
 
 Given this context, many microphone manufacturers and audio-related companies have followed the industry trend in the search for new markets. Only in the interval 2016-2019, 12 different ambisonic microphones have reached the market (Figure~\ref{fig:nummics}) --- a greater amount than all previous existing ambisonic microphones together. A comprehensive list of recent ambisonic microphone releases is shown in \ref{tab:nummics}.
 
-
 At the present time, however, the high expectations put into VR have significantly lowered, as shown in Figure~\ref{fig:vrfunding}. This is due to a variety of reasons, including lack of interesting content and the high production cost of the headsets \cite{fortune}. The change of focus of Jaunt (formerly one of the biggest VR film production companies) towards Augmented Reality (AR), as of October 2018, might be a paradigmatic example of this tendency \cite{theverge}. 
 
 \begin{figure}[t!]
-  \includegraphics[width=\textwidth]{Figures/Introduction/vr_funding.png}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{Figures/Introduction/vr_funding.png}
   \caption{Venture investments in VR in the period 2014-2018. Adapted from \cite{fortune}.}
   \label{fig:vrfunding}
+\end{center}
 \end{figure}
 
 
@@ -108,14 +111,16 @@ Lastly, the advance in signal processing methods for ambisonics can give rise to
 \section{Problem Description}
 \label{sec:problemdescription}
 
-The scientific context of the work developed in the present dissertation is depicted in Figure~\ref{fig:scheme1}, which has been inspired by \cite{jarrett2017theory}. 
+The scientific context of the work developed in this thesis is shown in Figure~\ref{fig:scheme1}, which has been inspired by \cite{jarrett2017theory}. 
 As we can observe, there are two main topics related with B-Format audio: \textit{generation} and \textit{analysis}, with the signal flow going from the former to the latter.
-Although the conceptual approach of the scheme might be very similar for any type of audio, the specific spatial information conveyed by the ambisonic signal places an emphasis on the informed analysis and description of the sound scene. \\
+Although the conceptual approach of the scheme might be very similar for any type of audio, the spatial information conveyed by the ambisonic signal places an emphasis on the informed analysis and description of the sound scene. \\
 
-\begin{figure}[th]
-  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1.png}
+\begin{figure}[t!]
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{Figures/Introduction/SCHEME1.png}
   \caption{General scheme of the B-Format audio generation and analysis framework.  Solid lines represent audio signals, while outlined arrows refer to non-audio information.}
   \label{fig:scheme1}
+\end{center}
 \end{figure}
 
 
@@ -129,7 +134,7 @@ While recordings are by definition more similar to real scenarios, they are expe
 Therefore, it is of our interest to consider the strengths of both signal generation paths.\\
 
 
-Ambisonic signal analysis has been divided into three different categories:
+Ambisonic signal analysis has been divided in three categories:
 \begin{description}
 	\item[Signal Enhancement] Modification of the input signal in order to obtain one or more output signals with desired attributes. 
 	
@@ -173,9 +178,11 @@ The list that follows concentrates the main scientific objectives to be develope
 \section{Outline}
 
 \begin{figure}[t]
-  \includegraphics[width=\textwidth]{Figures/Introduction/SCHEME1_NUMBERS.png}
+\begin{center}
+  \includegraphics[width=0.8\textwidth]{Figures/Introduction/SCHEME1_NUMBERS.png}
   \caption{General scheme of the B-Format audio generation and analysis framework, including the thesis contributions in form of Chapter numbers.}
   \label{fig:scheme1_numbers}
+\end{center}
 \end{figure}
 
 The present dissertation is organised as follows. 
@@ -184,9 +191,12 @@ The present dissertation is organised as follows.
 
 
 Chapters~\ref{chap:rt60}, \ref{chap:coherence} and \ref{chap:seld2019} develop the most significant academic contributions of this thesis. 
-\textbf{Chapter~\ref{chap:rt60}} presents a novel method for blind reverberation time in ambisonic recordings. To the best of our knowledge, this is the first method proposal specifically focusing on that problem.   The method is based on a Multichannel Auto-Regressive model of the late reverberation, which allows for an effective dereverberation of the ambisonic sound scene, and enables computation of the reverberation time from an estimation of the room impulse response. The evaluation metrics show a method performance similar to other state-of-the-art methods. 
+\textbf{Chapter~\ref{chap:rt60}} presents a novel method for blind reverberation time in ambisonic recordings. To the best of our knowledge, this is the first method proposal specifically focusing on that problem.   The method is based on a Multichannel Auto-Regressive model of the late reverberation, which allows for an effective dereverberation of the ambisonic sound scene, and enables computation of the reverberation time from an estimation of the room impulse response. The evaluation metrics show a method performance similar to other state-of-the-art methods.
+ 
 \textbf{Chapter~\ref{chap:coherence}} analyses the response of tetrahedral microphone arrays, which are the simplest and most common form of ambisonic microphones, under spherically isotropic sound field. The analysis is performed using both simulated and recorded diffuse field, and the results quantify the differences between ideal and real values under a variety of conditions and estimators.  
+
 In \textbf{Chapter~\ref{chap:seld2019}}, a complete system for Sound Event Localization and Detection of ambisonic sound scenes is described. The algorithm comprises two different parts. First, a parametric analysis is performed on the ambisonic signal. The analysis yields spatial localization and temporal activities of the sound events present in the scene. Then, each of those events is assigned to a class label by means of a deep-learning classifier. The method is able to perform in a similar way to the baseline system, while greatly improving its localization capabilities.
+\newpage
 
 Finally, \textbf{Chapter~\ref{chap:data}} presents some libraries and software utilities developed throughout this thesis. All the code has been publicly released under open source licenses. The libraries include utilities for the creation of datasets, the storage and exchange of impulse response files in a standard way, and the implementation of convenience tools for acoustic and microphone array signal processing analysis. Although the libraries do not directly involve any scientific contribution, they can be a great help for scientific and innovative purposes; given the industrial nature of this thesis, we have considered relevant to include them in the present dissertation.\\
 

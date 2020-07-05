@@ -6,18 +6,21 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces List of ambisonic microphones released in recent years (from \cite {List_of_Ambisonic_hardware}).\relax }}{4}{table.1.1}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Cartesian and spherical representation of characteristic points along the unit sphere.\relax }}{14}{table.2.1}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Cartesian and spherical representation of characteristic points along the unit sphere.\relax }}{12}{table.2.1}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Ambisonic decoding: standard values of $alpha_n$ weightings. Adapted from \cite {daniel2000representation}.\relax }}{22}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Reverberation time computation: usual reference levels\relax }}{36}{table.2.3}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Reverberation time computation: usual reference levels\relax }}{35}{table.2.3}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Baseline system: linear regression parameters\relax }}{48}{table.3.1}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Experiment results\relax }}{49}{table.3.2}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic features used for classification, grouped by type.\relax }}{70}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces (Hyper-)parameter values.\relax }}{74}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Evaluation results on the development set.\relax }}{75}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic features used for classification, grouped by type.\relax }}{72}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces (Hyper-)parameter values.\relax }}{76}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces System evaluation. Top: results on the cross-validation development set. Bottom: results on the evaluation set.\relax }}{77}{table.5.3}
+\contentsline {table}{\numberline {5.4}{\ignorespaces DCASE 2020 Challenge Task 3 evaluation results\relax }}{81}{table.5.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Features of \textit {MASP} compared to \textit {pyroomacoustics}.\relax }}{85}{table.6.1}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Summary of audio data used across Ambisonics-based Source Localization (above) and Source Separation (below) methods.\relax }}{90}{table.6.2}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Features of \textit {MASP} compared to \textit {pyroomacoustics}.\relax }}{91}{table.6.1}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Summary of audio data used across Ambisonics-based Source Localization (above) and Source Separation (below) methods.\relax }}{96}{table.6.2}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
