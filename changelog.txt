@@ -1,0 +1,20 @@
+CHANGELOG
+
+
+beta_v2
+______________________________
+- añadida discusión del método DCASE con respecto a los resultados finales del challenge (chapter 5)
+- añadido prefacio con contexto del doctorado industrial
+- añadido dos apéndices: List of contributions, and List of Software packages (antes estaba en la introducción).
+- añadido sección de conclusión 6.5 en capítulo de datos, para introducir el concepto de research reproducibility y poner en ese contexto las contribuciones software.
+- reorganizado sección de conclusiones (chapter 7). Extendido el Summary of Contributions, y reducido el Future Work.
+
+beta_v3
+______________________________
+- agradecimientos
+- lista de contributions y software en chapter 7.
+
+
+beta_v4
+______________________________
+- added auto-references

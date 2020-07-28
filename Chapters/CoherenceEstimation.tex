@@ -6,7 +6,7 @@
 
 A number of practical applications benefit of the knowledge about the diffuseness of a sound field, including speech enhancement and dereverberation \cite{p_habets_dual-microphone_2006}, noise suppression \cite{ito_designing_2010}, source separation \cite{duong_under-determined_2009} or background estimation \cite{stefanakis_foreground_2015}. In the field of spatial audio, diffuseness estimation is often used for parametrization \cite{pulkki2006directional, politis_compass_2018}, Direction-of-Arrival estimation \cite{thiergart_localization_2009} or source separation \cite{motlicek_real-time_2013}.
 
-In this Chapter, we study diffuseness estimation by subjecting a tetrahedral microphone array to spherically isotropic noise fields.
+In this Chapter, adapted from a previous academic publication \cite{stefanakis2019analysis},  we study diffuseness estimation by subjecting a tetrahedral microphone array to spherically isotropic noise fields.
 The motivation for this work is, first, that tetrahedral arrays are a well known type of microphone arrays, which have today become popular for applications related to Virtual and Augmented Reality. 
 Second, the spherical isotropic sound field is known to be a good approximation to the reverberant part of the sound field in a room \cite{elko_spatial_2001, mccowan_microphone_2003}, and therefore it would be interesting to investigate how different microphone arrays behave under such conditions.
 
@@ -20,6 +20,8 @@ Under spherical isotropic noise, the theoretical coherence between any pair of z
 However, there are several practical factors that might corrupt the coherence estimation, such as the approximation of the temporal expectation by time averaging \cite{thiergart_diffuseness_2011} in Eq.~(\ref{eq:psidefinition}), or the non-ideal implementation of the radial filters $\Gamma_n(kR)$ (Eq.~\ref{eq:a2b}) for the \textit{A-B conversion}\cite{schorkhuber_ambisonic_2017}.
 
 In the following sections, we present several experiments that illustrate the behavior of different coherence estimators applied on the signals captured with a tetrahedral microphone subjected to spherical isotropic noise, using both simulated and real sound recordings.
+
+
 
 
 

@@ -36,16 +36,18 @@ However, most of the existing reverberation time estimation methods focus on the
 %In a slightly different context, the method proposed in \cite{falcon2019machine} estimates reverberation time from room geometry; while the groundtruth values are computed through spatial filtering of Eigenmike recordings, those are just employed for algorithm training. 
 
 On the other hand, recent years have witnessed a growing interest in immersive audio for virtual and augmented reality.
-This situation has consolidated Ambisonics \cite{zotter2019ambisonics} as the \textit{de facto} standard for spatial audio. Dedicated spherical microphone arrays have reached the market in last years; their multichannel nature makes possible spatial manipulations that 
+This situation has consolidated Ambisonics as the \textit{de facto} standard for spatial audio. Dedicated spherical microphone arrays have reached the market in last years; their multichannel nature makes possible spatial manipulations that 
 %improve traditional signal processing methods.
 complement traditional signal enhancement methods.
 
 In this chapter, we present a novel approach to the problem of multichannel blind reverberation time estimation, specifically focusing on first order ambisonic (FOA) recordings. 
 %The method is based on dereverberation plus IR estimation by system identification. 
 The method is based on a dereverberation stage followed by system identification.
-To the best of our knowledge, the proposed algorithm is the first reverberation time estimation method specifically designed for first order ambisonic audio. 
+To the best of our knowledge, the proposed algorithm is the first reverberation time estimation method specifically designed for first order ambisonic audio.
 
-The rest of the chapter is organized as follows. Section~\ref{sec:signalmodel} introduces the nomenclature and the signal model. Sections~\ref{sec:baseline} and \ref{sec:proposed} describe the baseline and the proposed methods, respectively. The experimental setup is described in Section~\ref{sec:experimental}, and the results are discussed in Section~\ref{sec:results}. Finally, a conclusion is presented in Section~\ref{sec:conclusion}.
+The rest of the Chapter is organized as follows. Section~\ref{sec:signalmodel} introduces the nomenclature and the signal model. Sections~\ref{sec:baseline} and \ref{sec:proposed} describe the baseline and the proposed methods, respectively. The experimental setup is described in Section~\ref{sec:experimental}, and the results are discussed in Section~\ref{sec:results}. Finally, a conclusion is presented in Section~\ref{sec:conclusion}.
+
+The research presented in this Chapter has been submitted for publication at the IEEE 22nd International Workshop on Multimedia Signal Processing \cite{rt}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -359,7 +361,7 @@ Since all those methods perform single-channel estimation, and our method requie
 %\end{figure*}
 
 \begin{figure*}[htbp]
-	\centerline{\includegraphics[width=1.3\textwidth]{Figures/ReverberationTimeEstimation/96.png}}
+	\centerline{\includegraphics[width=1.1\textwidth]{Figures/ReverberationTimeEstimation/96.png}}
 	\caption{Experiment results for \textit{speech} (left column) and \textit{drums} (right column) datasets. Estimation error computed for each audio clip.}
 	\label{fig:results1}
 \end{figure*}

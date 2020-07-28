@@ -30,7 +30,7 @@ Although Matlab code can be called and executed from Python, in practice this ap
 \label{sec:masp}
 \subsection{Description}
 
-The Multichannel Acoustic Signal Processing (\textit{MASP}) is a Python library consisting of a collection of methods related with acoustics and microphone array processing.
+The Multichannel Acoustic Signal Processing (\textit{MASP}) is a Python library consisting of a collection of methods related with acoustics and microphone array processing \cite{perez2020python}.
 The library is mostly a transcoding from several Matlab libraries by A. Politis\cite{politis2016microphone, github_politis}. 
 It can be conveniently installed using \textit{pip}.
 
@@ -185,9 +185,9 @@ On the other hand, the SOFA specification defines some criteria that must be ful
     \item Relevant information about the data must be available.
 \end{enumerate} 
 
-Given that the described situation meets all requirements, the \textit{Ambisonics Directional Room Impulse Response} (AmbisonicsDRIR) convention has been therefore proposed as SOFA convention.\\
+Given that the described situation meets all requirements, the \textit{Ambisonics Directional Room Impulse Response} (AmbisonicsDRIR) convention has been therefore proposed as SOFA convention \cite{perez2018ambisonics}.\\
 
-The technical specifications of the proposed convention in its current state (version 0.2) are available online \cite{ambisonicsdrir}. 
+The technical specifications of the proposed convention in its current state (version 0.2) are available online \cite{ambisonicsdrir}.
 %Despite a timid adoption of the convention, the AmbisonicsDRIR proposal has arisen interest in the community. At the moment of writing, the \textit{Standardisation Committee on AES-69 Standard} is discussing potential modifications to the SOFA file format required for the adoption of several new features; and the support for spherical harmonic-based measurements is among the topics for deliberation.
 
 
@@ -195,7 +195,7 @@ The technical specifications of the proposed convention in its current state (ve
 
 The situation described in Section~\label{sec:intro_data}, regarding the availability of acoustic signal processing libraries in the Python programming language, can be easily extended to the case of SOFA APIs.
  
-The library \textit{pysofaconventions} has been created with the aim to provide an alternative to the existing Matlab/Octave and C/C++ implementations. 
+The library \textit{pysofaconventions} has been created with the aim to provide an alternative to the existing Matlab/Octave and C/C++ implementations \cite{pysofaconventions}.
 For ease of installation, it is integrated in the standard python package manager, \textit{pip}. 
 
 The current software version is 0.1.5. The library structure is inspired by the C++ implementation \cite{api_cpp}. 
@@ -323,7 +323,7 @@ Moreover, the capacity of batch processing of large ambisonic collections might 
 \subsection{Implementation}
 \label{sec:ambiscaper}
 
-\textit{AmbiScaper} is a tool designed to provide a flexible way of creating complex ambisonics sound scenes and their associated groundtruth annotations, to be used in the context of source localization and separation algorithms.
+\textit{AmbiScaper} \cite{perez2018ambiscaper} is a tool designed to provide a flexible way of creating complex ambisonics sound scenes and their associated groundtruth annotations, to be used in the context of source localization and separation algorithms.
 \textit{AmbiScaper} offers a high level control of the sound scene parameters, and provides a simple interface for the creation of large datasets with custom characteristics.
 \textit{AmbiScaper} is based on \textit{Scaper}, a framework designed to generate annotations for training Sound Event Detection models \cite{Salamon2017}.\\
 
